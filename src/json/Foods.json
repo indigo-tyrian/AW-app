@@ -1,0 +1,42 @@
+{
+  "Meat": [
+    "pork",
+    "beef",
+    "chicken"
+  ],
+  "Vegetable": [
+    "tomato",
+    "beef",
+    "chicken"
+  ],
+  "Fish": [
+    "pork",
+    "beef",
+    "chicken"
+  ],
+  "Eggs": [
+    "pork",
+    "beef",
+    "chicken"
+  ],
+  "Fruits": [
+    "bananas",
+    "apple",
+    "kiwi"
+  ],
+  "Beans": [
+    "pork",
+    "beef",
+    "chicken"
+  ],
+  "Daily Products": [
+    "pork",
+    "beef",
+    "chicken"
+  ],
+  "Grains": [
+    "pork",
+    "beef",
+    "chicken"
+  ]
+}

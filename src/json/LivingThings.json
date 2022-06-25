@@ -1,0 +1,336 @@
+{
+  "habitats": [
+    {
+      "img": [
+        "/images/livingThings/habitats/rockyShore.jpg"
+      ],
+      "title": "Rocky Shore",
+      "name": "rockyShore",
+      "contents": "Many factors favour the survival of life on rocky shores. Temperate coastal waters are mixed by waves and convection, maintaining adequate availability of nutrients. Also, the sea brings plankton and broken organic matter in with each tide. The high availability of light (due to low depths) and nutrient levels means that primary productivity of seaweeds and algae can be very high. Human actions can also benefit rocky shores due to nutrient runoff."
+    },
+    {
+      "img": [
+        "/images/livingThings/habitats/savanna.jpg"
+      ],
+      "name": "savanna",
+      "title": "Savanna",
+      "contents": "The word derives from the Spanish savanna, which is itself a loanword from Taíno. Letter b in Spanish, when positioned in the middle of a word, is pronounced almost like an English v; hence the change of grapheme when transcribed into English. The word originally entered English as the Zauana in a description of the ilands of the kinges of Spayne from 1555.[13][15] This was equivalent in the orthography of the times to zavana (see history of V). Peter Martyr reported it as the local title for the plain around Comagre, the court of the cacique Carlos in present-day Panama. The accounts are inexact,[17] but this is usually placed in present-day Madugandí[18] or at points on the nearby Guna Yala coast opposite Ustupo[19] or on Point Mosquitos.[20] These areas are now either given over to modern cropland or jungle"
+    },
+    {
+      "img": [
+        "/images/livingThings/habitats/sea.jpg"
+      ],
+      "name": "sea",
+      "title": "Sea",
+      "contents": "Many factors favour the survival of life on rocky shores. Temperate coastal waters are mixed by waves and convection, maintaining adequate availability of nutrients. Also, the sea brings plankton and broken organic matter in with each tide. The high availability of light (due to low depths) and nutrient levels means that primary productivity of seaweeds and algae can be very high. Human actions can also benefit rocky shores due to nutrient runoff."
+    },
+    {
+      "img": [
+        "/images/livingThings/habitats/deepSea.jpg"
+      ],
+      "name": "deepSea",
+      "title": "deep Sea",
+      "contents": "Many factors favour the survival of life on rocky shores. Temperate coastal waters are mixed by waves and convection, maintaining adequate availability of nutrients. Also, the sea brings plankton and broken organic matter in with each tide. The high availability of light (due to low depths) and nutrient levels means that primary productivity of seaweeds and algae can be very high. Human actions can also benefit rocky shores due to nutrient runoff."
+    },
+    {
+      "img": [
+        "/images/livingThings/habitats/grassLand.jpg"
+      ],
+      "name": "grassLand",
+      "title": "grass Land",
+      "contents": "Many factors favour the survival of life on rocky shores. Temperate coastal waters are mixed by waves and convection, maintaining adequate availability of nutrients. Also, the sea brings plankton and broken organic matter in with each tide. The high availability of light (due to low depths) and nutrient levels means that primary productivity of seaweeds and algae can be very high. Human actions can also benefit rocky shores due to nutrient runoff."
+    },
+    {
+      "img": [
+        "/images/livingThings/habitats/sandyBeach.jpg"
+      ],
+      "name": "sandyBeach",
+      "title": "sandy Beach",
+      "contents": "Many factors favour the survival of life on rocky shores. Temperate coastal waters are mixed by waves and convection, maintaining adequate availability of nutrients. Also, the sea brings plankton and broken organic matter in with each tide. The high availability of light (due to low depths) and nutrient levels means that primary productivity of seaweeds and algae can be very high. Human actions can also benefit rocky shores due to nutrient runoff."
+    },
+    {
+      "img": [
+        "/images/livingThings/habitats/river.jpg"
+      ],
+      "name": "river",
+      "title": "river",
+      "contents": "Many factors favour the survival of life on rocky shores. Temperate coastal waters are mixed by waves and convection, maintaining adequate availability of nutrients. Also, the sea brings plankton and broken organic matter in with each tide. The high availability of light (due to low depths) and nutrient levels means that primary productivity of seaweeds and algae can be very high. Human actions can also benefit rocky shores due to nutrient runoff."
+    },
+    {
+      "img": [
+        "/images/livingThings/habitats/forest.jpg"
+      ],
+      "name": "forest",
+      "title": "forest",
+      "contents": "Many factors favour the survival of life on rocky shores. Temperate coastal waters are mixed by waves and convection, maintaining adequate availability of nutrients. Also, the sea brings plankton and broken organic matter in with each tide. The high availability of light (due to low depths) and nutrient levels means that primary productivity of seaweeds and algae can be very high. Human actions can also benefit rocky shores due to nutrient runoff."
+    },
+    {
+      "img": [
+        "/images/livingThings/habitats/tropicalRainForest.jpg"
+      ],
+      "name": "tropicalRainForest",
+      "title": "tropical Rain Forest",
+      "contents": "Many factors favour the survival of life on rocky shores. Temperate coastal waters are mixed by waves and convection, maintaining adequate availability of nutrients. Also, the sea brings plankton and broken organic matter in with each tide. The high availability of light (due to low depths) and nutrient levels means that primary productivity of seaweeds and algae can be very high. Human actions can also benefit rocky shores due to nutrient runoff."
+    },
+    {
+      "img": [
+        "/images/livingThings/habitats/lake.jpg"
+      ],
+      "name": "img",
+      "title": "Lake",
+      "contents": "Many factors favour the survival of life on rocky shores. Temperate coastal waters are mixed by waves and convection, maintaining adequate availability of nutrients. Also, the sea brings plankton and broken organic matter in with each tide. The high availability of light (due to low depths) and nutrient levels means that primary productivity of seaweeds and algae can be very high. Human actions can also benefit rocky shores due to nutrient runoff."
+    },
+    {
+      "img": [
+        "/images/livingThings/habitats/Polar.jpg"
+      ],
+      "name": "polar",
+      "title": "Polar",
+      "contents": "Many factors favour the survival of life on rocky shores. Temperate coastal waters are mixed by waves and convection, maintaining adequate availability of nutrients. Also, the sea brings plankton and broken organic matter in with each tide. The high availability of light (due to low depths) and nutrient levels means that primary productivity of seaweeds and algae can be very high. Human actions can also benefit rocky shores due to nutrient runoff."
+    },
+    {
+      "img": [
+        "/images/livingThings/habitats/desert.jpg"
+      ],
+      "name": "desert",
+      "title": "desert",
+      "contents": "Many factors favour the survival of life on rocky shores. Temperate coastal waters are mixed by waves and convection, maintaining adequate availability of nutrients. Also, the sea brings plankton and broken organic matter in with each tide. The high availability of light (due to low depths) and nutrient levels means that primary productivity of seaweeds and algae can be very high. Human actions can also benefit rocky shores due to nutrient runoff."
+    }
+  ],
+  "species": [
+    {
+      "img": [
+        "/images/livingThings/species/mammal.jpg"
+      ],
+      "name": "mammal",
+      "title": "mammal",
+      "contents": "Many factors favour the survival of life on rocky shores. Temperate coastal waters are mixed by waves and convection, maintaining adequate availability of nutrients. Also, the sea brings plankton and broken organic matter in with each tide. The high availability of light (due to low depths) and nutrient levels means that primary productivity of seaweeds and algae can be very high. Human actions can also benefit rocky shores due to nutrient runoff."
+    },
+    {
+      "img": [
+        "/images/livingThings/species/reptile.jpg"
+      ],
+      "name": "reptile",
+      "title": "reptile",
+      "contents": "Many factors favour the survival of life on rocky shores. Temperate coastal waters are mixed by waves and convection, maintaining adequate availability of nutrients. Also, the sea brings plankton and broken organic matter in with each tide. The high availability of light (due to low depths) and nutrient levels means that primary productivity of seaweeds and algae can be very high. Human actions can also benefit rocky shores due to nutrient runoff."
+    },
+    {
+      "img": [
+        "/images/livingThings/species/amphibian.jpg"
+      ],
+      "name": "amphibian",
+      "title": "amphibian",
+      "contents": "Many factors favour the survival of life on rocky shores. Temperate coastal waters are mixed by waves and convection, maintaining adequate availability of nutrients. Also, the sea brings plankton and broken organic matter in with each tide. The high availability of light (due to low depths) and nutrient levels means that primary productivity of seaweeds and algae can be very high. Human actions can also benefit rocky shores due to nutrient runoff."
+    },
+    {
+      "img": [
+        "/images/livingThings/species/mollusca.jpg"
+      ],
+      "name": "mollusca",
+      "title": "mollusca",
+      "contents": "Many factors favour the survival of life on rocky shores. Temperate coastal waters are mixed by waves and convection, maintaining adequate availability of nutrients. Also, the sea brings plankton and broken organic matter in with each tide. The high availability of light (due to low depths) and nutrient levels means that primary productivity of seaweeds and algae can be very high. Human actions can also benefit rocky shores due to nutrient runoff."
+    },
+    {
+      "img": [
+        "/images/livingThings/species/fish.jpg"
+      ],
+      "name": "fish",
+      "title": "fish",
+      "contents": "Many factors favour the survival of life on rocky shores. Temperate coastal waters are mixed by waves and convection, maintaining adequate availability of nutrients. Also, the sea brings plankton and broken organic matter in with each tide. The high availability of light (due to low depths) and nutrient levels means that primary productivity of seaweeds and algae can be very high. Human actions can also benefit rocky shores due to nutrient runoff."
+    },
+    {
+      "img": [
+        "/images/livingThings/species/insect.jpg"
+      ],
+      "name": "insect",
+      "title": "insect",
+      "contents": "Many factors favour the survival of life on rocky shores. Temperate coastal waters are mixed by waves and convection, maintaining adequate availability of nutrients. Also, the sea brings plankton and broken organic matter in with each tide. The high availability of light (due to low depths) and nutrient levels means that primary productivity of seaweeds and algae can be very high. Human actions can also benefit rocky shores due to nutrient runoff."
+    },
+    {
+      "img": [
+        "/images/livingThings/species/bird.jpg"
+      ],
+      "name": "bird",
+      "title": "bird",
+      "contents": "Many factors favour the survival of life on rocky shores. Temperate coastal waters are mixed by waves and convection, maintaining adequate availability of nutrients. Also, the sea brings plankton and broken organic matter in with each tide. The high availability of light (due to low depths) and nutrient levels means that primary productivity of seaweeds and algae can be very high. Human actions can also benefit rocky shores due to nutrient runoff."
+    },
+    {
+      "img": [
+        "/images/livingThings/species/crustacean.jpg"
+      ],
+      "name": "crustacean",
+      "title": "crustacean",
+      "contents": "Many factors favour the survival of life on rocky shores. Temperate coastal waters are mixed by waves and convection, maintaining adequate availability of nutrients. Also, the sea brings plankton and broken organic matter in with each tide. The high availability of light (due to low depths) and nutrient levels means that primary productivity of seaweeds and algae can be very high. Human actions can also benefit rocky shores due to nutrient runoff."
+    }
+  ],
+  "each": [
+    {
+      "name": "africanElephant",
+      "title": "African Elephant",
+      "img": [
+        "/images/livingThings/each/elephant.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/African_bush_elephants_%28Loxodonta_africana%29_female_with_six-week-old_baby.jpg/270px-African_bush_elephants_%28Loxodonta_africana%29_female_with_six-week-old_baby.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Serengeti_Elefantenbulle.jpg/270px-Serengeti_Elefantenbulle.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/African_elephant_%28Loxodonta_africana%29_2.jpg/270px-African_elephant_%28Loxodonta_africana%29_2.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/African_Bush_Elephant.jpg/120px-African_Bush_Elephant.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Loxodonta_africana_South_Luangwa_National_Park_%281%29.jpg/360px-Loxodonta_africana_South_Luangwa_National_Park_%281%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Serengeti_Elefantenherde1.jpg/270px-Serengeti_Elefantenherde1.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Elefantes_africanos_de_sabana_%28Loxodonta_africana%29%2C_parque_nacional_de_Chobe%2C_Botsuana%2C_2018-07-28%2C_DD_25.jpg/300px-Elefantes_africanos_de_sabana_%28Loxodonta_africana%29%2C_parque_nacional_de_Chobe%2C_Botsuana%2C_2018-07-28%2C_DD_25.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Elephant_Kruger_2003.jpg/270px-Elephant_Kruger_2003.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Elefante_africano_de_sabana_%28Loxodonta_africana%29%2C_parque_nacional_Kruger%2C_Sud%C3%A1frica%2C_2018-07-25%2C_DD_06.jpg/270px-Elefante_africano_de_sabana_%28Loxodonta_africana%29%2C_parque_nacional_Kruger%2C_Sud%C3%A1frica%2C_2018-07-25%2C_DD_06.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/African_elephant_%28Loxodonta_africana%29_3.jpg/300px-African_elephant_%28Loxodonta_africana%29_3.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/African_bush_elephant_%28Loxodonta_africana%29_baby_6_weeks.jpg/270px-African_bush_elephant_%28Loxodonta_africana%29_baby_6_weeks.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/African_elephant%2C_Lake_St_Lucia_01.jpg/270px-African_elephant%2C_Lake_St_Lucia_01.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/African_elephants%2C_Lake_St_Lucia_04.jpg/270px-African_elephants%2C_Lake_St_Lucia_04.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Elefantes_africanos_de_sabana_%28Loxodonta_africana%29%2C_Elephant_Sands%2C_Botsuana%2C_2018-07-28%2C_DD_114-117_PAN.jpg/800px-Elefantes_africanos_de_sabana_%28Loxodonta_africana%29%2C_Elephant_Sands%2C_Botsuana%2C_2018-07-28%2C_DD_114-117_PAN.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/African_Elephant_Baby_Walk_2019-07-23.jpg/270px-African_Elephant_Baby_Walk_2019-07-23.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/African_Elephant_Backsides_2019-07-25.jpg/330px-African_Elephant_Backsides_2019-07-25.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Elephant_%28Loxodonta_Africana%29_05.jpg/300px-Elephant_%28Loxodonta_Africana%29_05.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Female_African_Elephant_2019-07-23.jpg/270px-Female_African_Elephant_2019-07-23.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Elephant_%28Loxodonta_Africana%29_04.jpg/220px-Elephant_%28Loxodonta_Africana%29_04.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/African_bush_elephant_%28Loxodonta_africana%29_spraying_water.jpg/270px-African_bush_elephant_%28Loxodonta_africana%29_spraying_water.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/African_elephant%2C_Lake_St_Lucia_03.jpg/270px-African_elephant%2C_Lake_St_Lucia_03.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Female_African_Elephant_Taking_Mud_Bath_2019-07-23.jpg/270px-Female_African_Elephant_Taking_Mud_Bath_2019-07-23.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/African_elephant_%28Loxodonta_africana%29_in_bush.jpg/270px-African_elephant_%28Loxodonta_africana%29_in_bush.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Elefante_africano_de_sabana_%28Loxodonta_africana%29%2C_parque_nacional_Kruger%2C_Sud%C3%A1frica%2C_2018-07-25%2C_DD_20.jpg/270px-Elefante_africano_de_sabana_%28Loxodonta_africana%29%2C_parque_nacional_Kruger%2C_Sud%C3%A1frica%2C_2018-07-25%2C_DD_20.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Elefantes_africanos_de_sabana_%28Loxodonta_africana%29%2C_parque_nacional_Kruger%2C_Sud%C3%A1frica%2C_2018-07-25%2C_DD_05.jpg/270px-Elefantes_africanos_de_sabana_%28Loxodonta_africana%29%2C_parque_nacional_Kruger%2C_Sud%C3%A1frica%2C_2018-07-25%2C_DD_05.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/African_Elephant_SVG.svg/225px-African_Elephant_SVG.svg.png",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Male_African_Elephant_After_Mud_Bath_2019-07-25.jpg/270px-Male_African_Elephant_After_Mud_Bath_2019-07-25.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Elephant_%28Loxodonta_africana%29_mating_ritual_composite.jpg/270px-Elephant_%28Loxodonta_africana%29_mating_ritual_composite.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/African_Elephant_Bull_Taking_Mud_Bath_2019-07-26.jpg/270px-African_Elephant_Bull_Taking_Mud_Bath_2019-07-26.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Elephant_skull_in_Chobe_National_Park.jpg/225px-Elephant_skull_in_Chobe_National_Park.jpg"
+      ],
+      "about": {
+        "name": "",
+        "title": "About",
+        "contents": "The African elephant is a genus comprising two living elephant species  the African bush elephant (L.africana) and the smaller African forest elephant (L. cyclotis). Both are social herbivores with grey skin iffer in the size and colour of their tusks and in the shape and size of their ears and skulls Both species are considered at heavy risk of extinction on the IUCN Red List; as of 2021 the bush elephant is considered endangered and the forest elephant is considered critically endangered. They are threatened"
+      }
+    },
+    {
+      "name": "oryx",
+      "title": "Oryx",
+      "img": [
+        "/images/livingThings/each/oryx.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Oryx_gazella_%28Okevi%29.jpg/240px-Oryx_gazella_%28Okevi%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Oryx_gazella_-Etosha_National_Park%2C_Namibia-8.jpg/271px-Oryx_gazella_-Etosha_National_Park%2C_Namibia-8.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Gemsbok_%28Oryx_gazella%29_male.jpg/270px-Gemsbok_%28Oryx_gazella%29_male.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Oryx_gazella_-_Etosha_2014.jpg/270px-Oryx_gazella_-_Etosha_2014.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Oryx_skeleton_at_MAV-USP.jpg/144px-Oryx_skeleton_at_MAV-USP.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Oryx_gazella_male_8054.jpg/270px-Oryx_gazella_male_8054.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Common_beisa_oryx_%28Oryx_beisa_beisa%29_female.jpg/270px-Common_beisa_oryx_%28Oryx_beisa_beisa%29_female.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Arabian_oryx_%28oryx_leucoryx%29.jpg/220px-Arabian_oryx_%28oryx_leucoryx%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Oryx_in_Namibia.jpg/270px-Oryx_in_Namibia.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Oryx_dammah_zoo_mexico.jpg/225px-Oryx_dammah_zoo_mexico.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Scimitar_oryx1.jpg/270px-Scimitar_oryx1.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Taurotragus_oryx_qtl2.jpg/150px-Taurotragus_oryx_qtl2.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Oryx_dammah_2.jpg/300px-Oryx_dammah_2.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Oryx_gazella_%28Gemsbok%29.jpg/240px-Oryx_gazella_%28Gemsbok%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Three_Arabian_Oryx_in_a_desert_landscape.png/270px-Three_Arabian_Oryx_in_a_desert_landscape.png",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Taurotragus_oryx.jpg/240px-Taurotragus_oryx.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/VAE-Oryx-01.jpg/270px-VAE-Oryx-01.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/A_pair_of_scimitar-horned_oryx.jpg/270px-A_pair_of_scimitar-horned_oryx.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Bovidae_Oryx_dammah_1.jpg/300px-Bovidae_Oryx_dammah_1.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Oryx_gazella_1.jpg/200px-Oryx_gazella_1.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Bovidae_Taurotragus_oryx_1.jpg/120px-Bovidae_Taurotragus_oryx_1.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/ZooZ%C3%BCrich_-_Oryx_leucoryx_2.JPG/300px-ZooZ%C3%BCrich_-_Oryx_leucoryx_2.JPG",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Taurotragus_oryx_qtl1.jpg/150px-Taurotragus_oryx_qtl1.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Oryx_mural_in_Tiwi%2C_Oman.jpg/300px-Oryx_mural_in_Tiwi%2C_Oman.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/ZooZ%C3%BCrich_-_Oryx_leucoryx_15.JPG/300px-ZooZ%C3%BCrich_-_Oryx_leucoryx_15.JPG",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Taxidermized_Arabian_Oryx_AUB.jpg/240px-Taxidermized_Arabian_Oryx_AUB.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/ZooZ%C3%BCrich_-_Oryx_leucoryx_17.JPG/300px-ZooZ%C3%BCrich_-_Oryx_leucoryx_17.JPG",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Taurotragus_oryx_-_young_bull_-_Etosha_2015.jpg/270px-Taurotragus_oryx_-_young_bull_-_Etosha_2015.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Oryx_Doha_Qatar_2019_08.jpg/330px-Oryx_Doha_Qatar_2019_08.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Bovidae_Taurotragus_oryx_3.jpg/120px-Bovidae_Taurotragus_oryx_3.jpg"
+      ],
+      "about": {
+        "name": "",
+        "title": "About",
+        "contents": "The African elephant is a genus comprising two living elephant species  the African bush elephant (L.africana) and the smaller African forest elephant (L. cyclotis). Both are social herbivores with grey skin iffer in the size and colour of their tusks and in the shape and size of their ears and skulls Both species are considered at heavy risk of extinction on the IUCN Red List; as of 2021 the bush elephant is considered endangered and the forest elephant is considered critically endangered. They are threatened"
+      }
+    },
+    {
+      "name": "tiger",
+      "title": "tiger",
+      "img": [
+        "/images/livingThings/each/tiger.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Panthera_tigris_altaica_13_-_Buffalo_Zoo.jpg/266px-Panthera_tigris_altaica_13_-_Buffalo_Zoo.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Bengal_tiger_%28Panthera_tigris_tigris%29_female_3.jpg/270px-Bengal_tiger_%28Panthera_tigris_tigris%29_female_3.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Amur_Tiger_Panthera_tigris_altaica_Eye_2112px_edit.jpg/150px-Amur_Tiger_Panthera_tigris_altaica_Eye_2112px_edit.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Panthera_tigris_sumatran_subspecies.jpg/240px-Panthera_tigris_sumatran_subspecies.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Bengal_tiger_%28Panthera_tigris_tigris%29_female_3_crop.jpg/270px-Bengal_tiger_%28Panthera_tigris_tigris%29_female_3_crop.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Panthera_tigris_tigris_Tidoba_20150306.jpg/270px-Panthera_tigris_tigris_Tidoba_20150306.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Tiger-2.jpg/300px-Tiger-2.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Panthera_tigris_virgata.jpg/270px-Panthera_tigris_virgata.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Tiger_Zoo_Vienna.jpg/300px-Tiger_Zoo_Vienna.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Panthera_tigris6.jpg/150px-Panthera_tigris6.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Bengal_tiger_%28Panthera_tigris_tigris%29_female.jpg/270px-Bengal_tiger_%28Panthera_tigris_tigris%29_female.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Amur_Tiger_Panthera_tigris_altaica_Cub_Walking_1500px.jpg/150px-Amur_Tiger_Panthera_tigris_altaica_Cub_Walking_1500px.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Panthera_tigris_altaica_in_Lodz_Zoo_1.jpg/300px-Panthera_tigris_altaica_in_Lodz_Zoo_1.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Siberian_Tiger_by_Malene_Th.jpg/120px-Siberian_Tiger_by_Malene_Th.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Siberischer_tiger_de_edit02.jpg/240px-Siberischer_tiger_de_edit02.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Bengal_tiger_%28Panthera_tigris_tigris%29_female_2.jpg/180px-Bengal_tiger_%28Panthera_tigris_tigris%29_female_2.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/White_Tiger_in_Touroparc.jpg/250px-White_Tiger_in_Touroparc.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Panthera_tigris_at_tuzoofari_mexico2018.jpg/180px-Panthera_tigris_at_tuzoofari_mexico2018.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Tiger_1_%28India%29.jpg/270px-Tiger_1_%28India%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Close-up_view_of_the_head_of_a_white_tiger%2C_yawning_with_the_tongue_out.jpg/180px-Close-up_view_of_the_head_of_a_white_tiger%2C_yawning_with_the_tongue_out.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Standing_white_tiger.jpg/270px-Standing_white_tiger.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/08-2011_-_Panthera_tigris_tigris._Lanzarote_-_Spain_-_TP08.jpg/200px-08-2011_-_Panthera_tigris_tigris._Lanzarote_-_Spain_-_TP08.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Tiger_berlin-3.jpg/300px-Tiger_berlin-3.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/08-2011._Panthera_tigris_tigris_-_Texas_Park_-_Lanzarote_-TP00.jpg/270px-08-2011._Panthera_tigris_tigris_-_Texas_Park_-_Lanzarote_-TP00.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Panthera_tigris_altaica_in_Lodz_Zoo_2.jpg/150px-Panthera_tigris_altaica_in_Lodz_Zoo_2.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/08-2011._Panthera_tigris_tigris_-_Texas_Park_-_Lanzarote_-TP04.jpg/270px-08-2011._Panthera_tigris_tigris_-_Texas_Park_-_Lanzarote_-TP04.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/08-2011._Panthera_tigris_tigris_-_Texas_Park_-_Lanzarote_-TP02.jpg/270px-08-2011._Panthera_tigris_tigris_-_Texas_Park_-_Lanzarote_-TP02.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Siberischer_tiger_de.jpg/240px-Siberischer_tiger_de.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Osnabr%C3%BCck_-_Zoo_-_Panthera_Tigris_Sumatrae_01.jpg/240px-Osnabr%C3%BCck_-_Zoo_-_Panthera_Tigris_Sumatrae_01.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Tiger_Drinking_Pond_Mudumalai_Mar21_DSC01310.jpg/240px-Tiger_Drinking_Pond_Mudumalai_Mar21_DSC01310.jpg"
+      ],
+      "about": {
+        "name": "",
+        "title": "About",
+        "contents": "The African elephant is a genus comprising two living elephant species  the African bush elephant (L.africana) and the smaller African forest elephant (L. cyclotis). Both are social herbivores with grey skin iffer in the size and colour of their tusks and in the shape and size of their ears and skulls Both species are considered at heavy risk of extinction on the IUCN Red List; as of 2021 the bush elephant is considered endangered and the forest elephant is considered critically endangered. They are threatened"
+      }
+    },
+    {
+      "name": "squirrels",
+      "title": "squirrels",
+      "img": [
+        "/images/livingThings/each/squirrels.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Streifenhoernchen.jpg/169px-Streifenhoernchen.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Squirrel_posing.jpg/220px-Squirrel_posing.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Cape_Ground_Squirrel.jpg/120px-Cape_Ground_Squirrel.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Anatolian_Ground_Squirrel_-_Spermophilus_xanthoprymnus_06.jpg/270px-Anatolian_Ground_Squirrel_-_Spermophilus_xanthoprymnus_06.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Japanese_Squirrel_edited_version.jpg/300px-Japanese_Squirrel_edited_version.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Eastern_Grey_Squirrel_in_St_James%27s_Park%2C_London_-_Nov_2006_edit.jpg/240px-Eastern_Grey_Squirrel_in_St_James%27s_Park%2C_London_-_Nov_2006_edit.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Sciuridae_%28181622197%29.jpg/270px-Sciuridae_%28181622197%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Sciuridae.jpg/180px-Sciuridae.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Gray_Squirrel_Breakfast.jpg/270px-Gray_Squirrel_Breakfast.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Spotted_Ground_Squirrel_8338vv.jpg/240px-Spotted_Ground_Squirrel_8338vv.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Watching_Squirrel.jpg/240px-Watching_Squirrel.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Squirrel_in_CP_%2840494%29.jpg/240px-Squirrel_in_CP_%2840494%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Love_in_the_squirrels.jpg/300px-Love_in_the_squirrels.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Squirrel_sleeping_on_tree.jpg/330px-Squirrel_sleeping_on_tree.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Adorable_Squirrel.jpg/240px-Adorable_Squirrel.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/White-tailed_Antelope_Squirrel_DSC4931aavv.jpg/270px-White-tailed_Antelope_Squirrel_DSC4931aavv.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Adorable_Squirrel_%28enhanced%29.jpg/240px-Adorable_Squirrel_%28enhanced%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Fox_Squirrel_On_Tree.jpg/120px-Fox_Squirrel_On_Tree.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Tamiasciurus_hudsonicus_James_Gardens.JPG/270px-Tamiasciurus_hudsonicus_James_Gardens.JPG",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Squirrel_in_Peterhof.jpg/200px-Squirrel_in_Peterhof.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Watching_Squirrel_%28enhanced%29.jpg/240px-Watching_Squirrel_%28enhanced%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Squirrel_%2825020341565%29.jpg/270px-Squirrel_%2825020341565%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/SquirrelPM%282%29.jpg/330px-SquirrelPM%282%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Model_Squirrel_%28original%29.jpg/240px-Model_Squirrel_%28original%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Squirrel_in_Coyoac%C3%A1n.jpg/330px-Squirrel_in_Coyoac%C3%A1n.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Peeping_Squirrel_-_geograph.org.uk_-_2318767.jpg/300px-Peeping_Squirrel_-_geograph.org.uk_-_2318767.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Squirrel_in_the_sun_-_geograph.org.uk_-_2379193.jpg/270px-Squirrel_in_the_sun_-_geograph.org.uk_-_2379193.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Fox_Squirrel_Behind_Tree_Looking.jpg/120px-Fox_Squirrel_Behind_Tree_Looking.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/DeadIndianPalmSquirrelPM%283%29.jpg/270px-DeadIndianPalmSquirrelPM%283%29.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Model_Squirrel_%28enhanced%29.jpg/240px-Model_Squirrel_%28enhanced%29.jpg"
+      ],
+      "about": {
+        "name": "",
+        "title": "About",
+        "contents": "The African elephant is a genus comprising two living elephant species  the African bush elephant (L.africana) and the smaller African forest elephant (L. cyclotis). Both are social herbivores with grey skin iffer in the size and colour of their tusks and in the shape and size of their ears and skulls Both species are considered at heavy risk of extinction on the IUCN Red List; as of 2021 the bush elephant is considered endangered and the forest elephant is considered critically endangered. They are threatened"
+      }
+    }
+  ]
+}
