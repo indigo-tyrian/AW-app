@@ -5,7 +5,7 @@ import TwitterSvg from "../../../src/components/svg/TwitterSvg"
 import { bigImgStyle, linkContainerStyle, TitleNameStyle, bigImgContainerStyle } from '../../../src/components/styles/eachOne.css'
 import db from '../../../src/firebase'
 import { useState, useEffect } from 'react';
-import Data from "../../../src/components/LivingThings.json"
+import Data from "../../../src/json/LivingThings.json"
 import AboutContent from "../../../src/components/Aboutcontent"
 import ImageGallery from "../../../src/components/ImgGallery"
 import { useRouter } from 'next/router'
