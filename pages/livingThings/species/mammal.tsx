@@ -5,20 +5,34 @@ import TwitterSvg from "../../../src/components/svg/TwitterSvg"
 import Data from "../../../src/json/LivingThings.json"
 import { bigImgStyle, linkContainerStyle, bigImgContainerStyle, TitleNameStyle } from '../../../src/components/styles/eachOne.css'
 import AboutContent from "../../../src/components/Aboutcontent"
-import { useRouter } from 'next/router'
+
+
+interface Props {
+  kk: {
+    im: string[];
+    name: string;
+    title: string;
+  }
+}
+
 
 
 const LivingThingsSpecies = () => {
-  const router = useRouter()
-  const one: keyof typeof Data.species = router.query.pid
+
+  const one = "mammal"
+  const kk = Data.species.find((d) => d.name == one) as {
+    name: string;
+    title: string;
+    img: string[];
+  }
 
 
   return (
     <>
       <div className={bigImgContainerStyle}>
-        <img className={bigImgStyle} src={Data.species[one].img[0].replace(/['"]+/g, '')} alt="hhhhhhhhhhhhh" />
+        <img className={bigImgStyle} src={kk.img[0].replace(/['"]+/g, '')} alt="hhhhhhhhhhhhh" />
       </div>
-      <div className={TitleNameStyle}>{Data.species[one].name}</div>
+      <div className={TitleNameStyle}>{kk.name}</div>
       <div className={linkContainerStyle}>
         <span style={{ top: -12 }}>
           <div >
@@ -37,7 +51,7 @@ const LivingThingsSpecies = () => {
         </div>
       </div>
 
-      <AboutContent contentPath={Data.species[one].contents} />
+      {/* <AboutContent contentPath={kk.contents} /> */}
     </>
   )
 }

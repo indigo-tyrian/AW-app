@@ -57,7 +57,21 @@ const NewtopiaComp = (
 ) => {
 
   const one = "Newtopia"
-  const moo = Mo.movies.find((d) => d.name == one)
+  const moo = Mo.movies.find((d) => d.name == one) as {
+    id: string
+    blogTitle: string
+    rate: {
+      story: number;
+      images: number;
+      music: number;
+      opening: number;
+      endRoll: number;
+      innovative: number;
+      socialEffect: number;
+      businessSuccessful: number;
+    }
+  }
+
   const [content, setContent] = useState<Props>([]);
   console.log(moo.blogTitle);
 

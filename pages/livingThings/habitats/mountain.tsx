@@ -7,15 +7,27 @@ import { bigImgStyle, linkContainerStyle, bigImgContainerStyle, TitleNameStyle }
 import AboutContent from "../../../src/components/Aboutcontent"
 import { useRouter } from 'next/router'
 
+interface Props {
+  kk: {
+    img: string[];
+    name: string;
+    title: string;
+  }
+}
 
 const Mountain = () => {
-  const one: string = "mountain"
+  const one = "mountain"
+  const kk = Data.habitats.find((d) => d.name == one) as {
+    name: string;
+    title: string;
+    img: string[];
+  }
   return (
     <>
       <div className={bigImgContainerStyle}>
-        <img className={bigImgStyle} src={Data.habitats[one].img[0].replace(/['"]+/g, '')} alt="hhhhhhhhhhhhh" />
+        <img className={bigImgStyle} src={kk.img[0].replace(/['"]+/g, '')} alt="hhhhhhhhhhhhh" />
       </div>
-      <div className={TitleNameStyle}>{Data.habitats[one].name}</div>
+      <div className={TitleNameStyle}>{kk.name}</div>
       <div className={linkContainerStyle}>
         <span style={{ top: -12 }}>
           <div >
@@ -34,7 +46,7 @@ const Mountain = () => {
         </div>
       </div>
 
-      <AboutContent contentPath={Data.habitats[one].contents} />
+      {/* <AboutContent contentPath={kk.contents} /> */}
     </>
   )
 }
