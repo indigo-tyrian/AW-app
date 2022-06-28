@@ -9,9 +9,22 @@ import { useEffect, useState } from "react";
 import { useRouter } from 'next/router'
 import SingleContent from '../src/components/Movies/SingleContent';
 
+interface Props {
+  id: number
+  name: string
+  poster_path: string
+  title: string
+  first_air_date: string
+  release_date: string
+  media_type: string
+  vote_average: number
+  overview: string
+}
+
+
 function Movies() {
 
-  const [content, setContent] = useState([]);
+  const [content, setContent] = useState<Props>({} as Props);
 
 
   const fetchTrending = async (): Promise<void> => {
@@ -32,7 +45,6 @@ function Movies() {
     <>
       <SingleContent
         key={content.id}
-        id={content.id}
         poster={content.poster_path}
         title={content.title || content.name}
         date={content.first_air_date || content.release_date}

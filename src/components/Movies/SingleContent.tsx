@@ -9,12 +9,6 @@ interface Props {
   media_type: string
   vote_average: number
   over_view: string
-  back_drop: string
-  runtime: number
-  genres: [{
-    id: number
-    name: string
-  }]
 }
 
 const SingleContent = ({
