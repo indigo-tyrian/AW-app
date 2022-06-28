@@ -16,63 +16,46 @@ import { ffContainerStyle, textContainerStyle, textTitleStyle, textContentsStyle
 // }
 
 interface Props {
-  content: {
+  id: number
+  name: string
+  poster_path: string
+  title: string
+  first_air_date: string
+  release_date: string
+  media_type: string
+  vote_average: number
+  overview: string
+  backdrop_path: string
+  runtime: number
+  genres: [{
     id: number
     name: string
-    poster_path: string
-    title: string
-    first_air_date: string
-    release_date: string
-    media_type: string
-    vote_average: number
-    overview: string
-    backdrop_path: string
-    runtime: number
-    genres: [{
-      id: number
-      name: string
-    }]
+  }]
+}
+
+interface Props2 {
+  id: string
+  blogTitle: string
+  rate: {
+    story: number;
+    images: number;
+    music: number;
+    opening: number;
+    endRoll: number;
+    innovative: number;
+    socialEffect: number;
+    businessSuccessful: number;
   }
 }
-interface Props2 {
-  moo: {
-    id: string
-    blogTitle: string
-    rate: {
-      story: number;
-      images: number;
-      music: number;
-      opening: number;
-      endRoll: number;
-      innovative: number;
-      socialEffect: number;
-      businessSuccessful: number;
-    }
-  }[]
-}
 
 
-const NewtopiaComp = (
-
-) => {
+const NewtopiaComp = () => {
 
   const one = "Newtopia"
-  const moo = Mo.movies.find((d) => d.name == one) as {
-    id: string
-    blogTitle: string
-    rate: {
-      story: number;
-      images: number;
-      music: number;
-      opening: number;
-      endRoll: number;
-      innovative: number;
-      socialEffect: number;
-      businessSuccessful: number;
-    }
-  }
+  const moo = Mo.movies.find((d) => d.name == one) as Props2
 
-  const [content, setContent] = useState<Props>([]);
+
+  const [content, setContent] = useState<Props>({} as Props);
   console.log(moo.blogTitle);
 
   const fetchTrending = () => {
@@ -80,6 +63,8 @@ const NewtopiaComp = (
     ).then(response => response.json()).then(res => {
       setContent(res)
       // console.log(res)
+    }).catch(error => {
+      console.log("hhhhh")
     })
 
     // console.log(data);
@@ -93,8 +78,8 @@ const NewtopiaComp = (
   return (
     <>
       <PosterAndInfo
-        key={content.id}
-        poster={content.poster_path}
+        key={content?.id}
+        poster={content?.poster_path}
         back_drop={content.backdrop_path}
         title={content.title || content.name}
         date={content.first_air_date || content.release_date}

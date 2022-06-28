@@ -8,20 +8,14 @@ import AboutContent from "../../../src/components/Aboutcontent"
 import { useRouter } from 'next/router'
 
 interface Props {
-  kk: {
-    img: string[];
-    name: string;
-    title: string;
-  }
+  img: string[];
+  name: string;
+  title: string;
 }
 
 const Mountain = () => {
   const one = "mountain"
-  const kk = Data.habitats.find((d) => d.name == one) as {
-    name: string;
-    title: string;
-    img: string[];
-  }
+  const kk = Data.habitats.find((d) => d.name == one) as Props
   return (
     <>
       <div className={bigImgContainerStyle}>

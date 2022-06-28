@@ -4,15 +4,14 @@ import ShareSvg from "../../../src/components/svg/ShareSvg"
 import TwitterSvg from "../../../src/components/svg/TwitterSvg"
 import Data from "../../../src/json/LivingThings.json"
 import { bigImgStyle, linkContainerStyle, bigImgContainerStyle, TitleNameStyle } from '../../../src/components/styles/eachOne.css'
-import AboutContent from "../../../src/components/Aboutcontent"
+// import AboutContent from "../../../src/components/AboutContent"
 
 
 interface Props {
-  kk: {
-    im: string[];
-    name: string;
-    title: string;
-  }
+  img: string[];
+  name: string;
+  title: string;
+
 }
 
 
@@ -20,11 +19,7 @@ interface Props {
 const LivingThingsSpecies = () => {
 
   const one = "mammal"
-  const kk = Data.species.find((d) => d.name == one) as {
-    name: string;
-    title: string;
-    img: string[];
-  }
+  const kk = Data.species.find((d) => d.name == one) as Props
 
 
   return (

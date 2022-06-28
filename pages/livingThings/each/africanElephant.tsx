@@ -17,7 +17,6 @@ interface Props2 {
 }
 
 interface Props {
-
   name: string;
   title: string;
   img: string[];
@@ -26,11 +25,7 @@ interface Props {
 
 const AfricanElephant = (props: Props2) => {
   const one = "africanElephant"
-  const kk: Props = Data.each.find((d) => d.name == one) as {
-    name: string;
-    title: string;
-    img: string[];
-  }
+  const kk: Props = Data.each.find((d) => d.name == one) as Props
 
   const [hidden, setHidden] = useState(false)
 
