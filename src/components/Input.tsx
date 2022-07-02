@@ -1,36 +1,38 @@
 import '../components/styles/global.css'
 import { MouseEvent, useState } from 'react'
-
 import { searchButtonStyle, searchContainerStyle, searchButtonInnerStyle, dataResultStyle, dataResultItemStyle } from "./styles/Input.css"
 import { MagnifyingGlassIcon } from "./svg/MagnifyingGlassSvg"
-import data from "../json/LivingThings.json"
-
-
-
+import Data from "../json/LivingThings.json"
 
 interface Props {
-  class: string
+  class1: string
   class2: string
 }
-const Input = (props: Props) => {
 
-  const [filteredData, setFilteredData] = useState([]);
+interface FilterProps {
+  name: string;
+  title: string;
+  img: string[];
+  about: {
+    name: string;
+    title: string;
+  }
+}[]
+
+interface Length {
+  length: number
+}
+
+const Input = ({ class2, class1 }: Props) => {
+
+  const [filteredData, setFilteredData] = useState<any>({} as FilterProps);
   const [wordEntered, setWordEntered] = useState("");
 
   const handleFilter = (event: { target: { value: string; }; }) => {
-    const searchWord = event.target.value
-    setWordEntered(searchWord);
-    const newFilter = data.each.filter((value) => {
-      if (searchWord == "") {
-        return null
-      }
-      else { return value.name.toLowerCase().startsWith(searchWord.toLowerCase()) }
-    })
-    if (searchWord === "") {
-      setFilteredData([]);
-    } else {
-      setFilteredData(newFilter);
-    }
+    const searchWord = event.target.value;
+    const newFilter = filteredData.length > 0 ? Data.each.filter((value) => { value.name.toLowerCase().startsWith(searchWord.toLowerCase()) }) : undefined
+
+    setFilteredData(newFilter)
 
   }
 
@@ -45,9 +47,9 @@ const Input = (props: Props) => {
 
   console.log(filteredData.length)
   return (
-    <div className={props.class2}>
+    <div className={class2}>
       <div className={searchContainerStyle}>
-        <input className={props.class} type="text" placeholder="Search..." onChange={handleFilter} value={wordEntered} />
+        <input className={class1} type="text" placeholder="Search..." onChange={handleFilter} value={wordEntered} />
         <div className={searchButtonStyle}>
           <div className={searchButtonInnerStyle} onClick={clearInput}>
             <MagnifyingGlassIcon fillColor='gray' />
@@ -59,12 +61,12 @@ const Input = (props: Props) => {
 
         <div className={dataResultStyle} >
           <div >
-            {filteredData.map((value, key) => {
+            {filteredData.map((value: { name: string }, key: number) => {
               return (
                 <div key={key} className={dataResultItemStyle}>
-                  <a href={value.link} target='_blank'>
-                    <p>{value.name}</p>
-                  </a>
+                  {/* <a href={value.link} target='_blank'> */}
+                  <p>{value.name}</p>
+                  {/* </a> */}
                 </div>
               )
             })}

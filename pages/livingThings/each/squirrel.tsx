@@ -22,8 +22,8 @@ interface Props {
 }
 
 
-const AfricanElephant = (props: Props2) => {
-  const one = "africanElephant"
+const Wolf = (props: Props2) => {
+  const one = "wolf"
   const kk: Props = Data.each.find((d) => d.name == one) as Props
   const [hidden, setHidden] = useState(false)
 
@@ -61,8 +61,6 @@ const AfricanElephant = (props: Props2) => {
           <FacebookSvg />
         </div>
       </div>
-
-      {/* "The African elephant is a genus comprising two living elephant species  the African bush elephant (L.africana) and the smaller African forest elephant (L. cyclotis). Both are social herbivores with grey skin iffer in the size and colour of their tusks and in the shape and size of their ears and skulls Both species are considered at heavy risk of extinction on the IUCN Red List; as of 2021 the bush elephant is considered endangered and the forest elephant is considered critically endangered. They are threatened" */}
 
       <div className={Style}>
         <div className={lineStyle}>About</div>
@@ -118,4 +116,4 @@ const AfricanElephant = (props: Props2) => {
 }
 
 
-export default AfricanElephant;
+export default Wolf;

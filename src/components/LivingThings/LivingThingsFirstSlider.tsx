@@ -21,7 +21,7 @@ const LivingThingsFirstSlider = () => {
         </div>
       </div>
       <Logo class={logoStyle.absolute} />
-      <Input class2={`${containerStyle.slider}`} class={`${inputSearchBoxStyle.slider}`} />
+      <Input class2={`${containerStyle.slider}`} class1={`${inputSearchBoxStyle.slider}`} />
       <div className={slideContainerStyle.livingTings}>
         <Swiper
           // modules={[Autoplay]}

@@ -19,7 +19,7 @@ const Header = (props: Props) => {
         {/* <div className={navTextStyle}>
           <div>Living Things</div>
         </div> */}
-        <Input class2={`${containerStyle.home}`} class={` ${inputSearchBoxStyle.home}`} />
+        <Input class2={`${containerStyle.home}`} class1={` ${inputSearchBoxStyle.home}`} />
       </nav>
       {/* <div className={languageStyle}>
           <div className={languageContainerStyle}>

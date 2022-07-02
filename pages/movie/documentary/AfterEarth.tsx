@@ -40,11 +40,10 @@ interface Props2 {
   }
 }
 
-const Newtopia = () => {
-  const one = "Newtopia"
+const AfterEarth = () => {
+  const one = "AfterEarth"
   const moo = Mo.movies.find((d) => d.name == one) as Props2
   const [content, setContent] = useState<Props>({} as Props);
-  console.log(moo.blogTitle);
 
   const fetchTrending = () => {
     fetch(`https://api.themoviedb.org/3/movie/${moo.id}?api_key=0bbd2e953c05d5b589625a131c3ecac6`
@@ -103,4 +102,4 @@ const Newtopia = () => {
   )
 }
 
-export default Newtopia
+export default AfterEarth
