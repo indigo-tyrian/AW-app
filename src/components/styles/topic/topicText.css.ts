@@ -1,5 +1,6 @@
-import {style } from "@vanilla-extract/css"
-import { vars } from './theme.css'
+import { style } from "@vanilla-extract/css"
+import { vars } from '../theme.css'
+
 
 export const textAreaStyle = style({
   left: "0",
@@ -7,5 +8,5 @@ export const textAreaStyle = style({
   width: "100%",
   marginTop: "-1.5vw",
   gridArea: "text"
-  
+
 })
