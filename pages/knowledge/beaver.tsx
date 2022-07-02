@@ -17,7 +17,7 @@ const Beaver = () => {
         For example, during the 40-day period between Carnival &#40;Carnival&#41; and Easter &#40;Easter&#41; in February and March &#40;called Lent&#41;, we fast.
       </p>
       <p>
-        Also, every Friday is a fasting day because Friday is the day of Christ's death. &#40;It is said that Jesus Christ was executed on Friday and resurrected three days later on Sunday.&#41;
+        Also, every Friday is a fasting day because Friday is the day of Christ&#39;s death. &#40;It is said that Jesus Christ was executed on Friday and resurrected three days later on Sunday.&#41;
       </p>
       <p>
         Fasting does not mean that we are not allowed to eat anything. We stop feasting and reduce the frequency and quantity of our food.
@@ -29,10 +29,10 @@ const Beaver = () => {
         Why did they fast?
       </h2>
       <p>
-        It was to experience Christ's suffering for themselves.
+        It was to experience Christ&#39;s suffering for themselves.
       </p>
       <p>
-        Jesus Christ willingly crucified Himself on the cross to save mankind from sin. Fasting is a painful practice, but by fasting, we are reminded of Christ's sacrifice and suffering.
+        Jesus Christ willingly crucified Himself on the cross to save mankind from sin. Fasting is a painful practice, but by fasting, we are reminded of Christ&#39;s sacrifice and suffering.
       </p>
       <p>
         It is also believed that by suppressing their cravings, they were learning self-control like Christ, and thus drawing a little closer to God.
@@ -54,20 +54,20 @@ const Beaver = () => {
         In the 17th century, a bishop said.
       </p>
       <p>
-        A bishop asked, "Is it correct to say that a beaver is a fish because it swims in water and its tail is shaped like a fin?"
-        "So we can eat it during the Passion Passion, right?"
+        A bishop asked, &#34;Is it correct to say that a beaver is a fish because it swims in water and its tail is shaped like a fin?&#34;
+        &#34;So we can eat it during the Passion Passion, right?&#34;
       </p>
       <p>
-        He said, "So, we can eat it during the Passion Passion.
+        He said, &#34;So, we can eat it during the Passion Passion.
       </p>
       <p>
-        When the church heard this, they said, "Well, that's right.
+        When the church heard this, they said, &#34;Well, that&#39;s right.
       </p>
       <p>
-        "Well, you are right.
+        &#34;Well, you are right.
       </p>
       <p>
-        The church was like, "Well, that's right. &#40;Hey!&#41;
+        The church was like, &#34;Well, that&#39;s right. &#40;Hey!&#41;
       </p>
       <Image
         src=""
@@ -75,7 +75,7 @@ const Beaver = () => {
       />
       <p>
 
-        So the beaver was made into a "fish" to fill the stomachs of those who were fasting.
+        So the beaver was made into a &#34;fish&#34; to fill the stomachs of those who were fasting.
       </p>
       <p>
         Translated with www.DeepL.com/Translator &#40;free version&#41;

@@ -5,7 +5,7 @@ const Hawk = () => {
     <>
       <h1 >A hawk, mosquit and DDT</h1>
       <p>
-        Since the 1950s, a chemical called "DDT" has been sprayed in large quantities in areas where infections were spreading in order to control the mosquitoes that transmit yellow fever and malaria.
+        Since the 1950s, a chemical called &#34;DDT&#34; has been sprayed in large quantities in areas where infections were spreading in order to control the mosquitoes that transmit yellow fever and malaria.
       </p>
       <p>
         DDT is a drug used primarily as a pesticide and insecticide. It is known for its high toxicity to organisms, but also for its resistance to decomposition.
@@ -50,7 +50,7 @@ const Hawk = () => {
         Today, the use of DDT is regulated in most countries, but if it is difficult to obtain an alternative insecticide to DDT, DDT may be used.
       </p>
       <p>
-        Mosquitoes resistant to DDT have already been identified, and some people have asked, "Wouldn't spraying with DDT only have a temporary effect?" Some say, "Spraying with DDT may only have a temporary effect.
+        Mosquitoes resistant to DDT have already been identified, and some people have asked, &#34;Wouldn&#39;t spraying with DDT only have a temporary effect?&#34; Some say, &#34;Spraying with DDT may only have a temporary effect.
       </p>
       <p>
         Even if one side is solved, other bad things will happen.
