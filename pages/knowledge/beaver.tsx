@@ -1,4 +1,4 @@
-
+import Image from 'next/image'
 
 const Beaver = () => {
   return (
@@ -14,10 +14,10 @@ const Beaver = () => {
         In the traditional Catholic tradition, there are many fasting events.
       </p>
       <p>
-        For example, during the 40-day period between Carnival (Carnival) and Easter (Easter) in February and March (called Lent), we fast.
+        For example, during the 40-day period between Carnival &#40;Carnival&#41; and Easter &#40;Easter&#41; in February and March &#40;called Lent&#41;, we fast.
       </p>
       <p>
-        Also, every Friday is a fasting day because Friday is the day of Christ's death. (It is said that Jesus Christ was executed on Friday and resurrected three days later on Sunday.)
+        Also, every Friday is a fasting day because Friday is the day of Christ's death. &#40;It is said that Jesus Christ was executed on Friday and resurrected three days later on Sunday.&#41;
       </p>
       <p>
         Fasting does not mean that we are not allowed to eat anything. We stop feasting and reduce the frequency and quantity of our food.
@@ -40,7 +40,10 @@ const Beaver = () => {
       <p>
         But for Roman Catholics, who love meat, the ban on meat was very painful.
       </p>
-      <img src="" alt="" />
+      <Image
+        src=""
+        alt="Picture of the author"
+      />
       <p>
         I still want to eat meat! I want meat every day, no matter what it takes!
       </p>
@@ -64,15 +67,18 @@ const Beaver = () => {
         "Well, you are right.
       </p>
       <p>
-        The church was like, "Well, that's right. (Hey!)
+        The church was like, "Well, that's right. &#40;Hey!&#41;
       </p>
-      <img src="" alt="" />
+      <Image
+        src=""
+        alt="Picture of the author"
+      />
       <p>
 
         So the beaver was made into a "fish" to fill the stomachs of those who were fasting.
       </p>
       <p>
-        Translated with www.DeepL.com/Translator (free version)
+        Translated with www.DeepL.com/Translator &#40;free version&#41;
       </p>
     </>
   )

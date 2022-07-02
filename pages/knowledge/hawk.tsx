@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 const Hawk = () => {
   return (
     <>
@@ -8,7 +10,10 @@ const Hawk = () => {
       <p>
         DDT is a drug used primarily as a pesticide and insecticide. It is known for its high toxicity to organisms, but also for its resistance to decomposition.
       </p>
-      <img src="" alt="" />
+      <Image
+        src=""
+        alt="Picture of the author"
+      />
       <p>
         DDT → Hawk
       </p>
@@ -18,7 +23,10 @@ const Hawk = () => {
       <p>
         Hawks are at the top of the food chain and have a longer life span than other organisms. Therefore, hawks living in areas where DDT has been sprayed have suffered from DDT bioaccumulation, a disease that causes their eggshells to crack easily.
       </p>
-      <img src="" alt="" />
+      <Image
+        src=""
+        alt="Picture of the author"
+      />
       <p>
 
         Bioaccumulation

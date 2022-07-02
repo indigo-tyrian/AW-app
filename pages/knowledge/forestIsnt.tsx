@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 const ForestIsnt = () => {
   return (
     <>
@@ -14,7 +16,7 @@ const ForestIsnt = () => {
       </p>
       <h2>The Other World Closest to Us</h2>
       <p>
-        For medieval people, the world was divided into unknown spaces (sacred spaces) and known spaces (secular spaces).
+        For medieval people, the world was divided into unknown spaces &#40;sacred spaces&#41; and known spaces &#40;secular spaces&#41;.
       </p>
       <p>
         Known spaces were places where people lived, such as houses, cities, and villages. Once one steps out of a city or village, there is an unknown space.
@@ -25,7 +27,10 @@ const ForestIsnt = () => {
       <p>
         Sorry for those of you who don't know Harry Potter, but for medieval people, the forest is exactly what the Forbidden Forest on the grounds of Hogwarts feels like.
       </p>
-      <img src="" alt="" />
+      <Image
+        src=""
+        alt="Picture of the author"
+      />
       <p>
         It is a very scary place, pitch black and inhabited by mysterious creatures. Wolves can be heard howling from time to time.
       </p>
@@ -45,7 +50,10 @@ const ForestIsnt = () => {
       <p>
         In contrast, virgin forests, which are untouched by human hands, are densely populated with trees with unlimited growth of branches and crooked trunks. These trees cover the sky, making it dark and eerie even during the daytime.
       </p>
-      <img src="" alt="" />
+      <Image
+        src=""
+        alt="Picture of the author"
+      />
       <p>
         The primeval forest was not a place to go all the way to refresh yourself, but a place you would want to leave as soon as possible, just like a human-managed forest.
       </p>
