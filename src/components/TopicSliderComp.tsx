@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 import { overlayGradientStyle, descriptionContainerStyle, descriptionText, descriptionTitleStyle, slideStyle, } from "./styles/topic/topicSlider.css"
 import { imgStyle } from './styles/ImageWindow.css';
@@ -32,7 +33,7 @@ export function TopicSliderComp(props: Props) {
   return (
     <Link href={props.link}>
       <div className={` ${slideStyle}`} onMouseEnter={hov} onMouseLeave={nonHov}>
-        <img className={`${isHover ? imgStyle.focus : imgStyle.nonFocus}`} src={props.imgSource} alt="" />
+        <Image className={`${isHover ? imgStyle.focus : imgStyle.nonFocus}`} src={props.imgSource} alt="" />
         <div className={overlayGradientStyle}></div>
         <div className={descriptionContainerStyle}>
           <span className={descriptionTitleStyle}>

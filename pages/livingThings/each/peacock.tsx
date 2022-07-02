@@ -10,6 +10,7 @@ import { useRouter } from 'next/router'
 import '../../../src/components/styles/global.css'
 import { Style, buttonContainerStyle, buttonExpandStyle, lineStyle, textStyle, descriptionTextStyle } from '../../../src/components/styles/eachOne.css'
 import { MouseEvent, useState } from 'react'
+import Image from 'next/image'
 
 interface Props2 {
   contentPath?: string;
@@ -42,7 +43,7 @@ const Peacock = (props: Props2) => {
   return (
     <>
       <div className={bigImgContainerStyle}>
-        <img className={bigImgStyle} src="https://images.pexels.com/photos/2196587/pexels-photo-2196587.jpeg" alt="" />
+        <Image className={bigImgStyle} src="https://images.pexels.com/photos/2196587/pexels-photo-2196587.jpeg" alt="" />
       </div>
       {/* <div className={TitleNameStyle}>{kk.name}</div> */}
       <div className={linkContainerStyle}>

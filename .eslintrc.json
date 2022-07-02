@@ -1,3 +1,8 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "next/core-web-vitals",
+
+  //follow as bellow was added by yuri
+  "rules": {
+    "react-hooks/exhaustive-deps": "off"
+  }
 }

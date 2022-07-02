@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 interface Props {
   title: string;
@@ -22,7 +23,7 @@ export function HomeFeaturesComp(props: Props) {
               {props.title}
             </span>
           </div>
-          <img className={imgStyle.nonFocus} src={props.imgSource} />
+          <Image className={imgStyle.nonFocus} src={props.imgSource} alt="" />
         </div>
       </div>
     </Link>

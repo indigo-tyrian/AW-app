@@ -10,6 +10,7 @@ import { useRouter } from 'next/router'
 import '../../../src/components/styles/global.css'
 import { Style, buttonContainerStyle, buttonExpandStyle, lineStyle, textStyle, descriptionTextStyle } from '../../../src/components/styles/eachOne.css'
 import { MouseEvent, useState } from 'react'
+import Image from 'next/image'
 
 interface Props2 {
   contentPath?: string;

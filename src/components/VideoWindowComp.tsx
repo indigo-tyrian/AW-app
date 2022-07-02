@@ -1,4 +1,6 @@
 import Link from 'next/link'
+import Image from 'next/image'
+
 import { MouseEvent, useState } from 'react'
 
 
@@ -41,7 +43,7 @@ export function SpeciesComp(props: Props) {
         <video className={`tab-area ${isHover ? videoStyle.appears : videoStyle.disappears}`} muted onMouseEnter={hov} onMouseLeave={nonHov} >
           <source src={props.videoSource} type="video/mp4" />
         </video>
-        <img className={`${imgStyle} ${phoneOnlyAreaBase}`} src={props.imgSource} alt="" />
+        <Image className={`${imgStyle} ${phoneOnlyAreaBase}`} src={props.imgSource} alt="" />
         <div className="text-block">
           <span className="text">{props.title}
           </span>
