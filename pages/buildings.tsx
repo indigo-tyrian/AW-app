@@ -1,18 +1,14 @@
-// import '../components/styles/global.css'
+import '../components/styles/global.css'
+import { BottomNav, Footer } from '../src/components'
 // import { Footer, BottomNav, Countries, BuildingsFirstSlider, BuildingsVideoWindow, BuildingsImgWindow, BuildingsTopic } from '../components/index'
 
-// function Buildings() {
-//   return (
-//     <div className='index'>
-//       <BuildingsFirstSlider />
-//       <BuildingsTopic />
-//       <BuildingsVideoWindow />
-//       <BuildingsImgWindow />
-//       <Countries />
-//       <Footer />
-//       <BottomNav />
-//     </div>
-//   )
-// }
+function Buildings() {
+  return (
+    <div className='index'>
+      <Footer />
+      <BottomNav />
+    </div>
+  )
+}
 
-// export default Buildings
+export default Buildings
