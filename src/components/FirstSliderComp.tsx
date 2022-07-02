@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 import { slideImgStyle, slideTextStyle, slideBgImgStyle, slideBgStyle } from "./styles/firstSlider.css";
 
@@ -6,7 +7,7 @@ interface Props {
   title1: string;
   title2?: string;
   text?: string;
-  imgSource?: string;
+  imgSource?: any;
   bgImgSource?: string;
   link: string;
   slideStyle?: string;
@@ -19,7 +20,7 @@ export function FirstSliderComp(props: Props) {
 
     <Link href={props.link}>
       <div className={props.slideStyle}>
-        <img className={props.slideImgStyle} src={props.imgSource} />
+        <Image className={props.slideImgStyle} src={props.imgSource} alt="" />
       </div>
       {/* <div className={props.slideTextStyle}>{props.title1}<br />{props.title2}
       </div> */}

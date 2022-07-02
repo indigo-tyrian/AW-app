@@ -5,6 +5,7 @@ import '../../../src/components/styles/global.css'
 import { useEffect, useState } from "react";
 import Mo from "../../../src/json/Movie.json"
 import { ffContainerStyle, textContainerStyle, textTitleStyle, textContentsStyle, mediumImgContainerStyle, imgStyle, leftContentsStyle, rightContentsStyle, paragraphStyle } from "../../../src/components/styles/movie.css"
+import Image from 'next/image'
 
 
 interface Props {
@@ -91,7 +92,7 @@ const Gravity = () => {
             <p className={paragraphStyle}>
             </p>
             <div className={mediumImgContainerStyle}>
-              <img className={imgStyle} src="" />
+              <Image className={imgStyle} src="" />
             </div>
           </div>
           <div className={leftContentsStyle}></div>

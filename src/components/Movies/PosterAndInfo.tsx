@@ -1,6 +1,7 @@
 import '../styles/global.css'
 import { img_300, img_500, img_1920, unavailable } from "../../../config";
 import { BgStyle, customBgStyle, posterContainerStyle, posterStyle, titleStyle, descriptionContainerStyle, firstContainerStyle, firstContainer2Style, titleContainerStyle, genresStyle, runTimeStyle, dateStyle, runTimeAndGenresStyle, overViewContainerStyle, } from "../../../src/components/styles/movie.css"
+import Image from 'next/image'
 
 
 
@@ -44,7 +45,7 @@ const PosterAndInfo = ({
           <div className={firstContainer2Style}>
             <div className={firstContainerStyle}>
               <div className={posterContainerStyle}>
-                <img className={posterStyle} src={poster ? `${img_300}/${poster}` : unavailable} alt={title} />
+                <Image className={posterStyle} src={poster ? `${img_300}/${poster}` : unavailable} alt={title} />
               </div>
               <div className={descriptionContainerStyle}>
                 <div className={titleContainerStyle}>

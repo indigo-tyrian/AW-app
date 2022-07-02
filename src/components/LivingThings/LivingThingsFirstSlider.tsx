@@ -11,6 +11,7 @@ import { logoStyle } from '../styles/logo.css';
 import 'swiper/css';
 import "swiper/css/effect-fade";
 import { tabAreaBase } from '../styles/global.css';
+import Image from 'next/image'
 
 const LivingThingsFirstSlider = () => {
   return (
@@ -50,10 +51,10 @@ const LivingThingsFirstSlider = () => {
 
       <div className={slideBgStyle}>
         {/* <div className={`${gradientStyle.arts} ${tabAreaBase}`}></div> */}
-        <img className={slideBgImgStyle} src='/images/livingThings/firstSlides/livingThingsSlideBG.jpg' alt="" />
+        <Image className={slideBgImgStyle} src='/images/livingThings/firstSlides/livingThingsSlideBG.jpg' alt="" />
       </div>
       {/* <div className={slideEarthStyle}>
-        <img className={slideEarthImgStyle} src="/images/common/earth-png-25612.png" alt="" />
+        <Image className={slideEarthImgStyle} src="/images/common/earth-png-25612.png" alt="" />
       </div> */}
     </div >
   )

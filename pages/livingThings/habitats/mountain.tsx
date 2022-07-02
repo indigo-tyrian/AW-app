@@ -6,6 +6,7 @@ import Data from "../../../src/json/LivingThings.json"
 import { bigImgStyle, linkContainerStyle, bigImgContainerStyle, TitleNameStyle } from '../../../src/components/styles/eachOne.css'
 import AboutContent from "../../../src/components/Aboutcontent"
 import { useRouter } from 'next/router'
+import Image from 'next/image'
 
 interface Props {
   img: string[];
@@ -19,7 +20,7 @@ const Mountain = () => {
   return (
     <>
       <div className={bigImgContainerStyle}>
-        <img className={bigImgStyle} src={kk.img[0].replace(/['"]+/g, '')} alt="hhhhhhhhhhhhh" />
+        <Image className={bigImgStyle} src={kk.img[0].replace(/['"]+/g, '')} alt="hhhhhhhhhhhhh" />
       </div>
       <div className={TitleNameStyle}>{kk.name}</div>
       <div className={linkContainerStyle}>
