@@ -79,7 +79,7 @@ const AfricanElephant = (props: Props2) => {
           </div>
         </div>
       </div>
-      <ImageGallery
+      {/* <ImageGallery
         imagePath0={kk.img[0].replace(/['"]+/g, '')}
         imagePath1={kk.img[1].replace(/['"]+/g, '')}
         imagePath2={kk.img[2].replace(/['"]+/g, '')}
@@ -111,7 +111,7 @@ const AfricanElephant = (props: Props2) => {
         imagePath28={kk.img[28].replace(/['"]+/g, '')}
         imagePath29={kk.img[29].replace(/['"]+/g, '')}
         imagePath30={kk.img[30].replace(/['"]+/g, '')}
-      />
+      /> */}
     </>
   )
 }

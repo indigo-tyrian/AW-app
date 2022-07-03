@@ -42,7 +42,7 @@ interface Props2 {
 }
 
 const AfterEarth = () => {
-  const one = "AfterEarth"
+  const one = "TickTickBoom"
   const moo = Mo.movies.find((d) => d.name == one) as Props2
   const [content, setContent] = useState<Props>({} as Props);
 

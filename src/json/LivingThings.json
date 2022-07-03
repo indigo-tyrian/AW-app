@@ -145,6 +145,34 @@
   ],
   "each": [
     {
+      "name": "redEyedTreeFrog",
+      "title": "redEyedTreeFrog",
+      "img": [
+        "/images/livingThings/each/elephant.jpg"
+      ]
+    },
+    {
+      "name": "wolf",
+      "title": "wolf",
+      "img": [
+        "/images/livingThings/each/elephant.jpg"
+      ]
+    },
+    {
+      "name": "squirrel",
+      "title": "squirrel",
+      "img": [
+        "/images/livingThings/each/elephant.jpg"
+      ]
+    },
+    {
+      "name": "blueAndYellowMacaw",
+      "title": "blueAndYellowMacaw",
+      "img": [
+        "/images/livingThings/each/elephant.jpg"
+      ]
+    },
+    {
       "name": "africanElephant",
       "title": "African Elephant",
       "img": [
@@ -179,11 +207,7 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Elephant_%28Loxodonta_africana%29_mating_ritual_composite.jpg/270px-Elephant_%28Loxodonta_africana%29_mating_ritual_composite.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/African_Elephant_Bull_Taking_Mud_Bath_2019-07-26.jpg/270px-African_Elephant_Bull_Taking_Mud_Bath_2019-07-26.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Elephant_skull_in_Chobe_National_Park.jpg/225px-Elephant_skull_in_Chobe_National_Park.jpg"
-      ],
-      "about": {
-        "name": "",
-        "title": "About"
-      }
+      ]
     },
     {
       "name": "oryx",
@@ -220,11 +244,7 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Taurotragus_oryx_-_young_bull_-_Etosha_2015.jpg/270px-Taurotragus_oryx_-_young_bull_-_Etosha_2015.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Oryx_Doha_Qatar_2019_08.jpg/330px-Oryx_Doha_Qatar_2019_08.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Bovidae_Taurotragus_oryx_3.jpg/120px-Bovidae_Taurotragus_oryx_3.jpg"
-      ],
-      "about": {
-        "name": "",
-        "title": "About"
-      }
+      ]
     },
     {
       "name": "tiger",
@@ -261,11 +281,7 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Siberischer_tiger_de.jpg/240px-Siberischer_tiger_de.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Osnabr%C3%BCck_-_Zoo_-_Panthera_Tigris_Sumatrae_01.jpg/240px-Osnabr%C3%BCck_-_Zoo_-_Panthera_Tigris_Sumatrae_01.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Tiger_Drinking_Pond_Mudumalai_Mar21_DSC01310.jpg/240px-Tiger_Drinking_Pond_Mudumalai_Mar21_DSC01310.jpg"
-      ],
-      "about": {
-        "name": "",
-        "title": "About"
-      }
+      ]
     },
     {
       "name": "squirrels",
@@ -302,11 +318,7 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Fox_Squirrel_Behind_Tree_Looking.jpg/120px-Fox_Squirrel_Behind_Tree_Looking.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/DeadIndianPalmSquirrelPM%283%29.jpg/270px-DeadIndianPalmSquirrelPM%283%29.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Model_Squirrel_%28enhanced%29.jpg/240px-Model_Squirrel_%28enhanced%29.jpg"
-      ],
-      "about": {
-        "name": "",
-        "title": "About"
-      }
+      ]
     }
   ]
 }
