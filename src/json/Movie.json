@@ -17,6 +17,7 @@
     },
     {
       "id": "674882-the-donut-king",
+      "name": "DonutKing",
       "blogTitle": "Indonesia, traditional life",
       "rate": {
         "story": 4,
@@ -31,6 +32,7 @@
     },
     {
       "id": "841646-kullankaivajat",
+      "name": "Kullankaivajat",
       "blogTitle": "Indonesia, traditional life",
       "rate": {
         "story": 4,
@@ -45,6 +47,7 @@
     },
     {
       "id": "437586-mid-90-s",
+      "name": "mid90s",
       "blogTitle": "Indonesia, traditional life",
       "rate": {
         "story": 4,
@@ -59,6 +62,7 @@
     },
     {
       "id": "82700-after-earth",
+      "name": "AfterEarth",
       "blogTitle": "Indonesia, traditional life",
       "rate": {
         "story": 4,
@@ -73,6 +77,7 @@
     },
     {
       "id": "49047-gravity",
+      "name": "Gravity",
       "blogTitle": "Indonesia, traditional life",
       "rate": {
         "story": 4,
@@ -87,6 +92,7 @@
     },
     {
       "id": "537116-tick-tick-boom",
+      "name": "TickTickBoom",
       "blogTitle": "Indonesia, traditional life",
       "rate": {
         "story": 4,

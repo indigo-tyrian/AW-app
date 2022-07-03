@@ -23,8 +23,8 @@ interface Props {
 }
 
 
-const AfricanElephant = (props: Props2) => {
-  const one = "africanElephant"
+const Wolf = (props: Props2) => {
+  const one = "wolf"
   const kk: Props = Data.each.find((d) => d.name == one) as Props
   const [hidden, setHidden] = useState(false)
 
@@ -117,4 +117,4 @@ const AfricanElephant = (props: Props2) => {
 }
 
 
-export default AfricanElephant;
+export default Wolf;
