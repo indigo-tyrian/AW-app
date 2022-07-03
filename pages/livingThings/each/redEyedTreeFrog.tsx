@@ -43,7 +43,7 @@ const RedEyedTreeFrog = (props: Props2) => {
   return (
     <>
       <div className={bigImgContainerStyle}>
-        <img className={bigImgStyle} src={kk.img[0].replace(/['"]+/g, '')} alt="" />
+        <Image className={bigImgStyle} src={kk.img[0].replace(/['"]+/g, '')} alt="" />
       </div>
       <div className={TitleNameStyle}>{kk.name}</div>
       <div className={linkContainerStyle}>

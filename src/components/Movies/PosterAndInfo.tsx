@@ -60,7 +60,7 @@ const PosterAndInfo = ({
                   </span> */}
                     <span className={genresStyle}>
                       {genres?.map((rr) => (
-                        <div className="subTitle" > {rr.name}</div>
+                        <div key={rr.id} className="subTitle" > {rr.name}</div>
                       ))}
                     </span>
                   </div>

@@ -92,7 +92,7 @@ const AfterEarth = () => {
             <p className={paragraphStyle}>
             </p>
             <div className={mediumImgContainerStyle}>
-              <Image className={imgStyle} src="" />
+              <Image className={imgStyle} src="" alt="" />
             </div>
           </div>
           <div className={leftContentsStyle}></div>
