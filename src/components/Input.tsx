@@ -25,7 +25,7 @@ interface Length {
 
 const Input = ({ class2, class1 }: Props) => {
 
-  const [filteredData, setFilteredData] = useState<any>({} as FilterProps);
+  const [filteredData, setFilteredData] = useState<any>([]);
   const [wordEntered, setWordEntered] = useState("");
 
   const handleFilter = (event: { target: { value: string; }; }) => {
