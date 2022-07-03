@@ -1,4 +1,3 @@
-import '../components/styles/global.css'
 import { BottomNav, Footer } from '../src/components'
 // import { Footer, BottomNav, Countries, BuildingsFirstSlider, BuildingsVideoWindow, BuildingsImgWindow, BuildingsTopic } from '../components/index'
 
