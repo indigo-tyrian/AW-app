@@ -1,6 +1,6 @@
 import App from 'next/app'
-App.getInitialProps = async () => ({ pageProps: {} })
-export default App
+// App.getInitialProps = async () => ({ pageProps: {} })
+// export default App
 
 
 // import type { AppProps } from 'next/app'
