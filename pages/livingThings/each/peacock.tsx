@@ -43,7 +43,7 @@ const Peacock = (props: Props2) => {
   return (
     <>
       <div className={bigImgContainerStyle}>
-        <Image className={bigImgStyle} src="https://images.pexels.com/photos/2196587/pexels-photo-2196587.jpeg" alt="" />
+        <Image className={bigImgStyle} src="https://images.pexels.com/photos/2196587/pexels-photo-2196587.jpeg" alt="" layout='fill' />
       </div>
       {/* <div className={TitleNameStyle}>{kk.name}</div> */}
       <div className={linkContainerStyle}>

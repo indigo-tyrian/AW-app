@@ -21,7 +21,7 @@ const SingleContent = ({
 }: Props) => {
   return (
     <div className={mediaStyle}>
-      <Image src={poster ? `${img_300}/${poster}` : unavailable} alt={title} />
+      <Image src={poster ? `${img_300}/${poster}` : unavailable} alt={title} layout='fill' />
       <b className={titleStyle}>{title}</b>
       <span className={subTitleStyle}>
         {media_type === "tv" ? "TV Series" : "movie"}

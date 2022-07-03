@@ -43,7 +43,7 @@ export function SpeciesComp(props: Props) {
         <video className={`tab-area ${isHover ? videoStyle.appears : videoStyle.disappears}`} muted onMouseEnter={hov} onMouseLeave={nonHov} >
           <source src={props.videoSource} type="video/mp4" />
         </video>
-        <Image className={`${imgStyle} ${phoneOnlyAreaBase}`} src={props.imgSource} alt="" />
+        <Image className={`${imgStyle} ${phoneOnlyAreaBase}`} src={props.imgSource} alt="" layout='fill' />
         <div className="text-block">
           <span className="text">{props.title}
           </span>

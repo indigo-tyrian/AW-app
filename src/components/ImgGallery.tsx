@@ -42,92 +42,92 @@ const ImageGallery = (props: Props) => {
     <div className={`${photoGalleryContainer} scroll`} >
       <div className={`${photoGallery} ${A}`}>
         <div className={`${photoGalleryItem} ${A1} `}>
-          <Image src={props.imagePath0} className={photoGalleryImg} alt="" />
+          <Image src={props.imagePath0} className={photoGalleryImg} alt="" layout='fill' />
         </div>
         <div className={`${photoGalleryItem} ${A2} `}>
-          <Image src={props.imagePath1} className={photoGalleryImg} alt="" />
+          <Image src={props.imagePath1} className={photoGalleryImg} alt="" layout='fill' />
         </div>
         <div className={`${photoGalleryItem} ${A3} `}>
-          <Image src={props.imagePath2} className={photoGalleryImg} alt="" />
+          <Image src={props.imagePath2} className={photoGalleryImg} alt="" layout='fill' />
         </div>
         <div className={`${photoGalleryItem} ${A4} `}>
-          <Image src={props.imagePath3} className={photoGalleryImg} alt="" />
+          <Image src={props.imagePath3} className={photoGalleryImg} alt="" layout='fill' />
         </div>
         <div className={`${photoGalleryItem} ${A5} `}>
-          <Image src={props.imagePath4} className={photoGalleryImg} alt="" />
+          <Image src={props.imagePath4} className={photoGalleryImg} alt="" layout='fill' />
         </div>
         <div className={`${photoGalleryItem} ${A6} `}>
-          <Image src={props.imagePath5} className={photoGalleryImg} alt="" />
+          <Image src={props.imagePath5} className={photoGalleryImg} alt="" layout='fill' />
         </div>
       </div>
 
       <div className={`${photoGallery} ${E}`}>
         <div className={`${photoGalleryItem} ${E1} `}>
-          <Image src={props.imagePath6} className={photoGalleryImg} alt="" />
+          <Image src={props.imagePath6} className={photoGalleryImg} alt="" layout='fill' />
         </div>
         <div className={`${photoGalleryItem} ${E2} `}>
-          <Image src={props.imagePath7} className={photoGalleryImg} alt="" />
+          <Image src={props.imagePath7} className={photoGalleryImg} alt="" layout='fill' />
         </div>
         <div className={`${photoGalleryItem} ${E3} `}>
-          <Image src={props.imagePath8} className={photoGalleryImg} alt="" />
+          <Image src={props.imagePath8} className={photoGalleryImg} alt="" layout='fill' />
         </div>
         <div className={`${photoGalleryItem} ${E4} `}>
-          <Image src={props.imagePath9} className={photoGalleryImg} alt="" />
+          <Image src={props.imagePath9} className={photoGalleryImg} alt="" layout='fill' />
         </div>
         <div className={`${photoGalleryItem} ${E5} `}>
-          <Image src={props.imagePath10} className={photoGalleryImg} alt="" />
+          <Image src={props.imagePath10} className={photoGalleryImg} alt="" layout='fill' />
         </div>
       </div>
 
 
       <div className={`${photoGallery} ${C}`}>
         <div className={`${photoGalleryItem} ${C1} `}>
-          <Image src={props.imagePath11} className={photoGalleryImg} alt="" />
+          <Image src={props.imagePath11} className={photoGalleryImg} alt="" layout='fill' />
         </div>
         <div className={`${photoGalleryItem} ${C2} `}>
-          <Image src={props.imagePath12} className={photoGalleryImg} alt="" />
+          <Image src={props.imagePath12} className={photoGalleryImg} alt="" layout='fill' />
         </div>
         <div className={`${photoGalleryItem} ${C3} `}>
-          <Image src={props.imagePath13} className={photoGalleryImg} alt="" />
+          <Image src={props.imagePath13} className={photoGalleryImg} alt="" layout='fill' />
         </div>
       </div>
 
       <div className={`${photoGallery} ${B}`}>
         <div className={`${photoGalleryItem} ${B1} `}>
-          <Image src={props.imagePath14} className={photoGalleryImg} alt="" />
+          <Image src={props.imagePath14} className={photoGalleryImg} alt="" layout='fill' />
         </div>
         <div className={`${photoGalleryItem} ${B2} `}>
-          <Image src={props.imagePath15} className={photoGalleryImg} alt="" />
+          <Image src={props.imagePath15} className={photoGalleryImg} alt="" layout='fill' />
         </div>
         <div className={`${photoGalleryItem} ${B3} `}>
-          <Image src={props.imagePath16} className={photoGalleryImg} alt="" />
+          <Image src={props.imagePath16} className={photoGalleryImg} alt="" layout='fill' />
         </div>
         <div className={`${photoGalleryItem} ${B4} `}>
-          <Image src={props.imagePath17} className={photoGalleryImg} alt="" />
+          <Image src={props.imagePath17} className={photoGalleryImg} alt="" layout='fill' />
         </div>
         <div className={`${photoGalleryItem} ${B5} `}>
-          <Image src={props.imagePath18} className={photoGalleryImg} alt="" />
+          <Image src={props.imagePath18} className={photoGalleryImg} alt="" layout='fill' />
         </div>
         <div className={`${photoGalleryItem} ${B6} `}>
-          <Image src={props.imagePath19} className={photoGalleryImg} alt="" />
+          <Image src={props.imagePath19} className={photoGalleryImg} alt="" layout='fill' />
         </div>
       </div>
 
       <div className={`${photoGallery} ${F}`}>
         <div className={`${photoGalleryItem} ${F1} `}>
-          <Image src={props.imagePath20} className={photoGalleryImg} alt="" />
+          <Image src={props.imagePath20} className={photoGalleryImg} alt="" layout='fill' />
         </div>
         <div className={`${photoGalleryItem} ${F2} `}>
-          <Image src={props.imagePath21} className={photoGalleryImg} alt="" />
+          <Image src={props.imagePath21} className={photoGalleryImg} alt="" layout='fill' />
         </div>
         <div className={`${photoGalleryItem} ${F3} `}>
-          <Image src={props.imagePath22} className={photoGalleryImg} alt="" />
+          <Image src={props.imagePath22} className={photoGalleryImg} alt="" layout='fill' />
         </div>
         <div className={`${photoGalleryItem} ${F4} `}>
-          <Image src={props.imagePath23} className={photoGalleryImg} alt="" />
+          <Image src={props.imagePath23} className={photoGalleryImg} alt="" layout='fill' />
         </div>
         <div className={`${photoGalleryItem} ${F5} `}>
-          <Image src={props.imagePath24} className={photoGalleryImg} alt="" />
+          <Image src={props.imagePath24} className={photoGalleryImg} alt="" layout='fill' />
         </div>
       </div>
 
@@ -135,13 +135,13 @@ const ImageGallery = (props: Props) => {
 
       <div className={`${photoGallery} ${D}`}>
         <div className={`${photoGalleryItem} ${D1} `}>
-          <Image src={props.imagePath25} className={photoGalleryImg} alt="" />
+          <Image src={props.imagePath25} className={photoGalleryImg} alt="" layout='fill' />
         </div>
         <div className={`${photoGalleryItem} ${D2} `}>
-          <Image src={props.imagePath26} className={photoGalleryImg} alt="" />
+          <Image src={props.imagePath26} className={photoGalleryImg} alt="" layout='fill' />
         </div>
         <div className={`${photoGalleryItem} ${D3} `}>
-          <Image src={props.imagePath27} className={photoGalleryImg} alt="" />
+          <Image src={props.imagePath27} className={photoGalleryImg} alt="" layout='fill' />
         </div>
       </div>
     </div>

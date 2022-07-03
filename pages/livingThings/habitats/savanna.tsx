@@ -15,12 +15,12 @@ interface Props {
 }
 
 const Mountain = () => {
-  const one = "mountain"
+  const one = "savanna"
   const kk = Data.habitats.find((d) => d.name == one) as Props
   return (
     <>
       <div className={bigImgContainerStyle}>
-        <Image className={bigImgStyle} src={kk.img[0].replace(/['"]+/g, '')} alt="hhhhhhhhhhhhh" />
+        <Image className={bigImgStyle} src={kk.img[0].replace(/['"]+/g, '')} alt="hhhhhhhhhhhhh" layout='fill' />
       </div>
       <div className={TitleNameStyle}>{kk.name}</div>
       <div className={linkContainerStyle}>

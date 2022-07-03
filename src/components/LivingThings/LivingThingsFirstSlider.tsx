@@ -51,7 +51,7 @@ const LivingThingsFirstSlider = () => {
 
       <div className={slideBgStyle}>
         {/* <div className={`${gradientStyle.arts} ${tabAreaBase}`}></div> */}
-        <Image className={slideBgImgStyle} src='/images/livingThings/firstSlides/livingThingsSlideBG.jpg' alt="" />
+        <Image className={slideBgImgStyle} src='/images/livingThings/firstSlides/livingThingsSlideBG.jpg' alt="" layout='fill' />
       </div>
       {/* <div className={slideEarthStyle}>
         <Image className={slideEarthImgStyle} src="/images/common/earth-png-25612.png" alt="" />

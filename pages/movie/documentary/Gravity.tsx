@@ -92,7 +92,7 @@ const Gravity = () => {
             <p className={paragraphStyle}>
             </p>
             <div className={mediumImgContainerStyle}>
-              <Image className={imgStyle} src="" alt="" />
+              <Image className={imgStyle} src="" alt="" layout='fill' />
             </div>
           </div>
           <div className={leftContentsStyle}></div>

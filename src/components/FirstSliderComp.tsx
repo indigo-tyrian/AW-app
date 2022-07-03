@@ -20,7 +20,7 @@ export function FirstSliderComp(props: Props) {
 
     <Link href={props.link}>
       <div className={props.slideStyle}>
-        <Image className={props.slideImgStyle} src={props.imgSource} alt="" />
+        <Image className={props.slideImgStyle} src={props.imgSource} alt="" layout='fill' />
       </div>
       {/* <div className={props.slideTextStyle}>{props.title1}<br />{props.title2}
       </div> */}

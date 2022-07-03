@@ -23,7 +23,7 @@ export function HomeFeaturesComp(props: Props) {
               {props.title}
             </span>
           </div>
-          <Image className={imgStyle.nonFocus} src={props.imgSource} alt="" />
+          <Image className={imgStyle.nonFocus} src={props.imgSource} alt="" layout='fill' />
         </div>
       </div>
     </Link>

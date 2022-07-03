@@ -37,7 +37,7 @@ export function ImgWindow(props: Props) {
   return (
     <Link href={props.link}>
       <div className={`${boxStyle}`} onMouseEnter={onPale} onMouseLeave={undoPale}>
-        <Image className={`${isHover ? imgStyle.focus : imgStyle.nonFocus} `} src={props.imgSource} alt="" />
+        <Image className={`${isHover ? imgStyle.focus : imgStyle.nonFocus} `} src={props.imgSource} alt="" layout='fill' />
         <div className={`${overlayStyle} ${pcAreaBase} ${isHover ? overlayStyle.grayOut : overlayStyle.nonGrayOut}`} ></div>
         <div className={gradientStyle}></div>
         <div className="text-block">

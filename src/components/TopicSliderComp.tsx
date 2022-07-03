@@ -33,7 +33,7 @@ export function TopicSliderComp(props: Props) {
   return (
     <Link href={props.link}>
       <div className={` ${slideStyle}`} onMouseEnter={hov} onMouseLeave={nonHov}>
-        <Image className={`${isHover ? imgStyle.focus : imgStyle.nonFocus}`} src={props.imgSource} alt="" />
+        <Image className={`${isHover ? imgStyle.focus : imgStyle.nonFocus}`} src={props.imgSource} alt="" layout='fill' />
         <div className={overlayGradientStyle}></div>
         <div className={descriptionContainerStyle}>
           <span className={descriptionTitleStyle}>

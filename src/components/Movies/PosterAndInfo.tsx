@@ -45,7 +45,7 @@ const PosterAndInfo = ({
           <div className={firstContainer2Style}>
             <div className={firstContainerStyle}>
               <div className={posterContainerStyle}>
-                <Image className={posterStyle} src={poster ? `${img_300}/${poster}` : unavailable} alt={title} />
+                <Image className={posterStyle} src={poster ? `${img_300}/${poster}` : unavailable} alt={title} layout='fill' />
               </div>
               <div className={descriptionContainerStyle}>
                 <div className={titleContainerStyle}>
