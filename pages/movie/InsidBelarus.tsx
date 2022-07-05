@@ -1,11 +1,12 @@
 import React from 'react'
-import PosterAndInfo from '../../../src/components/Movies/PosterAndInfo'
-import StarRating from '../../../src/components/Movies/StarRating'
-import '../../../src/components/styles/global.css'
+import PosterAndInfo from '../../src/components/Movies/PosterAndInfo'
+import StarRating from '../../src/components/Movies/StarRating'
+import '../../src/components/styles/global.css'
 import { useEffect, useState } from "react";
-import Mo from "../../../src/json/Movie.json"
-import { ffContainerStyle, textContainerStyle, textTitleStyle, textContentsStyle, mediumImgContainerStyle, imgStyle, leftContentsStyle, rightContentsStyle, paragraphStyle } from "../../../src/components/styles/movie.css"
+import Mo from "../../src/json/Movie.json"
+import { ffContainerStyle, textContainerStyle, textTitleStyle, textContentsStyle, mediumImgContainerStyle, imgStyle, leftContentsStyle, rightContentsStyle, paragraphStyle } from "../../src/components/styles/movie.css"
 import Image from 'next/image'
+import Link from 'next/link';
 
 
 interface Props {
@@ -41,10 +42,11 @@ interface Props2 {
   }
 }
 
-const Gravity = () => {
-  const one = "Gravity"
+const Newtopia = () => {
+  const one = "Newtopia"
   const moo = Mo.movies.find((d) => d.name == one) as Props2
   const [content, setContent] = useState<Props>({} as Props);
+  console.log(moo.blogTitle);
 
   const fetchTrending = () => {
     fetch(`https://api.themoviedb.org/3/movie/${moo.id}?api_key=0bbd2e953c05d5b589625a131c3ecac6`
@@ -92,7 +94,9 @@ const Gravity = () => {
             <p className={paragraphStyle}>
             </p>
             <div className={mediumImgContainerStyle}>
-              <Image className={imgStyle} src="" alt="" layout='fill' />
+
+
+              {/* <Image className={imgStyle} src="" alt="" layout='fill' /> */}
             </div>
           </div>
           <div className={leftContentsStyle}></div>
@@ -103,4 +107,4 @@ const Gravity = () => {
   )
 }
 
-export default Gravity
+export default Newtopia

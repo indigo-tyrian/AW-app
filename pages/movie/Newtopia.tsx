@@ -1,10 +1,10 @@
 import React from 'react'
-import PosterAndInfo from '../../../src/components/Movies/PosterAndInfo'
-import StarRating from '../../../src/components/Movies/StarRating'
-import '../../../src/components/styles/global.css'
+import PosterAndInfo from '../../src/components/Movies/PosterAndInfo'
+import StarRating from '../../src/components/Movies/StarRating'
+import '../../src/components/styles/global.css'
 import { useEffect, useState } from "react";
-import Mo from "../../../src/json/Movie.json"
-import { ffContainerStyle, textContainerStyle, textTitleStyle, textContentsStyle, mediumImgContainerStyle, imgStyle, leftContentsStyle, rightContentsStyle, paragraphStyle } from "../../../src/components/styles/movie.css"
+import Mo from "../../src/json/Movie.json"
+import { ffContainerStyle, textContainerStyle, textTitleStyle, textContentsStyle, mediumImgContainerStyle, imgStyle, leftContentsStyle, rightContentsStyle, paragraphStyle } from "../../src/components/styles/movie.css"
 import Image from 'next/image'
 
 
@@ -93,7 +93,7 @@ const Newtopia = () => {
             <p className={paragraphStyle}>
             </p>
             <div className={mediumImgContainerStyle}>
-              <Image className={imgStyle} src="" alt="" layout='fill' />
+              {/* <Image className={imgStyle} src="" alt="" layout='fill' /> */}
             </div>
           </div>
           <div className={leftContentsStyle}></div>

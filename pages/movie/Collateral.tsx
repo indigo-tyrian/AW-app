@@ -1,10 +1,10 @@
 import React from 'react'
-import PosterAndInfo from '../../../src/components/Movies/PosterAndInfo'
-import StarRating from '../../../src/components/Movies/StarRating'
-import '../../../src/components/styles/global.css'
+import PosterAndInfo from '../../src/components/Movies/PosterAndInfo'
+import StarRating from '../../src/components/Movies/StarRating'
+import '../../src/components/styles/global.css'
 import { useEffect, useState } from "react";
-import Mo from "../../../src/json/Movie.json"
-import { ffContainerStyle, textContainerStyle, textTitleStyle, textContentsStyle, mediumImgContainerStyle, imgStyle, leftContentsStyle, rightContentsStyle, paragraphStyle } from "../../../src/components/styles/movie.css"
+import Mo from "../../src/json/Movie.json"
+import { ffContainerStyle, textContainerStyle, textTitleStyle, textContentsStyle, mediumImgContainerStyle, imgStyle, leftContentsStyle, rightContentsStyle, paragraphStyle } from "../../src/components/styles/movie.css"
 import Image from 'next/image'
 
 
@@ -41,8 +41,8 @@ interface Props2 {
   }
 }
 
-const AfterEarth = () => {
-  const one = "TickTickBoom"
+const Collateral = () => {
+  const one = "Collateral"
   const moo = Mo.movies.find((d) => d.name == one) as Props2
   const [content, setContent] = useState<Props>({} as Props);
 
@@ -90,6 +90,7 @@ const AfterEarth = () => {
           <span className={textTitleStyle}>{moo.blogTitle}</span>
           <div className={textContentsStyle}>
             <p className={paragraphStyle}>
+              I don't know why the taxi driver run out of the cab in the place that
             </p>
             <div className={mediumImgContainerStyle}>
               <Image className={imgStyle} src="" alt="" layout='fill' />
@@ -103,4 +104,4 @@ const AfterEarth = () => {
   )
 }
 
-export default AfterEarth
+export default Collateral

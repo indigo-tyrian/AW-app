@@ -1,5 +1,5 @@
 import Image from 'next/image'
-
+import Profile from '../../src/components/Profile'
 const Beaver = () => {
   return (
     <>
@@ -40,10 +40,11 @@ const Beaver = () => {
       <p>
         But for Roman Catholics, who love meat, the ban on meat was very painful.
       </p>
-      <Image
-        src=""
-        alt="Picture of the author"
-      />
+      {/* <Image
+        src='https://user-images.githubusercontent.com/10515204/56117400-9a911800-5f85-11e9-878b-3f998609a6c8.jpg'
+        alt="Picture of the author" layout='fill'
+      /> */}
+      <Profile />
       <p>
         I still want to eat meat! I want meat every day, no matter what it takes!
       </p>
@@ -69,10 +70,10 @@ const Beaver = () => {
       <p>
         The church was like, &#34;Well, that&#39;s right. &#40;Hey!&#41;
       </p>
-      <Image
+      {/* <Image
         src=""
         alt="Picture of the author"
-      />
+      /> */}
       <p>
 
         So the beaver was made into a &#34;fish&#34; to fill the stomachs of those who were fasting.

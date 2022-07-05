@@ -36,3 +36,8 @@ export const subTitleStyle = style({
   paddingBottom: ["3px", "3px"],
   padding: "0 2px"
 })
+
+export const movieListContainerStyle = style({
+  display: "grid",
+  gridTemplateColumns: "repeat(6, 1fr)"
+})
