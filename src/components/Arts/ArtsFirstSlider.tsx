@@ -1,16 +1,16 @@
-import '../styles/global.css'
-import { Style, ctaTitleStyle, slideBgImgStyle, slideBgStyle, slideContainerStyle, slideCardBase, slideCardStyle, slideTextStyle, slideImgStyle } from "../styles/firstSlider.css";
+import 'src/components/styles/global.css'
+import { Style, ctaTitleStyle, slideBgImgStyle, slideBgStyle, slideContainerStyle, slideCardBase, slideCardStyle, slideTextStyle, slideImgStyle } from "src/components/styles/firstSlider.css";
 
-import { FirstSliderComp } from '../FirstSliderComp';
+import { FirstSliderComp } from 'src/components/FirstSliderComp';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper';
-import Input from '../Input';
-import Logo from '../Logo';
-import { inputSearchBoxStyle, containerStyle } from '../styles/Input.css';
-import { logoStyle } from '../styles/logo.css';
+import Input from 'src/components/Input';
+import Logo from 'src/components/Logo';
+import { inputSearchBoxStyle, containerStyle } from 'src/components/styles/Input.css';
+import { logoStyle } from 'src/components/styles/logo.css';
 import 'swiper/css';
 import "swiper/css/effect-fade";
-import { tabAreaBase } from '../styles/global.css';
+import { tabAreaBase } from 'src/components/styles/global.css';
 
 const AtrsFirstSlider = () => {
   return (

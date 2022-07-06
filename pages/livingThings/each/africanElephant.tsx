@@ -1,14 +1,14 @@
-import CopyLinkSvg from "../../../src/components/svg/CopyLinkSvg"
-import FacebookSvg from "../../../src/components/svg/FacebookSvg"
-import ShareSvg from "../../../src/components/svg/ShareSvg"
-import TwitterSvg from "../../../src/components/svg/TwitterSvg"
-import { bigImgStyle, linkContainerStyle, TitleNameStyle, bigImgContainerStyle } from '../../../src/components/styles/eachOne.css'
-import Data from "../../../src/json/LivingThings.json"
-import AboutContent from "../../../src/components/Aboutcontent"
-import ImageGallery from "../../../src/components/ImgGallery"
+import CopyLinkSvg from "src/components/svg/CopyLinkSvg"
+import FacebookSvg from "src/components/svg/FacebookSvg"
+import ShareSvg from "src/components/svg/ShareSvg"
+import TwitterSvg from "src/components/svg/TwitterSvg"
+import { bigImgStyle, linkContainerStyle, TitleNameStyle, bigImgContainerStyle } from 'src/components/styles/eachOne.css'
+import Data from "src/json/LivingThings.json"
+import AboutContent from "src/components/Aboutcontent"
+import ImageGallery from "src/components/ImgGallery"
 import { useRouter } from 'next/router'
-import '../../../src/components/styles/global.css'
-import { Style, buttonContainerStyle, buttonExpandStyle, lineStyle, textStyle, descriptionTextStyle } from '../../../src/components/styles/eachOne.css'
+import 'src/components/styles/global.css'
+import { Style, buttonContainerStyle, buttonExpandStyle, lineStyle, textStyle, descriptionTextStyle } from 'src/components/styles/eachOne.css'
 import { MouseEvent, useState } from 'react'
 import Image from 'next/image'
 

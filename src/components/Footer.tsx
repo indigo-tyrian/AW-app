@@ -1,4 +1,4 @@
-import '../components/styles/global.css'
+import 'src/components/styles/global.css'
 
 import { Style, containerStyle, buttonStyle } from "./styles/footer.css";
 import { logoAStyle, logoStyle } from './styles/logo.css';

@@ -1,4 +1,4 @@
-import { BottomNav, Footer } from '../src/components'
+import { BottomNav, Footer } from 'src/components'
 // import { Footer, BottomNav, Countries, BuildingsFirstSlider, BuildingsVideoWindow, BuildingsImgWindow, BuildingsTopic } from '../components/index'
 
 function Buildings() {

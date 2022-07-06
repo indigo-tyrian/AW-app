@@ -1,10 +1,10 @@
-import CopyLinkSvg from "../../../src/components/svg/CopyLinkSvg"
-import FacebookSvg from "../../../src/components/svg/FacebookSvg"
-import ShareSvg from "../../../src/components/svg/ShareSvg"
-import TwitterSvg from "../../../src/components/svg/TwitterSvg"
-import Data from "../../../src/json/LivingThings.json"
-import { bigImgStyle, linkContainerStyle, bigImgContainerStyle, TitleNameStyle } from '../../../src/components/styles/eachOne.css'
-// import AboutContent from "../../../src/components/AboutContent"
+import CopyLinkSvg from "src/components/svg/CopyLinkSvg"
+import FacebookSvg from "src/components/svg/FacebookSvg"
+import ShareSvg from "src/components/svg/ShareSvg"
+import TwitterSvg from "src/components/svg/TwitterSvg"
+import Data from "src/json/LivingThings.json"
+import { bigImgStyle, linkContainerStyle, bigImgContainerStyle, TitleNameStyle } from 'src/components/styles/eachOne.css'
+// import AboutContent from "src/components/AboutContent"
 import Image from 'next/image'
 
 

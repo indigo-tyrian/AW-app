@@ -1,7 +1,7 @@
-import '../styles/global.css'
-import { SpeciesComp } from '../VideoWindowComp'
-import { viewStyle, containerStyle } from "../styles/videoWindow.css"
-import { contentStyle, tabAreaBase, bigTextStyle } from '../styles/global.css'
+import 'src/components/styles/global.css'
+import { SpeciesComp } from 'src/components/VideoWindowComp'
+import { viewStyle, containerStyle } from "src/components/styles/videoWindow.css"
+import { contentStyle, tabAreaBase, bigTextStyle } from 'src/components/styles/global.css'
 
 const LivingThingsVideoWindow = () => {
   return (

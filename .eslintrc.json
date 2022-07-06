@@ -3,6 +3,15 @@
 
   //follow as bellow was added by yuri
   "rules": {
-    "react-hooks/exhaustive-deps": "off"
+    "react-hooks/exhaustive-deps": "off",
+    "@typescript-eslint/explicit-module-boundary-type": "off",
+    "@typescript-eslint/ba-ts-comment": "off",
+    "react/react-in-jsx-scope": "off"
+
+  },
+  "settings":{
+    "react":{
+      "version":"detect"
+    }
   }
 }

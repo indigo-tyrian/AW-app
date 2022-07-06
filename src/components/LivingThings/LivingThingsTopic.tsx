@@ -1,4 +1,4 @@
-import '../styles/global.css'
+import 'src/components/styles/global.css'
 import TopicText from "./LivingThingsTopicText"
 import TopicSlider from "./LivingThingsTopicSlider"
 

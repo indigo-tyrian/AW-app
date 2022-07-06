@@ -1,4 +1,4 @@
-import { featuresItemStyle, lineStyle, textStyle, containerStyle } from '../styles/eachOne.css';
+import { featuresItemStyle, lineStyle, textStyle, containerStyle } from 'src/components/styles/eachOne.css';
 
 interface Props {
   title: string;

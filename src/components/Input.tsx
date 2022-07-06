@@ -1,8 +1,8 @@
-import '../components/styles/global.css'
+import 'src/components/styles/global.css'
 import { MouseEvent, useState } from 'react'
 import { searchButtonStyle, searchContainerStyle, searchButtonInnerStyle, dataResultStyle, dataResultItemStyle } from "./styles/Input.css"
 import { MagnifyingGlassIcon } from "./svg/MagnifyingGlassSvg"
-import Data from "../json/LivingThings.json"
+import Data from "src/json/LivingThings.json"
 
 interface Props {
   class1: string

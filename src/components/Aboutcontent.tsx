@@ -1,4 +1,4 @@
-import '../components/styles/global.css'
+import 'src/components/styles/global.css'
 import { Style, buttonContainerStyle, buttonExpandStyle, lineStyle, textStyle, descriptionTextStyle } from './styles/eachOne.css'
 import { MouseEvent, useState } from 'react'
 

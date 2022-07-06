@@ -1,6 +1,6 @@
-import '../styles/global.css'
-import { img_300, img_500, img_1920, unavailable } from "../../../config";
-import { BgStyle, customBgStyle, posterContainerStyle, posterStyle, titleStyle, descriptionContainerStyle, firstContainerStyle, firstContainer2Style, titleContainerStyle, genresStyle, runTimeStyle, dateStyle, runTimeAndGenresStyle, overViewContainerStyle, } from "../../../src/components/styles/movie.css"
+import 'src/components/styles/global.css'
+import { img_300, img_500, img_1920, unavailable } from "config";
+import { BgStyle, customBgStyle, posterContainerStyle, posterStyle, titleStyle, descriptionContainerStyle, firstContainerStyle, firstContainer2Style, titleContainerStyle, genresStyle, runTimeStyle, dateStyle, runTimeAndGenresStyle, overViewContainerStyle, } from "src/components/styles/movie.css"
 import Image from 'next/image'
 
 

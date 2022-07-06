@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
-import '../components/styles/global.css'
-import { tabAreaBase } from '../components/styles/global.css';
+import 'src/components/styles/global.css'
+import { tabAreaBase } from 'src/components/styles/global.css';
 import { logoAStyle } from "./styles/logo.css"
 
 interface Props {

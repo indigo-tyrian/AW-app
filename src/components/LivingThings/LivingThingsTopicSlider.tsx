@@ -1,10 +1,10 @@
-import '../styles/global.css'
-import { TopicSliderComp } from '../TopicSliderComp'
+import 'src/components/styles/global.css'
+import { TopicSliderComp } from 'src/components/TopicSliderComp'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode } from "swiper";
 
 import "swiper/css";
-import { containerStyle } from '../styles/topic/topicSlider.css';
+import { containerStyle } from 'src/components/styles/topic/topicSlider.css';
 const LivingThingsTopicSlider = () => {
   return (
     <div className={containerStyle}>

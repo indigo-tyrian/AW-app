@@ -1,5 +1,5 @@
-import '../../components/styles/global.css'
-import { svgStyle } from '../styles/bottomNav.css'
+import 'src/components/styles/global.css'
+import { svgStyle } from 'src/components/styles/bottomNav.css'
 interface Props {
   fillColor?: string;
 }

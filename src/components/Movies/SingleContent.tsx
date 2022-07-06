@@ -1,6 +1,6 @@
-import '../styles/global.css'
-import { img_300, unavailable } from "../../../config";
-import { mediaStyle, subTitleStyle, titleStyle } from "../styles/SingleContent.css";
+import 'src/components/styles/global.css'
+import { img_300, unavailable } from "config";
+import { mediaStyle, subTitleStyle, titleStyle } from "src/components/styles/SingleContent.css";
 import Image from 'next/image'
 import Link from 'next/link';
 

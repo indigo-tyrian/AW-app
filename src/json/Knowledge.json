@@ -1,0 +1,25 @@
+{
+  "knowledge": [
+    {
+      "id": 1,
+      "name": "forest",
+      "title": "The forest was not a place to go for refreshment",
+      "text": "In the world we live in today, &#34;forests&#34; are something to protect and preserve!",
+      "src": "/images/knowledge/forest/forest.png"
+    },
+    {
+      "id": 2,
+      "name": "beaver",
+      "title": "A beaver is fish",
+      "text": "The concept of the beaver being a fish became popular among Roman Catholics during the Middle Ages",
+      "src": "/images/knowledge/beaver/beaver.jpg"
+    },
+    {
+      "id": 2,
+      "name": "hawk",
+      "title": "A hawk, mosquito  and DDT",
+      "text": " Since the 1950s, a chemical called &#34;DDT&#34; has been sprayed in large quantities in areas where infections were spreading in order to control the mosquitoes that transmit yellow fever and malaria.",
+      "src": "/images/knowledge/hawk/hawk.jpg"
+    }
+  ]
+}

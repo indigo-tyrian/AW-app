@@ -1,4 +1,4 @@
-import { c2ContainerStyle, c2TextStyle, classificationItemStyle } from '../styles/eachOne.css';
+import { c2ContainerStyle, c2TextStyle, classificationItemStyle } from 'src/components/styles/eachOne.css';
 
 interface Props {
   classification1: string;

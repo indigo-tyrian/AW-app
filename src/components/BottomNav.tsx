@@ -5,8 +5,8 @@ import { PostIcon } from "./svg/PostSvg"
 import { SavedIcon } from "./svg/SavedSvg"
 import { SettingIcon } from "./svg/SettingPersonSvg"
 import { Style, containerStyle, iconStyle, iconTextStyle, svgContainerStyle } from "./styles/bottomNav.css"
-import '../components/styles/global.css'
-import { phoneAreaBase } from "../components/styles/global.css"
+import 'src/components/styles/global.css'
+import { phoneAreaBase } from "src/components/styles/global.css"
 import { MouseEvent, useState } from "react"
 // import Ripples from 'react-ripples'
 

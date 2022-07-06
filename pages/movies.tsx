@@ -1,14 +1,15 @@
 import Link from 'next/link';
-import { ImgWindow } from '../src/components/ImgWindow';
-import { contentStyle } from '../src/components/styles/global.css';
-import { containerStyle } from '../src/components/styles/ImageWindow.css';
-import '../src/components/styles/global.css'
+import { ImgWindow } from 'src/components/ImgWindow';
+import { contentStyle } from 'src/components/styles/global.css';
+import { containerStyle } from 'src/components/styles/ImageWindow.css';
+import 'src/components/styles/global.css'
 import axios from "axios";
 import { useEffect, useState } from "react";
-import SingleContent from '../src/components/Movies/SingleContent';
-import { movieListContainerStyle } from "../src/components/styles/SingleContent.css";
-import Mo from "../src/json/Movie.json"
-
+import SingleContent from 'src/components/Movies/SingleContent';
+import { movieListContainerStyle } from "src/components/styles/SingleContent.css";
+import Mo from "src/json/Movie.json"
+import { Header } from 'src/components';
+import { IMDBProps, MovieDataProps } from './movie/movieInterface';
 
 interface Props {
   id: number
@@ -40,14 +41,9 @@ interface Props2 {
 
 
 function Movies() {
-
   const moviess = Mo.movies.map((o: any) => o.id)
-
-
   // const [content, setContent] = useState<Props>({} as Props);
   const [content, setContent] = useState<any>([]);
-  // const moviess = [];
-  const movies = ["666632-newtopia", "674882-the-donut-king", '437586-mid-90-s', '841646-kullankaivajat']
 
   const fetchTrending = async (e: any): Promise<void> => {
     const { data } = await axios.get(
@@ -57,6 +53,9 @@ function Movies() {
     setContent((content: any) => [...content, data]);
     // console.log(data)
   };
+
+
+
 
   useEffect(() => {
     {
@@ -69,7 +68,9 @@ function Movies() {
 
 
   return (
+
     <>
+      <Header />
       <div className={movieListContainerStyle}>
         {
           content.map((e: any) => {
@@ -85,6 +86,7 @@ function Movies() {
                 media_type={e.media_type}
                 vote_average={e.vote_average}
                 over_view={e.overview}
+
               />
             )
           })

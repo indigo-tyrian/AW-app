@@ -1,8 +1,8 @@
-import '../components/styles/global.css'
-import '../components/styles/countries.css'
+import 'src/components/styles/global.css'
+import 'src/components/styles/countries.css'
 import { countryNameStillStyle, countryNameStyle, searchIconStyle, worldMapStyle, worldMapViewStyle } from "./styles/countries.css"
 import WorldMap from "./svg/WorldMap"
-import { bigTextStyle, phoneScrollStyle } from '../components/styles/global.css'
+import { bigTextStyle, phoneScrollStyle } from 'src/components/styles/global.css'
 import { MouseEvent, useState } from 'react'
 import { MagnifyingGlassIcon } from './svg/MagnifyingGlassSvg'
 

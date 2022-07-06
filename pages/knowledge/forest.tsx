@@ -3,7 +3,7 @@ import Image from 'next/image'
 const ForestIsnt = () => {
   return (
     <>
-      <h1>The forest was not a &#34;place to go for refreshment&#34;</h1>
+      <h1>The forest was not a place to go for refreshment</h1>
 
       <p>
         In the world we live in today, &#34;forests&#34; are something to protect and preserve!
@@ -27,10 +27,10 @@ const ForestIsnt = () => {
       <p>
         Sorry for those of you who don&#39;t know Harry Potter, but for medieval people, the forest is exactly what the Forbidden Forest on the grounds of Hogwarts feels like.
       </p>
-      <Image
+      {/* <Image
         src=""
         alt="Picture of the author"
-      />
+      /> */}
       <p>
         It is a very scary place, pitch black and inhabited by mysterious creatures. Wolves can be heard howling from time to time.
       </p>
@@ -50,10 +50,10 @@ const ForestIsnt = () => {
       <p>
         In contrast, virgin forests, which are untouched by human hands, are densely populated with trees with unlimited growth of branches and crooked trunks. These trees cover the sky, making it dark and eerie even during the daytime.
       </p>
-      <Image
+      {/* <Image
         src=""
         alt="Picture of the author"
-      />
+      /> */}
       <p>
         The primeval forest was not a place to go all the way to refresh yourself, but a place you would want to leave as soon as possible, just like a human-managed forest.
       </p>

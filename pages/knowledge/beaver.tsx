@@ -1,9 +1,9 @@
 import Image from 'next/image'
-import Profile from '../../src/components/Profile'
+import Profile from 'src/components/Profile'
 const Beaver = () => {
   return (
     <>
-      <h1 >Abeaver is fish</h1>
+      <h1 >A beaver is fish</h1>
       <p>
         The concept of the beaver being a fish became popular among Roman Catholics during the Middle Ages.
       </p>
@@ -44,7 +44,6 @@ const Beaver = () => {
         src='https://user-images.githubusercontent.com/10515204/56117400-9a911800-5f85-11e9-878b-3f998609a6c8.jpg'
         alt="Picture of the author" layout='fill'
       /> */}
-      <Profile />
       <p>
         I still want to eat meat! I want meat every day, no matter what it takes!
       </p>

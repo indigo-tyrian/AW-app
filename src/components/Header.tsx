@@ -1,4 +1,4 @@
-import '../components/styles/global.css'
+import 'src/components/styles/global.css'
 
 import { headerStyle, navTextStyle, languageContainerStyle, languageExpandJpStyle, languageExpandStyle, languageInputStyle, languageLabelStyle, languageStyle, } from "./styles/header.css"
 import { MagnifyingGlassIcon } from "./svg/MagnifyingGlassSvg"

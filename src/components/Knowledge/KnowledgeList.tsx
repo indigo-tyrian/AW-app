@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link';
 import Data from "src/json/Knowledge.json"
 import { useEffect, useState } from "react";
-import { boxStyle, containerStyle, textStyle, titleStyle } from 'src/components/styles/knowledgeList.css';
+import { boxStyle, containerStyle, textStyle, titleStyle } from '../styles/knowledgeList.css';
 
 interface Props {
 
@@ -14,7 +14,7 @@ const KnowledgeList = ({
 
 }) => {
 
-  const kk: any = Data.knowledge as any
+  const kk: any = Data.knowledge.find as any
   const [hidden, setHidden] = useState(false)
 
   return (
@@ -32,7 +32,6 @@ const KnowledgeList = ({
                 />
                 <b className={titleStyle}>{e.title}</b>
                 <span className={textStyle}>
-                  {e.text}
                 </span>
               </div>
             </Link >

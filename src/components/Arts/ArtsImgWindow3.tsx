@@ -1,8 +1,8 @@
 
-import '../styles/global.css'
-import { containerStyle } from "../styles/ImageWindow.css"
-import { ImgWindow } from '../ImgWindow'
-import { bigTextStyle, contentStyle } from '../styles/global.css'
+import 'src/components/styles/global.css'
+import { containerStyle } from "src/components/styles/ImageWindow.css"
+import { ImgWindow } from 'src/components/ImgWindow'
+import { bigTextStyle, contentStyle } from 'src/components/styles/global.css'
 
 const ArtsImgWindow2 = () => {
   return (

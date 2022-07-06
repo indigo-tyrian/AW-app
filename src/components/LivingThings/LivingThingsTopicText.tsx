@@ -1,5 +1,5 @@
-import '../styles/global.css'
-import { bigTextStyle } from '../styles/global.css'
+import 'src/components/styles/global.css'
+import { bigTextStyle } from 'src/components/styles/global.css'
 
 const LivingThingsTopicText = () => {
   return (

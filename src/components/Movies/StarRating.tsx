@@ -1,6 +1,6 @@
-import '../styles/global.css'
+import 'src/components/styles/global.css'
 
-import { ratingContainerStyle, comprehensionRatingStyle, ratingEachStyle, ratingStarStyle, ratingTextStyle, comprehensiveRatingTextStyle, } from "../styles/movie.css"
+import { ratingContainerStyle, comprehensionRatingStyle, ratingEachStyle, ratingStarStyle, ratingTextStyle, comprehensiveRatingTextStyle, } from "src/components/styles/movie.css"
 
 // import ReactStars from 'react-stars'
 import Rating from '@mui/material/Rating';

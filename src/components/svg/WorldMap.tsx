@@ -1,6 +1,6 @@
-import '../styles/global.css'
-import '../styles/countries.css'
-import { worldMapSvgStyle } from '../styles/countries.css';
+import 'src/components/styles/global.css'
+import 'src/components/styles/countries.css'
+import { worldMapSvgStyle } from 'src/components/styles/countries.css';
 import { MouseEvent, MouseEventHandler, useRef } from 'react'
 
 interface Props {
