@@ -1,5 +1,5 @@
 import 'src/components/styles/global.css'
-import { Style, ctaTitleStyle, slideBgImgStyle, slideBgStyle, slideContainerStyle, slideCardBase, slideCardStyle, slideTextStyle, slideImgStyle } from "src/components/styles/firstSlider.css";
+import { Style, ctaTitleStyle, slideBgImgStyle, slideBgStyle, slideContainerStyle, slideCardBase, slideCardStyle, slideTextStyle, slideImgStyle, nextImageAdjustment } from "src/components/styles/firstSlider.css";
 
 import { FirstSliderComp } from 'src/components/FirstSliderComp';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -33,22 +33,22 @@ const AtrsFirstSlider = () => {
           >
             <SwiperSlide>
               <FirstSliderComp title1='The Birth of' title2='Venus' imgSource='/images/arts/firstSlide/La_nascita_di_Venere.jpg'
-                link="arts/each/theBirthOfVenus" slideImgStyle={slideImgStyle.others} slideStyle={slideCardStyle.top} slideTextStyle={slideTextStyle.arts} />
+                link="arts/each/theBirthOfVenus" slideImgStyle={slideImgStyle.others} slideStyle={slideCardStyle.top} slideTextStyle={slideTextStyle.arts} nextImageAdjustment={nextImageAdjustment.others} />
             </SwiperSlide>
 
             <SwiperSlide>
               <FirstSliderComp title1='Mona Lisa' imgSource='/images/arts/firstSlide/Mona_Lisa.jpg'
-                link="arts/each/monaLisa" slideImgStyle={slideImgStyle.others} slideStyle={slideCardStyle.top} slideTextStyle={slideTextStyle.arts} />
+                link="arts/each/monaLisa" slideImgStyle={slideImgStyle.others} slideStyle={slideCardStyle.top} slideTextStyle={slideTextStyle.arts} nextImageAdjustment={nextImageAdjustment.others} />
             </SwiperSlide>
 
             <SwiperSlide>
               <FirstSliderComp title1='The Lords of' title2='Montfoort' imgSource='/images/arts/firstSlide/The_Lords_of_Montfoort.jpg'
-                link="arts/each/theLordsOfMontfoort" slideImgStyle={slideImgStyle.others} slideStyle={slideCardStyle.top} slideTextStyle={slideTextStyle.arts} />
+                link="arts/each/theLordsOfMontfoort" slideImgStyle={slideImgStyle.others} slideStyle={slideCardStyle.top} slideTextStyle={slideTextStyle.arts} nextImageAdjustment={nextImageAdjustment.others} />
             </SwiperSlide>
 
             <SwiperSlide>
               <FirstSliderComp title1='The Night Watch' imgSource='/images/arts/firstSlide/The_Night_Watch.jpg'
-                link="arts/each/theNightWatch" slideImgStyle={slideImgStyle.others} slideStyle={slideCardStyle.center} slideTextStyle={slideTextStyle.arts} />
+                link="arts/each/theNightWatch" slideImgStyle={slideImgStyle.others} slideStyle={slideCardStyle.center} slideTextStyle={slideTextStyle.arts} nextImageAdjustment={nextImageAdjustment.others} />
             </SwiperSlide>
           </Swiper>
         </div>

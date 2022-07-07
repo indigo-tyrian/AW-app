@@ -6,20 +6,17 @@ import Data from "src/json/LivingThings.json"
 import { bigImgStyle, linkContainerStyle, bigImgContainerStyle, TitleNameStyle } from 'src/components/styles/eachOne.css'
 // import AboutContent from "src/components/AboutContent"
 import Image from 'next/image'
+import { Props, Props2 } from 'interfaces/livingThingsInterface';
+import Head from 'next/head'
 
-
-interface Props {
-  img: string[];
-  name: string;
-  title: string;
-
-}
-
+import { useRouter } from 'next/router'
 
 
 const LivingThingsSpecies = () => {
 
-  const one = "mammal"
+  // const one = "mammal"
+  const router = useRouter()
+  const one = router.asPath.replace("/livingThings/species/", "")
   const kk = Data.species.find((d) => d.name == one) as Props
 
 

@@ -7,14 +7,17 @@ import Mo from "src/json/Movie.json"
 import { ffContainerStyle, textContainerStyle, textTitleStyle, textContentsStyle, mediumImgContainerStyle, imgStyle, leftContentsStyle, rightContentsStyle, paragraphStyle } from "src/components/styles/movie.css"
 import Image from 'next/image'
 import Link from 'next/link';
+import { useRouter } from 'next/router';
+import Head from 'next/head'
 
 
-import { IMDBProps, MovieDataProps } from './movieInterface';
+import { TMDBProps, MovieDataProps } from 'interfaces/movieInterface';
 
 const Newtopia = () => {
-  const one = "Newtopia"
+  const router = useRouter()
+  const one = router.asPath.replace("/movie/", "")
   const moo = Mo.movies.find((d) => d.name == one) as MovieDataProps
-  const [content, setContent] = useState<IMDBProps>({} as IMDBProps);
+  const [content, setContent] = useState<TMDBProps>({} as TMDBProps);
   console.log(moo.blogTitle);
 
   const fetchTrending = () => {

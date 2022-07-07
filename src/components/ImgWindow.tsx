@@ -21,7 +21,6 @@ interface Props {
 
 export function ImgWindow(props: Props) {
   const [isHover, setIsHover] = useState(false)
-
   const onPale = (event: MouseEvent<HTMLDivElement>) => {
     if (event) {
       setIsHover(!isHover)

@@ -11,20 +11,14 @@ import 'src/components/styles/global.css'
 import { Style, buttonContainerStyle, buttonExpandStyle, lineStyle, textStyle, descriptionTextStyle } from 'src/components/styles/eachOne.css'
 import { MouseEvent, useState } from 'react'
 import Image from 'next/image'
-
-interface Props2 {
-  contentPath?: string;
-}
-
-interface Props {
-  name: string;
-  title: string;
-  img: string[];
-}
+import { Props, Props2 } from 'interfaces/livingThingsInterface';
+import Head from 'next/head'
 
 
 const AfricanElephant = (props: Props2) => {
-  const one = "africanElephant"
+  // const one = "africanElephant"
+  const router = useRouter()
+  const one = router.asPath.replace("/livingThings/", "")
   const kk: Props = Data.each.find((d) => d.name == one) as Props
   const [hidden, setHidden] = useState(false)
 

@@ -13,6 +13,7 @@ interface Props {
   slideStyle?: string;
   slideImgStyle?: string;
   slideTextStyle?: string;
+  nextImageAdjustment?: string;
 }
 
 export function FirstSliderComp(props: Props) {
@@ -20,7 +21,11 @@ export function FirstSliderComp(props: Props) {
 
     <Link href={props.link}>
       <div className={props.slideStyle}>
-        <Image className={props.slideImgStyle} src={props.imgSource} alt="" layout='fill' />
+        <div className={props.slideImgStyle}>
+          <div className={props.nextImageAdjustment}>
+            <Image src={props.imgSource} alt="" layout='fill' objectFit='contain' />
+          </div>
+        </div>
       </div>
       {/* <div className={props.slideTextStyle}>{props.title1}<br />{props.title2}
       </div> */}

@@ -1,8 +1,14 @@
+import Head from 'next/head'
 import Image from 'next/image'
 import Profile from 'src/components/Profile'
 const Beaver = () => {
   return (
     <>
+      <Head>
+        <title>{ }</title>
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+      </Head>
       <h1 >A beaver is fish</h1>
       <p>
         The concept of the beaver being a fish became popular among Roman Catholics during the Middle Ages.

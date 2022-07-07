@@ -1,25 +1,59 @@
 import { style, styleVariants } from "@vanilla-extract/css"
 
-export const mediaStyle = style({
+export const mediaStyleBase = style({
+  transition: "all 0.1s linear",
   display: "flex",
   flexDirection: "column",
-  width: "200px",
-  padding: "5px",
   margin: "5px 0",
   backgroundColor: "#282c34",
   borderRadius: "10px",
-  position: "relative",
   fontFamily: '"Montserrat", sans-serif',
-  ":hover": {
-    backgroundColor: "white",
-    color: "black"
-  },
   "@media": {
     "screen and (max-width: 550px)": {
       width: "46%"
     }
   },
 })
+
+export const mediaStyle = styleVariants({
+  pop: [mediaStyleBase,
+    {
+      top: -10,
+      position: "absolute",
+    }
+  ],
+  nonpop:
+    [mediaStyleBase,
+      {
+
+      }]
+})
+
+export const boxStyleBase = style({
+  position: "relative",
+  transition: "all 0.1s linear",
+
+})
+
+export const boxStyle = styleVariants({
+  pop: [boxStyleBase,
+
+    {
+      width: 250,
+      hight: 300,
+
+
+    }
+  ],
+  nonpop:
+    [boxStyleBase,
+      {
+        width: 200,
+        hight: 300,
+      }]
+})
+
+
 
 export const posterStyle = style({
   borderRadius: "10px"

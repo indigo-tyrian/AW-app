@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Data from "src/json/Knowledge.json"
 import { useEffect, useState } from "react";
 import { boxStyle, containerStyle, textStyle, titleStyle } from 'src/components/styles/knowledgeList.css';
+import Head from 'next/head'
 
 interface Props {
 

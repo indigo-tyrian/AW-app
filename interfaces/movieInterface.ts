@@ -1,4 +1,4 @@
-export interface IMDBProps {
+export interface TMDBProps {
   id: number
   name: string
   poster_path: string

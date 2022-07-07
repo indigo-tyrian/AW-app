@@ -12,19 +12,15 @@ import { Style, buttonContainerStyle, buttonExpandStyle, lineStyle, textStyle, d
 import { MouseEvent, useState } from 'react'
 import Image from 'next/image'
 
-interface Props2 {
-  contentPath?: string;
-}
+import { Props, Props2 } from 'interfaces/livingThingsInterface';
+import Head from 'next/head'
 
-interface Props {
-  name: string;
-  title: string;
-  img: string[];
-}
 
 
 const BlueAndYellowMacaw = (props: Props2) => {
-  const one = "blueAndYellowMacaw"
+  // const one = "blueAndYellowMacaw"
+  const router = useRouter()
+  const one = router.asPath.replace("/livingThings/", "")
   const kk: Props = Data.each.find((d) => d.name == one) as Props
   const [hidden, setHidden] = useState(false)
 

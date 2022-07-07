@@ -1,8 +1,14 @@
 import Image from 'next/image'
+import Head from 'next/head'
 
 const Hawk = () => {
   return (
     <>
+      <Head>
+        <title>{ }</title>
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+      </Head>
       <h1 >A hawk, mosquito and DDT</h1>
       <p>
         Since the 1950s, a chemical called &#34;DDT&#34; has been sprayed in large quantities in areas where infections were spreading in order to control the mosquitoes that transmit yellow fever and malaria.

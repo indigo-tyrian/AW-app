@@ -7,15 +7,13 @@ import { bigImgStyle, linkContainerStyle, bigImgContainerStyle, TitleNameStyle }
 import AboutContent from "src/components/Aboutcontent"
 import { useRouter } from 'next/router'
 import Image from 'next/image'
-
-interface Props {
-  img: string[];
-  name: string;
-  title: string;
-}
+import { Props, Props2 } from 'interfaces/livingThingsInterface';
+import Head from 'next/head'
 
 const Mountain = () => {
-  const one = "savanna"
+  // const one = "savanna"
+  const router = useRouter()
+  const one = router.asPath.replace("/livingThings/habitats/", "")
   const kk = Data.habitats.find((d) => d.name == one) as Props
   return (
     <>

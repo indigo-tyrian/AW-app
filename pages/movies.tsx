@@ -9,7 +9,8 @@ import SingleContent from 'src/components/Movies/SingleContent';
 import { movieListContainerStyle } from "src/components/styles/SingleContent.css";
 import Mo from "src/json/Movie.json"
 import { Header } from 'src/components';
-import { IMDBProps, MovieDataProps } from './movie/movieInterface';
+import { TMDBProps, MovieDataProps } from 'interfaces/movieInterface';
+import Head from 'next/head'
 
 interface Props {
   id: number
@@ -53,10 +54,6 @@ function Movies() {
     setContent((content: any) => [...content, data]);
     // console.log(data)
   };
-
-
-
-
   useEffect(() => {
     {
       moviess.map((e) => {
@@ -65,10 +62,7 @@ function Movies() {
 
     }
   }, []);
-
-
   return (
-
     <>
       <Header />
       <div className={movieListContainerStyle}>
@@ -86,7 +80,6 @@ function Movies() {
                 media_type={e.media_type}
                 vote_average={e.vote_average}
                 over_view={e.overview}
-
               />
             )
           })

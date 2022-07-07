@@ -1,8 +1,14 @@
 import Image from 'next/image'
+import Head from 'next/head'
 
 const ForestIsnt = () => {
   return (
     <>
+      <Head>
+        <title>{ }</title>
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+      </Head>
       <h1>The forest was not a place to go for refreshment</h1>
 
       <p>

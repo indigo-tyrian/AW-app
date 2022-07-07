@@ -6,14 +6,18 @@ import { useEffect, useState } from "react";
 import Mo from "src/json/Movie.json"
 import { ffContainerStyle, textContainerStyle, textTitleStyle, textContentsStyle, mediumImgContainerStyle, imgStyle, leftContentsStyle, rightContentsStyle, paragraphStyle } from "src/components/styles/movie.css"
 import Image from 'next/image'
+import { useRouter } from 'next/router';
+import Head from 'next/head'
 
 
-import { IMDBProps, MovieDataProps } from './movieInterface';
+import { TMDBProps, MovieDataProps } from 'interfaces/movieInterface';
 
 const TheVisit = () => {
-  const one = "TheVisit"
+  // const one = "TheVisit"
+  const router = useRouter()
+  const one = router.asPath.replace("/movie/", "")
   const moo = Mo.movies.find((d) => d.name == one) as MovieDataProps
-  const [content, setContent] = useState<IMDBProps>({} as IMDBProps);
+  const [content, setContent] = useState<TMDBProps>({} as TMDBProps);
 
   const fetchTrending = () => {
     fetch(`https://api.themoviedb.org/3/movie/${moo.id}?api_key=0bbd2e953c05d5b589625a131c3ecac6`

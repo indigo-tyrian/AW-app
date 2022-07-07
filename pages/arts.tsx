@@ -1,4 +1,5 @@
 import { Footer, BottomNav, Countries, ArtsFirstSlider, ArtsImgWindow1, ArtsImgWindow2, ArtsTopic, ArtsImgWindow3 } from 'src/components/index'
+import Head from 'next/head'
 
 function Arts() {
   return (
