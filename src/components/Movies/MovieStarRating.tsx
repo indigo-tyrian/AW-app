@@ -19,7 +19,7 @@ interface Props {
 }
 
 
-const StarRating = ({
+const MovieStarRating = ({
   story,
   images,
   music,
@@ -121,4 +121,4 @@ const StarRating = ({
   )
 }
 
-export default StarRating
+export default MovieStarRating

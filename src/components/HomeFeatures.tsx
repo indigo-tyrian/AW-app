@@ -9,36 +9,41 @@ export function HomeFeatures() {
     <>
       <Header />
       <div className={`${containerStyle} ${contentStyle}`}>
-        <HomeFeaturesComp title='Living Things' text='How is the weather of the world?' imgSource='/images/home/home-animal.jpg' comingSoon="" link='/livingThings' />
+        <HomeFeaturesComp title='Living Things' text='How is the weather of the world?' imgSource='/images/home/home-animal.jpg' comingSoonText='' comingSoonClass="" link='/livingThings' />
 
-        <HomeFeaturesComp title='Arts' text='How is the weather of the world?' imgSource='/images/home/home-art.jpg' comingSoon='' link='/arts' />
+        <HomeFeaturesComp title='Arts' text='How is the weather of the world?' imgSource='/images/home/home-art.jpg' comingSoonText='' comingSoonClass='' link='/arts' />
 
-        <HomeFeaturesComp title='Foods' text='How is the weather of the world?' imgSource='/images/home/home-foods.jpg' comingSoon='' link='/foods' />
+        <HomeFeaturesComp title='Foods' text='How is the weather of the world?' imgSource='/images/home/home-foods.jpg' comingSoonText='' comingSoonClass='' link='/foods' />
 
-        <HomeFeaturesComp title='Movies' text='How is the weather of the world?' imgSource='/images/home/home-movie.jpg' comingSoon="" link='/movies' />
+        <HomeFeaturesComp title='Movies' text='How is the weather of the world?' imgSource='/images/home/home-movie.jpg' comingSoonText='' comingSoonClass="" link='/movies' />
 
-        <HomeFeaturesComp title='History' text='How is the weather of the world?' imgSource='/images/home/home-histories.jpg' comingSoon="" link='/histories' />
+        <HomeFeaturesComp title='Knowledge' text='How is the weather of the world?' imgSource='/images/home/home-knowledge.jpg' comingSoonText='' comingSoonClass="" link='/knowledge' />
 
-        <HomeFeaturesComp title='Knowledge' text='How is the weather of the world?' imgSource='/images/home/home-knowledge.jpg' comingSoon="" link='/knowledge' />
+        {/* History */}
+        <HomeFeaturesComp title='' text='How is the weather of the world?' imgSource='/images/home/home-histories.jpg' comingSoonText='Coming Soon' comingSoonClass={comingSoonStyle} link='/histories' />
 
-        <HomeFeaturesComp title='Cities' text='How is the weather of the world?' imgSource='/images/home/home-city.jpg' comingSoon={comingSoonStyle} link='/cities' />
+        {/* Cities */}
+        <HomeFeaturesComp title='' text='How is the weather of the world?' imgSource='/images/home/home-city.jpg' comingSoonText='Coming Soon' comingSoonClass={comingSoonStyle} link='/cities' />
 
-        <HomeFeaturesComp title='Buildings' text='How is the weather of the world?' imgSource='/images/home/home-building.jpg' comingSoon={comingSoonStyle} link='/buildings' />
+        {/* Buildings */}
+        <HomeFeaturesComp title='' text='How is the weather of the world?' imgSource='/images/home/home-building.jpg' comingSoonText='Coming Soon' comingSoonClass={comingSoonStyle} link='/buildings' />
+
+        {/* Books */}
+        <HomeFeaturesComp title='' text='How is the weather of the world?' imgSource='/images/home/home-books.jpg' comingSoonText='Coming Soon' comingSoonClass={comingSoonStyle} link='/books' />
+
+        {/* Stones */}
+        <HomeFeaturesComp title='' text='How is the weather of the world?' imgSource='/images/home/home-stone.jpg' comingSoonText='Coming Soon' comingSoonClass={comingSoonStyle} link='' />
+
+        {/* Nature */}
+        <HomeFeaturesComp title='' text='How is the weather of the world?' imgSource='/images/home/home-nature.jpg' comingSoonText='Coming Soon' comingSoonClass={comingSoonStyle} link='/nature' />
 
 
-        <HomeFeaturesComp title='Books' text='How is the weather of the world?' imgSource='/images/home/home-books.jpg' comingSoon={comingSoonStyle} link='/books' />
-
-        <HomeFeaturesComp title='Stones' text='How is the weather of the world?' imgSource='/images/home/home-stone.jpg' comingSoon={comingSoonStyle} link='' />
-
-        <HomeFeaturesComp title='Nature' text='How is the weather of the world?' imgSource='/images/home/home-nature.jpg' comingSoon={comingSoonStyle} link='/nature' />
+        {/* Sister Relationship City */}
+        <HomeFeaturesComp title='' text='How is the weather of the world?' imgSource='/images/home/home-sister-city.jpg' comingSoonText='Coming Soon' comingSoonClass={comingSoonStyle} link='/sister-relationship-city' />
 
 
-
-        <HomeFeaturesComp title='Sister Relationship City' text='How is the weather of the world?' imgSource='/images/home/home-sister-city.jpg' comingSoon={comingSoonStyle} link='/sister-relationship-city' />
-
-
-
-        <HomeFeaturesComp title='Flower' text='How is the weather of the world?' imgSource='/images/home/home-flower.jpg' comingSoon={comingSoonStyle} link='/flower' />
+        {/* Flower */}
+        <HomeFeaturesComp title='' text='How is the weather of the world?' imgSource='/images/home/home-flower.jpg' comingSoonText='Coming Soon' comingSoonClass={comingSoonStyle} link='/flower' />
       </div>
     </>
   )

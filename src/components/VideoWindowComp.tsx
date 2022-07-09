@@ -6,6 +6,7 @@ import { MouseEvent, useState } from 'react'
 
 import { videoStyle, boxStyle, imgStyle } from "./styles/videoWindow.css"
 import { phoneOnlyAreaBase } from './styles/global.css';
+import { nextImageAdjustment } from './styles/nextImage.css';
 interface Props {
   title: string;
   text?: string;
@@ -43,7 +44,9 @@ export function SpeciesComp(props: Props) {
         <video className={`tab-area ${isHover ? videoStyle.appears : videoStyle.disappears}`} muted onMouseEnter={hov} onMouseLeave={nonHov} >
           <source src={props.videoSource} type="video/mp4" />
         </video>
-        <Image className={`${imgStyle} ${phoneOnlyAreaBase}`} src={props.imgSource} alt="" layout='fill' />
+        <div className={nextImageAdjustment.imageWindow}>
+          <Image className={`${imgStyle} ${phoneOnlyAreaBase}`} src={props.imgSource} alt="" layout='fill' objectFit='contain' />
+        </div>
         <div className="text-block">
           <span className="text">{props.title}
           </span>
@@ -51,7 +54,7 @@ export function SpeciesComp(props: Props) {
           </span>
         </div>
       </div>
-    </Link>
+    </Link >
   )
 }
 

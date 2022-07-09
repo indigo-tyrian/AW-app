@@ -1,10 +1,11 @@
-import Image from 'next/image'
+import NextImageComp from 'src/components/NextImageComp';
 
 
 import { boxStyle, imgStyle, gradientStyle, overlayStyle } from './styles/ImageWindow.css';
 import { MouseEvent, useState } from 'react'
 import Link from 'next/link';
 import { pcAreaBase } from './styles/global.css';
+import { nextImageAdjustment } from './styles/nextImage.css';
 
 
 
@@ -36,7 +37,9 @@ export function ImgWindow(props: Props) {
   return (
     <Link href={props.link}>
       <div className={`${boxStyle}`} onMouseEnter={onPale} onMouseLeave={undoPale}>
-        <Image className={`${isHover ? imgStyle.focus : imgStyle.nonFocus} `} src={props.imgSource} alt="" layout='fill' />
+        <div className={nextImageAdjustment.imageWindow}>
+          <NextImageComp containerClassName={nextImageAdjustment.imageWindow} boxClassName={`${isHover ? imgStyle.focus : imgStyle.nonFocus} `} src={props.imgSource} alt="" />
+        </div>
         <div className={`${overlayStyle} ${pcAreaBase} ${isHover ? overlayStyle.grayOut : overlayStyle.nonGrayOut}`} ></div>
         <div className={gradientStyle}></div>
         <div className="text-block">

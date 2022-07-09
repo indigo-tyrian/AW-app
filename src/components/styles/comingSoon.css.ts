@@ -11,8 +11,9 @@ export const comingSoonStyle = style({
   zIndex: 10
 })
 export const comingSoonText = style({
-  fontSize: "4vw",
+  fontSize: "3vw",
   fontWeight: 700,
+  color: "rgba(255, 255, 255,0.5)",
   textTransform: "uppercase",
   position: "absolute",
   top: "50%",

@@ -1,5 +1,6 @@
 import { containerStyle, imgStyle, nameStyle, textStyle } from "./styles/profile.css";
 import Image from 'next/image'
+import { nextImageAdjustment } from "./styles/nextImage.css";
 
 
 export default function Profile() {
@@ -8,8 +9,9 @@ export default function Profile() {
   return (
     <div className={containerStyle}>
       {/* <Image className={imgStyle} src="\images\movies\profilePic.jpg" alt="" layout='fill' /> */}
-
-      <Image className={imgStyle} src={movieImage} alt="" layout='fill' />
+      <div className={nextImageAdjustment.imageWindow}>
+        <Image className={imgStyle} src={movieImage} alt="" layout='fill' objectFit='contain' />
+      </div>
       <div className={nameStyle}></div>
       <div className={textStyle}></div>
     </div>

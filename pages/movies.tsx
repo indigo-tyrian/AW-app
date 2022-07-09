@@ -5,10 +5,10 @@ import { containerStyle } from 'src/components/styles/ImageWindow.css';
 import 'src/components/styles/global.css'
 import axios from "axios";
 import { useEffect, useState } from "react";
-import SingleContent from 'src/components/Movies/SingleContent';
+import MovieSingleContent from 'src/components/Movies/MovieSingleContent';
 import { movieListContainerStyle } from "src/components/styles/SingleContent.css";
 import Mo from "src/json/Movie.json"
-import { Header } from 'src/components';
+import { BottomNav, Footer, Header } from 'src/components';
 import { TMDBProps, MovieDataProps } from 'interfaces/movieInterface';
 import Head from 'next/head'
 
@@ -23,6 +23,7 @@ interface Props {
   vote_average: number
   overview: string
   original_name: string
+  back_drop: string
 }[]
 
 interface Props2 {
@@ -71,7 +72,7 @@ function Movies() {
             console.log(moviess);
 
             return (
-              < SingleContent
+              < MovieSingleContent
                 original_title={e.original_title}
                 key={e.id}
                 poster={e.poster_path}
@@ -80,6 +81,7 @@ function Movies() {
                 media_type={e.media_type}
                 vote_average={e.vote_average}
                 over_view={e.overview}
+                back_drop={e.backdrop_path}
               />
             )
           })
@@ -90,6 +92,8 @@ function Movies() {
         <ImgWindow title1='Movie' totalNumber={110} imgSource='/images/movies/movie.jpg' link="/movie/movies" />
         <ImgWindow title1='TV series' totalNumber={110} imgSource='/images/movies/documentary.jpg' link="/movie/tvSeries" />
       </div>
+      <Footer />
+      <BottomNav />
     </>
   )
 }

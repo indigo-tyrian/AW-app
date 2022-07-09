@@ -1,5 +1,6 @@
-import Image from 'next/image'
+import NextImageComp from 'src/components/NextImageComp';
 import Head from 'next/head'
+import { nextImageAdjustment } from 'src/components/styles/nextImage.css'
 
 const ForestIsnt = () => {
   return (
@@ -33,10 +34,7 @@ const ForestIsnt = () => {
       <p>
         Sorry for those of you who don&#39;t know Harry Potter, but for medieval people, the forest is exactly what the Forbidden Forest on the grounds of Hogwarts feels like.
       </p>
-      {/* <Image
-        src=""
-        alt="Picture of the author"
-      /> */}
+      <NextImageComp containerClassName={nextImageAdjustment.moviePoster} src='https://user-images.githubusercontent.com/10515204/56117400-9a911800-5f85-11e9-878b-3f998609a6c8.jpg' alt="" />
       <p>
         It is a very scary place, pitch black and inhabited by mysterious creatures. Wolves can be heard howling from time to time.
       </p>
@@ -56,10 +54,7 @@ const ForestIsnt = () => {
       <p>
         In contrast, virgin forests, which are untouched by human hands, are densely populated with trees with unlimited growth of branches and crooked trunks. These trees cover the sky, making it dark and eerie even during the daytime.
       </p>
-      {/* <Image
-        src=""
-        alt="Picture of the author"
-      /> */}
+      <NextImageComp containerClassName={nextImageAdjustment.moviePoster} src='https://user-images.githubusercontent.com/10515204/56117400-9a911800-5f85-11e9-878b-3f998609a6c8.jpg' alt="" />
       <p>
         The primeval forest was not a place to go all the way to refresh yourself, but a place you would want to leave as soon as possible, just like a human-managed forest.
       </p>

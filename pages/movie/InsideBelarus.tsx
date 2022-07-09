@@ -1,11 +1,12 @@
 import React from 'react'
-import PosterAndInfo from 'src/components/Movies/PosterAndInfo'
-import StarRating from 'src/components/Movies/StarRating'
+import MoviePosterAndInfo from 'src/components/Movies/MoviePosterAndInfo'
+import MovieStarRating from 'src/components/Movies/MovieStarRating'
 import 'src/components/styles/global.css'
 import { useEffect, useState } from "react";
 import Mo from "src/json/Movie.json"
 import { ffContainerStyle, textContainerStyle, textTitleStyle, textContentsStyle, mediumImgContainerStyle, imgStyle, leftContentsStyle, rightContentsStyle, paragraphStyle } from "src/components/styles/movie.css"
-import Image from 'next/image'
+import NextImageComp from 'src/components/NextImageComp';
+import { nextImageAdjustment } from 'src/components/styles/nextImage.css';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import Head from 'next/head'
@@ -35,7 +36,7 @@ const InsideBelarus = () => {
 
   return (
     <>
-      <PosterAndInfo
+      <MoviePosterAndInfo
         key={content?.id}
         poster={content?.poster_path}
         back_drop={content.backdrop_path}
@@ -48,7 +49,7 @@ const InsideBelarus = () => {
         genres={content.genres}
       />
 
-      <StarRating
+      <MovieStarRating
         story={moo.rate.story}
         socialEffect={moo.rate.socialEffect}
         businessSuccessful={moo?.rate.businessSuccessful}
@@ -85,7 +86,7 @@ const InsideBelarus = () => {
               some of the troops Russian army invaded Ukrina from Belarus
             </p>
             <div className={mediumImgContainerStyle}>
-              {/* <Image className={imgStyle} src="" alt="" layout='fill' /> */}
+              <NextImageComp containerClassName={nextImageAdjustment.landscape} boxClassName={imgStyle} src="/images/movies/documentary.jpg" alt="" />
             </div>
           </div>
           <div className={leftContentsStyle}></div>

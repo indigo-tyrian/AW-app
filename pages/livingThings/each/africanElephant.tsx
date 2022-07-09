@@ -10,9 +10,10 @@ import { useRouter } from 'next/router'
 import 'src/components/styles/global.css'
 import { Style, buttonContainerStyle, buttonExpandStyle, lineStyle, textStyle, descriptionTextStyle } from 'src/components/styles/eachOne.css'
 import { MouseEvent, useState } from 'react'
-import Image from 'next/image'
+import NextImageComp from 'src/components/NextImageComp';
 import { Props, Props2 } from 'interfaces/livingThingsInterface';
 import Head from 'next/head'
+import { nextImageAdjustment } from "src/components/styles/nextImage.css"
 
 
 const AfricanElephant = (props: Props2) => {
@@ -37,7 +38,7 @@ const AfricanElephant = (props: Props2) => {
   return (
     <>
       <div className={bigImgContainerStyle}>
-        <Image className={bigImgStyle} src={kk.img[0].replace(/['"]+/g, '')} alt="" layout='fill' />
+        <NextImageComp containerClassName={nextImageAdjustment.landscape} boxClassName={bigImgStyle} src={kk.img[0].replace(/['"]+/g, '')} alt="" />
       </div>
       <div className={TitleNameStyle}>{kk.name}</div>
       <div className={linkContainerStyle}>

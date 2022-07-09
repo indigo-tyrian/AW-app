@@ -20,7 +20,7 @@ interface Props {
   }]
 }
 
-const PosterAndInfo = ({
+const MoviePosterAndInfo = ({
   poster,
   title,
   date,
@@ -79,4 +79,4 @@ const PosterAndInfo = ({
   )
 }
 
-export default PosterAndInfo
+export default MoviePosterAndInfo

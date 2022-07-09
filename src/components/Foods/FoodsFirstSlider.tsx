@@ -1,5 +1,5 @@
 import 'src/components/styles/global.css'
-import { Style, ctaTitleStyle, slideBgImgStyle, slideBgStyle, slideContainerStyle, slideCardBase, slideCardStyle, slideTextStyle, slideImgStyle, nextImageAdjustment } from "src/components/styles/firstSlider.css";
+import { Style, ctaTitleStyle, slideBgImgStyle, slideBgStyle, slideContainerStyle, slideCardBase, slideCardStyle, slideTextStyle, slideImgStyle } from "src/components/styles/firstSlider.css";
 
 import { FirstSliderComp } from 'src/components/FirstSliderComp';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -11,6 +11,7 @@ import { logoStyle } from 'src/components/styles/logo.css';
 import 'swiper/css';
 import "swiper/css/effect-fade";
 import { tabAreaBase } from 'src/components/styles/global.css';
+import { nextImageAdjustment } from '../styles/nextImage.css';
 
 const FoodsFirstSlider = () => {
   return (
@@ -33,22 +34,22 @@ const FoodsFirstSlider = () => {
           >
             <SwiperSlide>
               <FirstSliderComp title1='Delicious' title2='Desserts' imgSource='/images/foods/firstSlide/cakes.jpg'
-                link="foods/each/theBirthOfVenus" slideImgStyle={slideImgStyle.others} slideStyle={slideCardStyle.top} slideTextStyle={slideTextStyle.foods} nextImageAdjustment={nextImageAdjustment.others} />
+                link="foods/each/theBirthOfVenus" slideImgStyle={slideImgStyle.others} slideStyle={slideCardStyle.top} slideTextStyle={slideTextStyle.foods} nextImageAdjustment={nextImageAdjustment.landscape} />
             </SwiperSlide>
 
             <SwiperSlide>
               <FirstSliderComp title1='In the' title2='Restaurants' imgSource='/images/foods/firstSlide/serve.jpg'
-                link="foods/each/monaLisa" slideImgStyle={slideImgStyle.others} slideStyle={slideCardStyle.top} slideTextStyle={slideTextStyle.foods} nextImageAdjustment={nextImageAdjustment.others} />
+                link="foods/each/monaLisa" slideImgStyle={slideImgStyle.others} slideStyle={slideCardStyle.top} slideTextStyle={slideTextStyle.foods} nextImageAdjustment={nextImageAdjustment.landscape} />
             </SwiperSlide>
 
             <SwiperSlide>
               <FirstSliderComp title1='With' title2='Friends' imgSource='/images/foods/firstSlide/table.jpg'
-                link="foods/each/theLordsOfMontfoort" slideImgStyle={slideImgStyle.others} slideStyle={slideCardStyle.top} slideTextStyle={slideTextStyle.foods} nextImageAdjustment={nextImageAdjustment.others} />
+                link="foods/each/theLordsOfMontfoort" slideImgStyle={slideImgStyle.others} slideStyle={slideCardStyle.top} slideTextStyle={slideTextStyle.foods} nextImageAdjustment={nextImageAdjustment.landscape} />
             </SwiperSlide>
 
             <SwiperSlide>
               <FirstSliderComp title1='Delicious' title2='Food' imgSource='/images/foods/firstSlide/vegetable-skewer.jpg'
-                link="foods/each/theNightWatch" slideImgStyle={slideImgStyle.others} slideStyle={slideCardStyle.top} slideTextStyle={slideTextStyle.foods} nextImageAdjustment={nextImageAdjustment.others} />
+                link="foods/each/theNightWatch" slideImgStyle={slideImgStyle.others} slideStyle={slideCardStyle.top} slideTextStyle={slideTextStyle.foods} nextImageAdjustment={nextImageAdjustment.landscape} />
             </SwiperSlide>
           </Swiper>
         </div>

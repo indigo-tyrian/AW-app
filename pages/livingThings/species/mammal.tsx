@@ -5,7 +5,8 @@ import TwitterSvg from "src/components/svg/TwitterSvg"
 import Data from "src/json/LivingThings.json"
 import { bigImgStyle, linkContainerStyle, bigImgContainerStyle, TitleNameStyle } from 'src/components/styles/eachOne.css'
 // import AboutContent from "src/components/AboutContent"
-import Image from 'next/image'
+import NextImageComp from 'src/components/NextImageComp';
+import { nextImageAdjustment } from 'src/components/styles/nextImage.css';
 import { Props, Props2 } from 'interfaces/livingThingsInterface';
 import Head from 'next/head'
 
@@ -23,7 +24,7 @@ const LivingThingsSpecies = () => {
   return (
     <>
       <div className={bigImgContainerStyle}>
-        <Image className={bigImgStyle} src={kk.img[0].replace(/['"]+/g, '')} alt="" layout='fill' />
+        <NextImageComp containerClassName={nextImageAdjustment.landscape} boxClassName={bigImgStyle} src={kk.img[0].replace(/['"]+/g, '')} alt="" />
       </div>
       <div className={TitleNameStyle}>{kk.name}</div>
       <div className={linkContainerStyle}>

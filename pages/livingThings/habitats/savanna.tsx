@@ -6,7 +6,8 @@ import Data from "src/json/LivingThings.json"
 import { bigImgStyle, linkContainerStyle, bigImgContainerStyle, TitleNameStyle } from 'src/components/styles/eachOne.css'
 import AboutContent from "src/components/Aboutcontent"
 import { useRouter } from 'next/router'
-import Image from 'next/image'
+import NextImageComp from 'src/components/NextImageComp';
+import { nextImageAdjustment } from 'src/components/styles/nextImage.css';
 import { Props, Props2 } from 'interfaces/livingThingsInterface';
 import Head from 'next/head'
 
@@ -18,7 +19,7 @@ const Mountain = () => {
   return (
     <>
       <div className={bigImgContainerStyle}>
-        <Image className={bigImgStyle} src={kk.img[0].replace(/['"]+/g, '')} alt="hhhhhhhhhhhhh" layout='fill' />
+        <NextImageComp containerClassName={nextImageAdjustment.landscape} boxClassName={bigImgStyle} src={kk.img[0].replace(/['"]+/g, '')} alt="" />
       </div>
       <div className={TitleNameStyle}>{kk.name}</div>
       <div className={linkContainerStyle}>

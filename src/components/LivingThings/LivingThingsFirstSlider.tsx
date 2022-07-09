@@ -1,5 +1,5 @@
 import 'src/components/styles/global.css'
-import { Style, ctaTitleStyle, slideBgImgStyle, slideBgStyle, slideImgStyle, slideContainerStyle, slideTextStyle, slideCardStyle, slideEarthStyle, slideEarthImgStyle, nextImageAdjustment } from "src/components/styles/firstSlider.css";
+import { Style, ctaTitleStyle, slideBgImgStyle, slideBgStyle, slideImgStyle, slideContainerStyle, slideTextStyle, slideCardStyle, slideEarthStyle, slideEarthImgStyle } from "src/components/styles/firstSlider.css";
 
 import { FirstSliderComp } from 'src/components/FirstSliderComp';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -11,7 +11,8 @@ import { logoStyle } from 'src/components/styles/logo.css';
 import 'swiper/css';
 import "swiper/css/effect-fade";
 import { tabAreaBase } from 'src/components/styles/global.css';
-import Image from 'next/image'
+import NextImageComp from 'src/components/NextImageComp';
+import { nextImageAdjustment } from '../styles/nextImage.css';
 
 const LivingThingsFirstSlider = () => {
   return (
@@ -51,7 +52,7 @@ const LivingThingsFirstSlider = () => {
 
       <div className={slideBgStyle}>
         {/* <div className={`${gradientStyle.arts} ${tabAreaBase}`}></div> */}
-        <Image className={slideBgImgStyle} src='/images/livingThings/firstSlides/livingThingsSlideBG.jpg' alt="" layout='fill' />
+        <NextImageComp containerClassName={nextImageAdjustment.landscape} src='/images/livingThings/firstSlides/livingThingsSlideBG.jpg' alt="" />
       </div>
       {/* <div className={slideEarthStyle}>
         <Image className={slideEarthImgStyle} src="/images/common/earth-png-25612.png" alt="" />

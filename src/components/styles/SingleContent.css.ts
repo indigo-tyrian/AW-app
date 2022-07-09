@@ -1,3 +1,4 @@
+import zIndex from "@mui/material/styles/zIndex"
 import { style, styleVariants } from "@vanilla-extract/css"
 
 export const mediaStyleBase = style({
@@ -18,20 +19,30 @@ export const mediaStyleBase = style({
 export const mediaStyle = styleVariants({
   pop: [mediaStyleBase,
     {
-      top: -10,
+      top: "50%",
+      left: "50%",
       position: "absolute",
+      transform: "translate(-50%, -50%) scale3d(2.2,2.2,1)",
+      zIndex: 2,
+
     }
   ],
   nonpop:
     [mediaStyleBase,
       {
-
+        top: "50%",
+        left: "50%",
+        position: "absolute",
+        transform: "translate(-50%, -50%) scale3d(1,1,1)",
+        zIndex: 1,
       }]
 })
 
 export const boxStyleBase = style({
   position: "relative",
-  transition: "all 0.1s linear",
+  width: 200,
+  height: 300,
+  transition: "all 0.3s linear",
 
 })
 
@@ -39,8 +50,7 @@ export const boxStyle = styleVariants({
   pop: [boxStyleBase,
 
     {
-      width: 250,
-      hight: 300,
+
 
 
     }
@@ -48,16 +58,16 @@ export const boxStyle = styleVariants({
   nonpop:
     [boxStyleBase,
       {
-        width: 200,
-        hight: 300,
+
       }]
 })
 
 
 
 export const posterStyle = style({
-  borderRadius: "10px"
+  // borderRadius: "10px"
 })
+
 export const titleStyle = style({
   width: "100%",
   textAlign: "center",
@@ -73,5 +83,6 @@ export const subTitleStyle = style({
 
 export const movieListContainerStyle = style({
   display: "grid",
-  gridTemplateColumns: "repeat(6, 1fr)"
+  gridTemplateColumns: "repeat(9, 1fr)",
+  gap: 10
 })

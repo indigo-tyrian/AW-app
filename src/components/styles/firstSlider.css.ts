@@ -110,26 +110,6 @@ export const slideImgStyle = styleVariants({
     ]
 })
 
-const nextImageAdjustmentBase = style({
-  position: "relative",
-})
-
-export const nextImageAdjustment = styleVariants({
-  livingThings: [nextImageAdjustmentBase,
-    {
-      width: 700,
-      height: 700
-    }
-  ],
-  others:
-    [nextImageAdjustmentBase,
-      {
-        width: 1920,
-        height: 1080
-      }
-    ]
-})
-
 const slideTextBase = style({
   fontSize: "3vw",
   fontWeight: "bolder",
