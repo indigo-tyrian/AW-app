@@ -55,5 +55,13 @@ export const nextImageAdjustment = styleVariants({
         width: 200,
         height: 200
       }
+    ],
+  imageGallery:
+    [nextImageAdjustmentBase,
+      {
+        // position: "relative",
+        width: 600,
+        height: 600
+      }
     ]
 })

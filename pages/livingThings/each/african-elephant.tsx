@@ -15,7 +15,7 @@ import Head from 'next/head'
 import { nextImageAdjustment } from "src/components/styles/nextImage.css"
 import { supabase } from 'utils/supabaseClient'
 
-const Peacock = (props: Props2) => {
+const AfricanElephant = (props: Props2) => {
   const router = useRouter()
   const one = router.asPath.replace("/livingThings/each/", "")
   const [livingThingsData, setLivingThingsData] = useState<any>({});
@@ -24,7 +24,7 @@ const Peacock = (props: Props2) => {
   const fetchLivingThings = async () => {
     let { data: LivingThings, error }: any = await supabase
       .from('livingThings_each')
-      .select('name,i0:image_URL->0')
+      .select('name,i0:image_URL->0,i1:image_URL->1,i2:image_URL->2,i3:image_URL->3,i4:image_URL->4,i5:image_URL->5,i6:image_URL->6,i7:image_URL->7,i8:image_URL->8,i9:image_URL->9,i10:image_URL->10,i11:image_URL->11,i12:image_URL->12,i13:image_URL->13,i14:image_URL->14,i15:image_URL->15,i16:image_URL->16,i17:image_URL->17,i18:image_URL->18,i19:image_URL->19,i20:image_URL->20,i21:image_URL->21,i22:image_URL->22,i23:image_URL->23,i24:image_URL->24,i25:image_URL->25,i26:image_URL->26,i27:image_URL->27,i28:image_URL->28,i29:image_URL->29,i30:image_URL->30')
 
     const kk = await LivingThings.find((d: any) => d.name == one)
     setLivingThingsData(kk);
@@ -86,7 +86,7 @@ const Peacock = (props: Props2) => {
         </div>
       </div>
 
-      {/* <ImageGallery
+      <ImageGallery
         imagePath0={livingThingsData.i0 ? livingThingsData.i0 : "/images/black"}
         imagePath1={livingThingsData.i1 ? livingThingsData.i1 : "/images/black"}
         imagePath2={livingThingsData.i2 ? livingThingsData.i2 : "/images/black"}
@@ -118,9 +118,9 @@ const Peacock = (props: Props2) => {
         imagePath28={livingThingsData.i28 ? livingThingsData.i28 : "/images/black"}
         imagePath29={livingThingsData.i29 ? livingThingsData.i29 : "/images/black"}
         imagePath30={livingThingsData.i30 ? livingThingsData.i30 : "/images/black"}
-      /> */}
+      />
     </>
   )
 }
 
-export default Peacock;
+export default AfricanElephant;

@@ -32,13 +32,13 @@ const LivingThingsTopicSlider = () => {
         <SwiperSlide>
           <TopicSliderComp title='African Elephant'
             text='African elephants are the largest land animals on Earth.'
-            imgSource='/images/livingThings/each/elephant.jpg' link="/livingThings/each/africanElephant" />
+            imgSource='/images/livingThings/each/elephant.jpg' link="/livingThings/each/african-elephant" />
         </SwiperSlide>
 
         <SwiperSlide>
           <TopicSliderComp title='Squirrel'
             text='The squirrel family includes tree squirrels, ground squirrels, and flying squirrels.'
-            imgSource='/images/livingThings/each/squirrels.jpg' link="/livingThings/each/squirrels" />
+            imgSource='/images/livingThings/each/squirrels.jpg' link="/livingThings/each/squirrel" />
         </SwiperSlide>
         <SwiperSlide>
           <TopicSliderComp title='Tiger'

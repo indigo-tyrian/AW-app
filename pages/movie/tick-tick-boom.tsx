@@ -1,21 +1,21 @@
 import React from 'react'
 import MoviePosterAndInfo from 'src/components/Movies/MoviePosterAndInfo'
 import MovieStarRating from 'src/components/Movies/MovieStarRating'
+
 import 'src/components/styles/global.css'
 import { useEffect, useState } from "react";
-import Mo from "src/json/Movie.json"
+import { supabase } from 'utils/supabaseClient'
 import { ffContainerStyle, textContainerStyle, textTitleStyle, textContentsStyle, mediumImgContainerStyle, imgStyle, leftContentsStyle, rightContentsStyle, paragraphStyle } from "src/components/styles/movie.css"
 import NextImageComp from 'src/components/NextImageComp';
 import { nextImageAdjustment } from 'src/components/styles/nextImage.css';
-import Link from 'next/link';
 import { useRouter } from 'next/router';
 import Head from 'next/head'
 
 
-
 import { TMDBProps, MovieDataProps } from 'interfaces/movieInterface';
 
-const InsideBelarus = () => {
+const TickTickBoom = () => {
+  // const one = "TickTickBoom"
   const router = useRouter()
   const one = router.asPath.replace("/movie/", "")
   const moo = Mo.movies.find((d) => d.name == one) as MovieDataProps
@@ -65,25 +65,6 @@ const InsideBelarus = () => {
           <span className={textTitleStyle}>{moo.blogTitle}</span>
           <div className={textContentsStyle}>
             <p className={paragraphStyle}>
-              Belarus Forces Down Plane in Minsku. opposition activist and journalist Roman Protasevich and his girlfriend Sofia Sapega, were arrested by authorities.  up Europe Sees State Hijacking
-            </p>
-
-            <p className={paragraphStyle}>
-              Belarusian president Alexander Lukashenko elected with 80% vote rate.
-            </p>
-
-            <p className={paragraphStyle}>
-              Belarus Middle East Refugees and Migrants Porland and borderline
-              Belarus said to the refugees to "You can via Belarus"
-
-              freezing condition
-            </p>
-            <Link href="https://javafilms.fr/film/inside-belarus-putins-puppet-regime/">
-              ffffffffff
-            </Link>
-
-            <p className={paragraphStyle}>
-              some of the troops Russian army invaded Ukrina from Belarus
             </p>
             <div className={mediumImgContainerStyle}>
               <NextImageComp containerClassName={nextImageAdjustment.landscape} boxClassName={imgStyle} src="/images/movies/documentary.jpg" alt="" />
@@ -97,4 +78,4 @@ const InsideBelarus = () => {
   )
 }
 
-export default InsideBelarus
+export default TickTickBoom

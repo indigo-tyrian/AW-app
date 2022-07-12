@@ -3,7 +3,7 @@ import MoviePosterAndInfo from 'src/components/Movies/MoviePosterAndInfo'
 import MovieStarRating from 'src/components/Movies/MovieStarRating'
 import 'src/components/styles/global.css'
 import { useEffect, useState } from "react";
-import Mo from "src/json/Movie.json"
+import { supabase } from 'utils/supabaseClient'
 import { ffContainerStyle, textContainerStyle, textTitleStyle, textContentsStyle, mediumImgContainerStyle, imgStyle, leftContentsStyle, rightContentsStyle, paragraphStyle } from "src/components/styles/movie.css"
 import NextImageComp from 'src/components/NextImageComp';
 import { nextImageAdjustment } from 'src/components/styles/nextImage.css';

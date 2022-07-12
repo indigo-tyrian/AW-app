@@ -3,7 +3,7 @@ import MoviePosterAndInfo from 'src/components/Movies/MoviePosterAndInfo'
 import MovieStarRating from 'src/components/Movies/MovieStarRating'
 import 'src/components/styles/global.css'
 import { useEffect, useState } from "react";
-import Mo from "src/json/Movie.json"
+import { supabase } from 'utils/supabaseClient'
 import { ffContainerStyle, textContainerStyle, textTitleStyle, textContentsStyle, mediumImgContainerStyle, imgStyle, leftContentsStyle, rightContentsStyle, paragraphStyle } from "src/components/styles/movie.css"
 import NextImageComp from 'src/components/NextImageComp';
 import { nextImageAdjustment } from 'src/components/styles/nextImage.css';
@@ -13,8 +13,8 @@ import Head from 'next/head'
 
 import { TMDBProps, MovieDataProps } from 'interfaces/movieInterface';
 
-const TheDonutKing = () => {
-  // const one = "TheDonutKing"
+const TheVisit = () => {
+  // const one = "TheVisit"
   const router = useRouter()
   const one = router.asPath.replace("/movie/", "")
   const moo = Mo.movies.find((d) => d.name == one) as MovieDataProps
@@ -64,6 +64,7 @@ const TheDonutKing = () => {
           <span className={textTitleStyle}>{moo.blogTitle}</span>
           <div className={textContentsStyle}>
             <p className={paragraphStyle}>
+
             </p>
             <div className={mediumImgContainerStyle}>
               <NextImageComp containerClassName={nextImageAdjustment.landscape} boxClassName={imgStyle} src="/images/movies/documentary.jpg" alt="" />
@@ -77,4 +78,4 @@ const TheDonutKing = () => {
   )
 }
 
-export default TheDonutKing
+export default TheVisit

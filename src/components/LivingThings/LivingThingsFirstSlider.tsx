@@ -37,11 +37,11 @@ const LivingThingsFirstSlider = () => {
           </SwiperSlide>
 
           <SwiperSlide>
-            <FirstSliderComp title1='Blue-and-yellow' title2='Macaw' imgSource='/images/livingThings/firstSlides/parrot.png' link="livingThings/each/blueAndYellowMacaw" slideImgStyle={slideImgStyle.livingThings} slideStyle={slideCardStyle.livingThings} slideTextStyle={slideTextStyle.livingThings} nextImageAdjustment={nextImageAdjustment.livingThings}></FirstSliderComp>
+            <FirstSliderComp title1='Blue-and-yellow' title2='Macaw' imgSource='/images/livingThings/firstSlides/parrot.png' link="livingThings/each/blue-and-yellow-macaw" slideImgStyle={slideImgStyle.livingThings} slideStyle={slideCardStyle.livingThings} slideTextStyle={slideTextStyle.livingThings} nextImageAdjustment={nextImageAdjustment.livingThings}></FirstSliderComp>
           </SwiperSlide>
 
           <SwiperSlide>
-            <FirstSliderComp title1='Red-Eyed' title2='Tree Frog' imgSource='/images/livingThings/firstSlides/frog.png' link="livingThings/each/redEyedTreeFrog" slideImgStyle={slideImgStyle.livingThings} slideStyle={slideCardStyle.livingThings} slideTextStyle={slideTextStyle.livingThings} nextImageAdjustment={nextImageAdjustment.livingThings} />
+            <FirstSliderComp title1='Red-Eyed' title2='Tree Frog' imgSource='/images/livingThings/firstSlides/frog.png' link="livingThings/each/red-eyed-tree-frog" slideImgStyle={slideImgStyle.livingThings} slideStyle={slideCardStyle.livingThings} slideTextStyle={slideTextStyle.livingThings} nextImageAdjustment={nextImageAdjustment.livingThings} />
           </SwiperSlide>
 
           <SwiperSlide>

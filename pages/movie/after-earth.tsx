@@ -1,10 +1,9 @@
 import React from 'react'
 import MoviePosterAndInfo from 'src/components/Movies/MoviePosterAndInfo'
 import MovieStarRating from 'src/components/Movies/MovieStarRating'
-
 import 'src/components/styles/global.css'
 import { useEffect, useState } from "react";
-import Mo from "src/json/Movie.json"
+import { supabase } from 'utils/supabaseClient'
 import { ffContainerStyle, textContainerStyle, textTitleStyle, textContentsStyle, mediumImgContainerStyle, imgStyle, leftContentsStyle, rightContentsStyle, paragraphStyle } from "src/components/styles/movie.css"
 import NextImageComp from 'src/components/NextImageComp';
 import { nextImageAdjustment } from 'src/components/styles/nextImage.css';
@@ -14,15 +13,29 @@ import Head from 'next/head'
 
 import { TMDBProps, MovieDataProps } from 'interfaces/movieInterface';
 
-const TickTickBoom = () => {
-  // const one = "TickTickBoom"
+const AfterEarth = () => {
   const router = useRouter()
   const one = router.asPath.replace("/movie/", "")
-  const moo = Mo.movies.find((d) => d.name == one) as MovieDataProps
-  const [content, setContent] = useState<TMDBProps>({} as TMDBProps);
 
-  const fetchTrending = () => {
-    fetch(`https://api.themoviedb.org/3/movie/${moo.id}?api_key=0bbd2e953c05d5b589625a131c3ecac6`
+  const [content, setContent] = useState<TMDBProps>({} as TMDBProps);
+  const [movieData, setMovieData] = useState<any>({});
+  // console.log(moo.blogTitle);
+
+  // console.log(process.env.NEXT_PUBLIC_SUPABASE_URLs);
+  // console.log(router.asPath.replaceAll("/movie/", ""));
+
+  const fetchF = async () => {
+    let { data: Movie, error }: any = await supabase
+      .from('Movie')
+      .select()
+
+
+    const bb = await Movie.find((d: any) => d.movie_name == one)
+    console.log(bb, "mmmmm");
+    setMovieData(bb);
+
+
+    fetch(`https://api.themoviedb.org/3/movie/${bb.movie_id}?api_key=0bbd2e953c05d5b589625a131c3ecac6`
     ).then(response => response.json()).then(res => {
       setContent(res)
     }).catch(error => {
@@ -31,9 +44,16 @@ const TickTickBoom = () => {
   };
 
   useEffect(() => {
-    fetchTrending();
+    fetchF();
   }, []);
 
+
+  // console.log(bb, "dddddd")
+  // console.log(one, "sssss")
+
+  console.log(movieData, "tttts")
+  console.log(content, "aaaa")
+  // console.log(movieData.blogTitle, "aaaa")
   return (
     <>
       <MoviePosterAndInfo
@@ -50,19 +70,19 @@ const TickTickBoom = () => {
       />
 
       <MovieStarRating
-        story={moo.rate.story}
-        socialEffect={moo.rate.socialEffect}
-        businessSuccessful={moo?.rate.businessSuccessful}
-        endRoll={moo.rate.endRoll}
-        images={moo.rate.images}
-        innovative={moo.rate.innovative}
-        music={moo.rate.music}
-        opening={moo.rate.opening}
+        story={movieData.rating_story}
+        socialEffect={movieData.rating_socialEffect}
+        businessSuccessful={movieData.rating_businessSuccessful}
+        endRoll={movieData.rating_endRoll}
+        images={movieData.rating_images}
+        innovative={movieData.rating_innovative}
+        music={movieData.rating_music}
+        opening={movieData.rating_opening}
       />
 
       <div className={ffContainerStyle}>
         <div className={textContainerStyle}>
-          <span className={textTitleStyle}>{moo.blogTitle}</span>
+          <span className={textTitleStyle}>{movieData.blog_title}</span>
           <div className={textContentsStyle}>
             <p className={paragraphStyle}>
             </p>
@@ -78,4 +98,4 @@ const TickTickBoom = () => {
   )
 }
 
-export default TickTickBoom
+export default AfterEarth

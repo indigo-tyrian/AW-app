@@ -12,11 +12,15 @@ export const bigImgContainerStyle = style({
   position: "relative"
 })
 
-export const bigImgStyle = style([allImgStyle, {
+// export const bigImgStyle = style([allImgStyle, {
+//   top: "50%",
+//   left: "50%",
+// }])
+
+export const bigImgStyle = style({
   top: "50%",
   left: "50%",
-}])
-
+})
 
 
 export const TitleNameStyle = style({
@@ -161,12 +165,13 @@ export const photoGalleryItem = style({
   position: "relative",
   overflow: "hidden"
 })
-export const photoGalleryImg = style([allImgStyle, {
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%, -50%)",
-  aspectRatio: "16 / 9"
-}])
+
+export const photoGalleryImg = style({
+  // top: "50%",
+  // left: "50%",
+  // transform: "translate(-50%, -50%)",
+  // aspectRatio: "16 / 9"
+})
 
 
 export const A = style({

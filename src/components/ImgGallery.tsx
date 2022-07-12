@@ -43,142 +43,117 @@ const ImageGallery = (props: Props) => {
     <div className={`${photoGalleryContainer} scroll`} >
       <div className={`${photoGallery} ${A}`}>
         <div className={`${photoGalleryItem} ${A1} `}>
-          <div className={nextImageAdjustment.imageWindow}>
-            <NextImageComp containerClassName={nextImageAdjustment.imageWindow} src={props.imagePath0} boxClassName={photoGalleryImg} alt="" />
-          </div>
+
+          <NextImageComp containerClassName={nextImageAdjustment.imageGallery} src={props.imagePath0} boxClassName={photoGalleryImg} alt="" />
         </div>
         <div className={`${photoGalleryItem} ${A2} `}>
-          <div className={nextImageAdjustment.imageWindow}>
-            <NextImageComp containerClassName={nextImageAdjustment.imageWindow} src={props.imagePath1} boxClassName={photoGalleryImg} alt="" />
-          </div>
+
+          <NextImageComp containerClassName={nextImageAdjustment.imageGallery} src={props.imagePath1} boxClassName={photoGalleryImg} alt="" />
         </div>
         <div className={`${photoGalleryItem} ${A3} `}>
-          <div className={nextImageAdjustment.imageWindow}>
-            <NextImageComp containerClassName={nextImageAdjustment.imageWindow} src={props.imagePath2} boxClassName={photoGalleryImg} alt="" />
-          </div>
+
+          <NextImageComp containerClassName={nextImageAdjustment.imageGallery} src={props.imagePath2} boxClassName={photoGalleryImg} alt="" />
         </div>
         <div className={`${photoGalleryItem} ${A4} `}>
-          <div className={nextImageAdjustment.imageWindow}>
-            <NextImageComp containerClassName={nextImageAdjustment.imageWindow} src={props.imagePath3} boxClassName={photoGalleryImg} alt="" />
-          </div>
+
+          <NextImageComp containerClassName={nextImageAdjustment.imageGallery} src={props.imagePath3} boxClassName={photoGalleryImg} alt="" />
         </div>
         <div className={`${photoGalleryItem} ${A5} `}>
-          <div className={nextImageAdjustment.imageWindow}>
-            <NextImageComp containerClassName={nextImageAdjustment.imageWindow} src={props.imagePath4} boxClassName={photoGalleryImg} alt="" />
-          </div>
+
+          <NextImageComp containerClassName={nextImageAdjustment.imageGallery} src={props.imagePath4} boxClassName={photoGalleryImg} alt="" />
         </div>
         <div className={`${photoGalleryItem} ${A6} `}>
-          <div className={nextImageAdjustment.imageWindow}>
-            <NextImageComp containerClassName={nextImageAdjustment.imageWindow} src={props.imagePath5} boxClassName={photoGalleryImg} alt="" />
-          </div>
+
+          <NextImageComp containerClassName={nextImageAdjustment.imageGallery} src={props.imagePath5} boxClassName={photoGalleryImg} alt="" />
         </div>
       </div>
 
       <div className={`${photoGallery} ${E}`}>
         <div className={`${photoGalleryItem} ${E1} `}>
-          <div className={nextImageAdjustment.imageWindow}>
-            <NextImageComp containerClassName={nextImageAdjustment.imageWindow} src={props.imagePath6} boxClassName={photoGalleryImg} alt="" />
-          </div>
+
+          <NextImageComp containerClassName={nextImageAdjustment.imageGallery} src={props.imagePath6} boxClassName={photoGalleryImg} alt="" />
         </div>
         <div className={`${photoGalleryItem} ${E2} `}>
-          <div className={nextImageAdjustment.imageWindow}>
-            <NextImageComp containerClassName={nextImageAdjustment.imageWindow} src={props.imagePath7} boxClassName={photoGalleryImg} alt="" />
-          </div>
+
+          <NextImageComp containerClassName={nextImageAdjustment.imageGallery} src={props.imagePath7} boxClassName={photoGalleryImg} alt="" />
         </div>
         <div className={`${photoGalleryItem} ${E3} `}>
-          <div className={nextImageAdjustment.imageWindow}>
-            <NextImageComp containerClassName={nextImageAdjustment.imageWindow} src={props.imagePath8} boxClassName={photoGalleryImg} alt="" />
-          </div>
+
+          <NextImageComp containerClassName={nextImageAdjustment.imageGallery} src={props.imagePath8} boxClassName={photoGalleryImg} alt="" />
         </div>
         <div className={`${photoGalleryItem} ${E4} `}>
-          <div className={nextImageAdjustment.imageWindow}>
-            <NextImageComp containerClassName={nextImageAdjustment.imageWindow} src={props.imagePath9} boxClassName={photoGalleryImg} alt="" />
-          </div>
+
+          <NextImageComp containerClassName={nextImageAdjustment.imageGallery} src={props.imagePath9} boxClassName={photoGalleryImg} alt="" />
         </div>
         <div className={`${photoGalleryItem} ${E5} `}>
-          <div className={nextImageAdjustment.imageWindow}>
-            <NextImageComp containerClassName={nextImageAdjustment.imageWindow} src={props.imagePath10} boxClassName={photoGalleryImg} alt="" />
-          </div>
+
+          <NextImageComp containerClassName={nextImageAdjustment.imageGallery} src={props.imagePath10} boxClassName={photoGalleryImg} alt="" />
         </div>
       </div>
 
 
       <div className={`${photoGallery} ${C}`}>
         <div className={`${photoGalleryItem} ${C1} `}>
-          <div className={nextImageAdjustment.imageWindow}>
-            <NextImageComp containerClassName={nextImageAdjustment.imageWindow} src={props.imagePath11} boxClassName={photoGalleryImg} alt="" />
-          </div>
+
+          <NextImageComp containerClassName={nextImageAdjustment.imageGallery} src={props.imagePath11} boxClassName={photoGalleryImg} alt="" />
         </div>
         <div className={`${photoGalleryItem} ${C2} `}>
-          <div className={nextImageAdjustment.imageWindow}>
-            <NextImageComp containerClassName={nextImageAdjustment.imageWindow} src={props.imagePath12} boxClassName={photoGalleryImg} alt="" />
-          </div>
+
+          <NextImageComp containerClassName={nextImageAdjustment.imageGallery} src={props.imagePath12} boxClassName={photoGalleryImg} alt="" />
         </div>
         <div className={`${photoGalleryItem} ${C3} `}>
-          <div className={nextImageAdjustment.imageWindow}>
-            <NextImageComp containerClassName={nextImageAdjustment.imageWindow} src={props.imagePath13} boxClassName={photoGalleryImg} alt="" />
-          </div>
+
+          <NextImageComp containerClassName={nextImageAdjustment.imageGallery} src={props.imagePath13} boxClassName={photoGalleryImg} alt="" />
         </div>
       </div>
 
       <div className={`${photoGallery} ${B}`}>
         <div className={`${photoGalleryItem} ${B1} `}>
-          <div className={nextImageAdjustment.imageWindow}>
-            <NextImageComp containerClassName={nextImageAdjustment.imageWindow} src={props.imagePath14} boxClassName={photoGalleryImg} alt="" />
-          </div>
+
+          <NextImageComp containerClassName={nextImageAdjustment.imageGallery} src={props.imagePath14} boxClassName={photoGalleryImg} alt="" />
         </div>
         <div className={`${photoGalleryItem} ${B2} `}>
-          <div className={nextImageAdjustment.imageWindow}>
-            <NextImageComp containerClassName={nextImageAdjustment.imageWindow} src={props.imagePath15} boxClassName={photoGalleryImg} alt="" />
-          </div>
+
+          <NextImageComp containerClassName={nextImageAdjustment.imageGallery} src={props.imagePath15} boxClassName={photoGalleryImg} alt="" />
         </div>
         <div className={`${photoGalleryItem} ${B3} `}>
-          <div className={nextImageAdjustment.imageWindow}>
-            <NextImageComp containerClassName={nextImageAdjustment.imageWindow} src={props.imagePath16} boxClassName={photoGalleryImg} alt="" />
-          </div>
+
+          <NextImageComp containerClassName={nextImageAdjustment.imageGallery} src={props.imagePath16} boxClassName={photoGalleryImg} alt="" />
         </div>
         <div className={`${photoGalleryItem} ${B4} `}>
-          <div className={nextImageAdjustment.imageWindow}>
-            <NextImageComp containerClassName={nextImageAdjustment.imageWindow} src={props.imagePath17} boxClassName={photoGalleryImg} alt="" />
-          </div>
+
+          <NextImageComp containerClassName={nextImageAdjustment.imageGallery} src={props.imagePath17} boxClassName={photoGalleryImg} alt="" />
         </div>
         <div className={`${photoGalleryItem} ${B5} `}>
-          <div className={nextImageAdjustment.imageWindow}>
-            <NextImageComp containerClassName={nextImageAdjustment.imageWindow} src={props.imagePath18} boxClassName={photoGalleryImg} alt="" />
-          </div>
+
+          <NextImageComp containerClassName={nextImageAdjustment.imageGallery} src={props.imagePath18} boxClassName={photoGalleryImg} alt="" />
         </div>
         <div className={`${photoGalleryItem} ${B6} `}>
-          <div className={nextImageAdjustment.imageWindow}>
-            <NextImageComp containerClassName={nextImageAdjustment.imageWindow} src={props.imagePath19} boxClassName={photoGalleryImg} alt="" />
-          </div>
+
+          <NextImageComp containerClassName={nextImageAdjustment.imageGallery} src={props.imagePath19} boxClassName={photoGalleryImg} alt="" />
         </div>
       </div>
 
       <div className={`${photoGallery} ${F}`}>
         <div className={`${photoGalleryItem} ${F1} `}>
-          <div className={nextImageAdjustment.imageWindow}>
-            <NextImageComp containerClassName={nextImageAdjustment.imageWindow} src={props.imagePath20} boxClassName={photoGalleryImg} alt="" />
-          </div>
+
+          <NextImageComp containerClassName={nextImageAdjustment.imageGallery} src={props.imagePath20} boxClassName={photoGalleryImg} alt="" />
         </div>
         <div className={`${photoGalleryItem} ${F2} `}>
-          <div className={nextImageAdjustment.imageWindow}>
-            <NextImageComp containerClassName={nextImageAdjustment.imageWindow} src={props.imagePath21} boxClassName={photoGalleryImg} alt="" />
-          </div>
+
+          <NextImageComp containerClassName={nextImageAdjustment.imageGallery} src={props.imagePath21} boxClassName={photoGalleryImg} alt="" />
         </div>
         <div className={`${photoGalleryItem} ${F3} `}>
-          <div className={nextImageAdjustment.imageWindow}>
-            <NextImageComp containerClassName={nextImageAdjustment.imageWindow} src={props.imagePath22} boxClassName={photoGalleryImg} alt="" />
-          </div>
+
+          <NextImageComp containerClassName={nextImageAdjustment.imageGallery} src={props.imagePath22} boxClassName={photoGalleryImg} alt="" />
         </div>
         <div className={`${photoGalleryItem} ${F4} `}>
-          <div className={nextImageAdjustment.imageWindow}>
-            <NextImageComp containerClassName={nextImageAdjustment.imageWindow} src={props.imagePath23} boxClassName={photoGalleryImg} alt="" />
-          </div>
+
+          <NextImageComp containerClassName={nextImageAdjustment.imageGallery} src={props.imagePath23} boxClassName={photoGalleryImg} alt="" />
         </div>
         <div className={`${photoGalleryItem} ${F5} `}>
-          <div className={nextImageAdjustment.imageWindow}>
-            <NextImageComp containerClassName={nextImageAdjustment.imageWindow} src={props.imagePath24} boxClassName={photoGalleryImg} alt="" />
-          </div>
+
+          <NextImageComp containerClassName={nextImageAdjustment.imageGallery} src={props.imagePath24} boxClassName={photoGalleryImg} alt="" />
         </div>
       </div>
 
@@ -186,19 +161,16 @@ const ImageGallery = (props: Props) => {
 
       <div className={`${photoGallery} ${D}`}>
         <div className={`${photoGalleryItem} ${D1} `}>
-          <div className={nextImageAdjustment.imageWindow}>
-            <NextImageComp containerClassName={nextImageAdjustment.imageWindow} src={props.imagePath25} boxClassName={photoGalleryImg} alt="" />
-          </div>
+
+          <NextImageComp containerClassName={nextImageAdjustment.imageGallery} src={props.imagePath25} boxClassName={photoGalleryImg} alt="" />
         </div>
         <div className={`${photoGalleryItem} ${D2} `}>
-          <div className={nextImageAdjustment.imageWindow}>
-            <NextImageComp containerClassName={nextImageAdjustment.imageWindow} src={props.imagePath26} boxClassName={photoGalleryImg} alt="" />
-          </div>
+
+          <NextImageComp containerClassName={nextImageAdjustment.imageGallery} src={props.imagePath26} boxClassName={photoGalleryImg} alt="" />
         </div>
         <div className={`${photoGalleryItem} ${D3} `}>
-          <div className={nextImageAdjustment.imageWindow}>
-            <NextImageComp containerClassName={nextImageAdjustment.imageWindow} src={props.imagePath27} boxClassName={photoGalleryImg} alt="" />
-          </div>
+
+          <NextImageComp containerClassName={nextImageAdjustment.imageGallery} src={props.imagePath27} boxClassName={photoGalleryImg} alt="" />
         </div>
       </div>
     </div>

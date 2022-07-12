@@ -3,7 +3,7 @@ import MoviePosterAndInfo from 'src/components/Movies/MoviePosterAndInfo'
 import MovieStarRating from 'src/components/Movies/MovieStarRating'
 import 'src/components/styles/global.css'
 import { useEffect, useState } from "react";
-import Mo from "src/json/Movie.json"
+import { supabase } from 'utils/supabaseClient'
 import { ffContainerStyle, textContainerStyle, textTitleStyle, textContentsStyle, mediumImgContainerStyle, imgStyle, leftContentsStyle, rightContentsStyle, paragraphStyle } from "src/components/styles/movie.css"
 import NextImageComp from 'src/components/NextImageComp';
 import { nextImageAdjustment } from 'src/components/styles/nextImage.css';
@@ -13,12 +13,12 @@ import Head from 'next/head'
 
 import { TMDBProps, MovieDataProps } from 'interfaces/movieInterface';
 
-const TheVisit = () => {
-  // const one = "TheVisit"
+const Kultainenmaa = () => {
   const router = useRouter()
   const one = router.asPath.replace("/movie/", "")
   const moo = Mo.movies.find((d) => d.name == one) as MovieDataProps
   const [content, setContent] = useState<TMDBProps>({} as TMDBProps);
+  console.log(moo.blogTitle);
 
   const fetchTrending = () => {
     fetch(`https://api.themoviedb.org/3/movie/${moo.id}?api_key=0bbd2e953c05d5b589625a131c3ecac6`
@@ -64,7 +64,6 @@ const TheVisit = () => {
           <span className={textTitleStyle}>{moo.blogTitle}</span>
           <div className={textContentsStyle}>
             <p className={paragraphStyle}>
-
             </p>
             <div className={mediumImgContainerStyle}>
               <NextImageComp containerClassName={nextImageAdjustment.landscape} boxClassName={imgStyle} src="/images/movies/documentary.jpg" alt="" />
@@ -78,4 +77,4 @@ const TheVisit = () => {
   )
 }
 
-export default TheVisit
+export default Kultainenmaa

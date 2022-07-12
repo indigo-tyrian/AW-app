@@ -15,7 +15,7 @@ import Head from 'next/head'
 import { nextImageAdjustment } from "src/components/styles/nextImage.css"
 import { supabase } from 'utils/supabaseClient'
 
-const Peacock = (props: Props2) => {
+const RedEyedTreeFrog = (props: Props2) => {
   const router = useRouter()
   const one = router.asPath.replace("/livingThings/each/", "")
   const [livingThingsData, setLivingThingsData] = useState<any>({});
@@ -123,4 +123,4 @@ const Peacock = (props: Props2) => {
   )
 }
 
-export default Peacock;
+export default RedEyedTreeFrog;
