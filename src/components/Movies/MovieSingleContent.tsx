@@ -3,9 +3,12 @@ import { img_300, img_500, unavailable } from "config";
 import { boxStyle, mediaStyle, subTitleStyle, titleStyle } from "src/components/styles/SingleContent.css";
 import Image from 'next/image'
 import Link from 'next/link';
-import { MouseEvent, useState } from 'react'
+import { MouseEvent, useState, useEffect } from 'react'
 import { nextImageAdjustment } from 'src/components/styles/nextImage.css';
 import NextImageComp from 'src/components/NextImageComp';
+import { supabase } from 'utils/supabaseClient'
+import Movie from 'pages/movie/after-earth';
+
 
 interface Props {
   poster: string
@@ -29,6 +32,17 @@ const MovieSingleContent = ({
   back_drop
 }: Props) => {
 
+  const [movieData, setMovieData] = useState<any>();
+
+  const fetchMovieData = async () => {
+    let { data: MovieData, error }: any = await supabase
+      .from('movie')
+      .select('movie_id,movie_name,movie_original_title')
+    setMovieData(MovieData);
+
+  }
+
+
   const [isHover, setIsHover] = useState(false)
   const popup = (event: MouseEvent<HTMLDivElement>) => {
     if (event) {
@@ -42,9 +56,15 @@ const MovieSingleContent = ({
     }
   }
 
+  useEffect(() => {
+    fetchMovieData();
+  }, []);
 
+  // console.log(movieData.find((d: any) => d.movie_original_title == original_title).movie_name, "000000")
+  console.log(movieData, "000000")
   return (
-    <Link href={`/movie/${original_title.replace(/\s/g, '')}`}>
+    // <Link href={`/movie/${original_title.replace(/\s/g, '')}`}>
+    <Link href={`/movie/${movieData ? movieData.find((d: any) => d.movie_original_title == original_title).movie_name : ""}`}>
       <div className={isHover ? boxStyle.pop : boxStyle.nonpop}>
         <div className={isHover ? mediaStyle.pop : mediaStyle.nonpop} onMouseEnter={popup} onMouseLeave={undoPopup} >
           {/* <div className={nextImageAdjustment.moviePoster}>

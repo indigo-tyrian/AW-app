@@ -1,41 +1,29 @@
-import React from 'react'
 import MoviePosterAndInfo from 'src/components/Movies/MoviePosterAndInfo'
 import MovieStarRating from 'src/components/Movies/MovieStarRating'
+import NextImageComp from 'src/components/NextImageComp';
 import 'src/components/styles/global.css'
 import { useEffect, useState } from "react";
 import { supabase } from 'utils/supabaseClient'
 import { ffContainerStyle, textContainerStyle, textTitleStyle, textContentsStyle, mediumImgContainerStyle, imgStyle, leftContentsStyle, rightContentsStyle, paragraphStyle } from "src/components/styles/movie.css"
-import NextImageComp from 'src/components/NextImageComp';
 import { nextImageAdjustment } from 'src/components/styles/nextImage.css';
 import { useRouter } from 'next/router';
 import Head from 'next/head'
-
-
 import { TMDBProps, MovieDataProps } from 'interfaces/movieInterface';
 
-const TheDonutKing = () => {
+const Movie = () => {
   const router = useRouter()
   const one = router.asPath.replace("/movie/", "")
-
   const [content, setContent] = useState<TMDBProps>({} as TMDBProps);
   const [movieData, setMovieData] = useState<any>({});
-  // console.log(moo.blogTitle);
-
-  // console.log(process.env.NEXT_PUBLIC_SUPABASE_URLs);
-  // console.log(router.asPath.replaceAll("/movie/", ""));
-
-  const fetchF = async () => {
-    let { data: Movie, error }: any = await supabase
-      .from('Movie')
-      .select()
-
-
-    const bb = await Movie.find((d: any) => d.movie_name == one)
-    console.log(bb, "mmmmm");
+  const tmdbAPIkey = process.env.NEXT_PUBLIC_TMDB_API_KEY
+  console.log(tmdbAPIkey)
+  const fetchMovieData = async () => {
+    let { data: MovieData, error }: any = await supabase
+      .from('movie')
+      .select('movie_id,movie_name,rating_story,rating_socialEffect,rating_businessSuccessful,rating_endRoll,rating_opening,rating_innovative,rating_music,rating_images')
+    const bb = await MovieData.find((d: any) => d.movie_name == one)
     setMovieData(bb);
-
-
-    fetch(`https://api.themoviedb.org/3/movie/${bb.movie_id}?api_key=0bbd2e953c05d5b589625a131c3ecac6`
+    fetch(`https://api.themoviedb.org/3/movie/${bb.movie_id}?api_key=${tmdbAPIkey}`
     ).then(response => response.json()).then(res => {
       setContent(res)
     }).catch(error => {
@@ -44,16 +32,9 @@ const TheDonutKing = () => {
   };
 
   useEffect(() => {
-    fetchF();
+    fetchMovieData();
   }, []);
-
-
-  // console.log(bb, "dddddd")
-  // console.log(one, "sssss")
-
-  console.log(movieData, "tttts")
   console.log(content, "aaaa")
-  // console.log(movieData.blogTitle, "aaaa")
   return (
     <>
       <MoviePosterAndInfo
@@ -70,14 +51,14 @@ const TheDonutKing = () => {
       />
 
       <MovieStarRating
-        story={movieData.rating_story}
-        socialEffect={movieData.rating_socialEffect}
-        businessSuccessful={movieData.rating_businessSuccessful}
-        endRoll={movieData.rating_endRoll}
-        images={movieData.rating_images}
-        innovative={movieData.rating_innovative}
-        music={movieData.rating_music}
-        opening={movieData.rating_opening}
+        story={parseInt(movieData.rating_story)}
+        socialEffect={parseInt(movieData.rating_socialEffect)}
+        businessSuccessful={parseInt(movieData.rating_businessSuccessful)}
+        endRoll={parseInt(movieData.rating_endRoll)}
+        images={parseInt(movieData.rating_images)}
+        innovative={parseInt(movieData.rating_innovative)}
+        music={parseInt(movieData.rating_music)}
+        opening={parseInt(movieData.rating_opening)}
       />
 
       <div className={ffContainerStyle}>
@@ -98,4 +79,4 @@ const TheDonutKing = () => {
   )
 }
 
-export default TheDonutKing
+export default Movie

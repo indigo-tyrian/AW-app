@@ -45,40 +45,28 @@ interface Props2 {
 
 
 function Movies() {
-  const tmdbAPIkey = process.env.NEXT_PUBLIC_TMDB_API_KEY
-  // const [content, setContent] = useState<TMDBProps>({} as TMDBProps);
+  const moviess = Mo.movies.map((o: any) => o.id)
+  // const [content, setContent] = useState<Props>({} as Props);
   const [content, setContent] = useState<any>([]);
-  const [movieData, setMovieData] = useState<any>({});
+  console.log(moviess)
+  const fetchTrending = async (e: any): Promise<void> => {
+    const { data } = await axios.get(
+      `https://api.themoviedb.org/3/movie/${e}?api_key=0bbd2e953c05d5b589625a131c3ecac6`
+    );
 
-  const fetchMovieData = async () => {
-    let { data: Movie, error }: any = await supabase
-      .from('movie')
-      .select('movie_id,movie_name,movie_original_title')
-    console.log(Movie)
-    const moviess = Movie.map((o: any) => o.movie_id)
-    setMovieData(moviess)
-    console.log(moviess, 'tttt')
-    console.log('dddd')
-    console.log(movieData, 'vvvvvvvvvvvvvvvvvvvvvvvvvvv')
-    moviess.map(async (e: any) => {
-      fetch(`https://api.themoviedb.org/3/movie/${e}?api_key=${tmdbAPIkey}`
-      ).then(response => response.json()).then(res => {
-        setContent((content: any) => [...content, res]);
-      }).catch(error => {
-        console.log("hhhhh")
-      })
-    })
+    setContent((content: any) => [...content, data]);
+    // console.log(data)
   };
-
   useEffect(() => {
-    fetchMovieData();
+    {
+      moviess.map((e: any) => {
+        fetchTrending(e);
+      })
+
+    }
   }, []);
 
-  console.log(content, "aaaa")
-  console.log(movieData, 'sssssssssssssssss')
-  // console.log(movieData);
-  console.log(content, 'eeeeeeeeeeee');
-  // console.log(movieData, 'llllll');
+
 
   return (
     <>
@@ -86,8 +74,7 @@ function Movies() {
       <div className={movieListContainerStyle}>
         {
           content.map((e: any) => {
-            console.log(movieData);
-            console.log(content);
+            console.log(moviess);
 
             return (
               < MovieSingleContent

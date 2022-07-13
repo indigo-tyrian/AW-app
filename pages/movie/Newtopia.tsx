@@ -10,7 +10,7 @@ import { useRouter } from 'next/router';
 import Head from 'next/head'
 import { TMDBProps, MovieDataProps } from 'interfaces/movieInterface';
 
-const Newtopia = () => {
+const Movie = () => {
   const router = useRouter()
   const one = router.asPath.replace("/movie/", "")
   const [content, setContent] = useState<TMDBProps>({} as TMDBProps);
@@ -18,10 +18,10 @@ const Newtopia = () => {
   const tmdbAPIkey = process.env.NEXT_PUBLIC_TMDB_API_KEY
   console.log(tmdbAPIkey)
   const fetchMovieData = async () => {
-    let { data: Movie, error }: any = await supabase
+    let { data: MovieData, error }: any = await supabase
       .from('movie')
-      .select('movie_id,movie_name,story:rating->story,socialEffect:rating->socialEffect,businessSuccessful:rating->businessSuccessful,endRoll:rating->endRoll,opening:rating->opening,innovative:rating->innovative,music:rating->music,images:rating->images')
-    const bb = await Movie.find((d: any) => d.movie_name == one)
+      .select('movie_id,movie_name,rating_story,rating_socialEffect,rating_businessSuccessful,rating_endRoll,rating_opening,rating_innovative,rating_music,rating_images')
+    const bb = await MovieData.find((d: any) => d.movie_name == one)
     setMovieData(bb);
     fetch(`https://api.themoviedb.org/3/movie/${bb.movie_id}?api_key=${tmdbAPIkey}`
     ).then(response => response.json()).then(res => {
@@ -34,7 +34,7 @@ const Newtopia = () => {
   useEffect(() => {
     fetchMovieData();
   }, []);
-
+  console.log(content, "aaaa")
   return (
     <>
       <MoviePosterAndInfo
@@ -51,14 +51,14 @@ const Newtopia = () => {
       />
 
       <MovieStarRating
-        story={parseInt(movieData.story)}
-        socialEffect={parseInt(movieData.socialEffect)}
-        businessSuccessful={parseInt(movieData.businessSuccessful)}
-        endRoll={parseInt(movieData.endRoll)}
-        images={parseInt(movieData.images)}
-        innovative={parseInt(movieData.innovative)}
-        music={parseInt(movieData.music)}
-        opening={parseInt(movieData.opening)}
+        story={parseInt(movieData.rating_story)}
+        socialEffect={parseInt(movieData.rating_socialEffect)}
+        businessSuccessful={parseInt(movieData.rating_businessSuccessful)}
+        endRoll={parseInt(movieData.rating_endRoll)}
+        images={parseInt(movieData.rating_images)}
+        innovative={parseInt(movieData.rating_innovative)}
+        music={parseInt(movieData.rating_music)}
+        opening={parseInt(movieData.rating_opening)}
       />
 
       <div className={ffContainerStyle}>
@@ -79,4 +79,4 @@ const Newtopia = () => {
   )
 }
 
-export default Newtopia
+export default Movie

@@ -3,6 +3,7 @@ import { style, styleVariants } from "@vanilla-extract/css"
 
 export const mediaStyleBase = style({
   transition: "all 0.1s linear",
+  transitionDelay: "0.5s",
   display: "flex",
   flexDirection: "column",
   margin: "5px 0",
@@ -42,7 +43,7 @@ export const boxStyleBase = style({
   position: "relative",
   width: 200,
   height: 300,
-  transition: "all 0.3s linear",
+  // transition: "all 0.3s linear",
 
 })
 

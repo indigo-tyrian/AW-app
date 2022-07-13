@@ -1,28 +1,29 @@
-import React from 'react'
 import MoviePosterAndInfo from 'src/components/Movies/MoviePosterAndInfo'
 import MovieStarRating from 'src/components/Movies/MovieStarRating'
+import NextImageComp from 'src/components/NextImageComp';
 import 'src/components/styles/global.css'
 import { useEffect, useState } from "react";
 import { supabase } from 'utils/supabaseClient'
 import { ffContainerStyle, textContainerStyle, textTitleStyle, textContentsStyle, mediumImgContainerStyle, imgStyle, leftContentsStyle, rightContentsStyle, paragraphStyle } from "src/components/styles/movie.css"
-import NextImageComp from 'src/components/NextImageComp';
 import { nextImageAdjustment } from 'src/components/styles/nextImage.css';
 import { useRouter } from 'next/router';
 import Head from 'next/head'
-
-
 import { TMDBProps, MovieDataProps } from 'interfaces/movieInterface';
 
-const mid90s = () => {
-  // const one = "mid90s"
+const Newtopia = () => {
   const router = useRouter()
   const one = router.asPath.replace("/movie/", "")
-  const moo = Mo.movies.find((d) => d.name == one) as MovieDataProps
   const [content, setContent] = useState<TMDBProps>({} as TMDBProps);
-  console.log(moo.blogTitle);
-
-  const fetchTrending = () => {
-    fetch(`https://api.themoviedb.org/3/movie/${moo.id}?api_key=0bbd2e953c05d5b589625a131c3ecac6`
+  const [movieData, setMovieData] = useState<any>({});
+  const tmdbAPIkey = process.env.NEXT_PUBLIC_TMDB_API_KEY
+  console.log(tmdbAPIkey)
+  const fetchMovieData = async () => {
+    let { data: Movie, error }: any = await supabase
+      .from('movie')
+      .select('movie_id,movie_name,story:rating->story,socialEffect:rating->socialEffect,businessSuccessful:rating->businessSuccessful,endRoll:rating->endRoll,opening:rating->opening,innovative:rating->innovative,music:rating->music,images:rating->images')
+    const bb = await Movie.find((d: any) => d.movie_name == one)
+    setMovieData(bb);
+    fetch(`https://api.themoviedb.org/3/movie/${bb.movie_id}?api_key=${tmdbAPIkey}`
     ).then(response => response.json()).then(res => {
       setContent(res)
     }).catch(error => {
@@ -31,9 +32,9 @@ const mid90s = () => {
   };
 
   useEffect(() => {
-    fetchTrending();
+    fetchMovieData();
   }, []);
-
+  console.log(content, "aaaa")
   return (
     <>
       <MoviePosterAndInfo
@@ -50,19 +51,19 @@ const mid90s = () => {
       />
 
       <MovieStarRating
-        story={moo.rate.story}
-        socialEffect={moo.rate.socialEffect}
-        businessSuccessful={moo?.rate.businessSuccessful}
-        endRoll={moo.rate.endRoll}
-        images={moo.rate.images}
-        innovative={moo.rate.innovative}
-        music={moo.rate.music}
-        opening={moo.rate.opening}
+        story={parseInt(movieData.story)}
+        socialEffect={parseInt(movieData.socialEffect)}
+        businessSuccessful={parseInt(movieData.businessSuccessful)}
+        endRoll={parseInt(movieData.endRoll)}
+        images={parseInt(movieData.images)}
+        innovative={parseInt(movieData.innovative)}
+        music={parseInt(movieData.music)}
+        opening={parseInt(movieData.opening)}
       />
 
       <div className={ffContainerStyle}>
         <div className={textContainerStyle}>
-          <span className={textTitleStyle}>{moo.blogTitle}</span>
+          <span className={textTitleStyle}>{movieData.blog_title}</span>
           <div className={textContentsStyle}>
             <p className={paragraphStyle}>
             </p>
@@ -78,4 +79,4 @@ const mid90s = () => {
   )
 }
 
-export default mid90s
+export default Newtopia
