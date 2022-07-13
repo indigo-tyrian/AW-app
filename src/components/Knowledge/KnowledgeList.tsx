@@ -2,7 +2,8 @@ import 'src/components/styles/global.css'
 import NextImageComp from 'src/components/NextImageComp';
 import { nextImageAdjustment } from 'src/components/styles/nextImage.css';
 import Link from 'next/link';
-import Data from "src/json/Knowledge.json"
+import { supabase } from 'utils/supabaseClient'
+
 import { useEffect, useState } from "react";
 import { barStyle, boxStyle, containerStyle, textStyle, titleStyle, textContainerStyle, box2Style, knowledgeListContainerStyle, rightContentsStyle, leftContentsStyle, imageStyle, infoStyle } from 'src/components/styles/knowledgeList.css';
 import Head from 'next/head'
@@ -12,9 +13,25 @@ interface Props {
 
 const KnowledgeList = ({
 }) => {
-  const kk: any = Data.knowledge as any
+  // const kk: any = Data.knowledge as any
   const [hidden, setHidden] = useState(false)
+  const [content, setContent] = useState<any>();
+  const tmdbAPIkey = process.env.NEXT_PUBLIC_TMDB_API_KEY
 
+
+  const fetchMovieData = async () => {
+    let { data: Knowledge, error }: any = await supabase
+      .from('knowledge')
+      .select('name,title,text,src')
+    console.log(Knowledge)
+    setContent(Knowledge)
+  }
+
+  useEffect(() => {
+    fetchMovieData();
+  }, []);
+
+  // console.log(content)
   return (
     <div className={knowledgeListContainerStyle}>
 
@@ -22,11 +39,10 @@ const KnowledgeList = ({
       <div className={leftContentsStyle}></div>
       <div className={containerStyle}>
         {
-          kk.map((e: any) => {
+          content ? content.map((e: any, i: any) => {
             console.log(e);
-
             return (
-              <Link href={`/knowledge/${e.name.replace(/\s/g, '')}`}>
+              <Link href={`/knowledge/${e.name}`} key={i}>
                 <div>
                   <div className={box2Style}>
                     <hr className={barStyle}></hr>
@@ -45,7 +61,7 @@ const KnowledgeList = ({
                 </div>
               </Link >
             )
-          })
+          }) : <></>
         }
       </div >
     </div>

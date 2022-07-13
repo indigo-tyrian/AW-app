@@ -3,13 +3,10 @@ import { ImgWindow } from 'src/components/ImgWindow';
 import { contentStyle } from 'src/components/styles/global.css';
 import { containerStyle } from 'src/components/styles/ImageWindow.css';
 import 'src/components/styles/global.css'
-import axios from "axios";
 import { supabase } from 'utils/supabaseClient'
-
 import { useEffect, useState } from "react";
 import MovieSingleContent from 'src/components/Movies/MovieSingleContent';
 import { movieListContainerStyle } from "src/components/styles/SingleContent.css";
-import Mo from "src/json/Movie.json"
 import { BottomNav, Footer, Header } from 'src/components';
 import { TMDBProps, MovieDataProps } from 'interfaces/movieInterface';
 import Head from 'next/head'

@@ -10,7 +10,7 @@ const ArtsImgWindow1 = () => {
         <div  >Search by Period</div>
       </div>
       <div className={`${contentStyle} ${containerStyle}`}>
-        <ImgWindow title1='Ancient Times' totalNumber={110} imgSource='/images/arts/period/Lascaux_ancient.jpg' link="/arts/period/ancientTimes" />
+        <ImgWindow title1='Ancient Times' totalNumber={110} imgSource='/images/arts/period/Lascaux_ancient.jpg' link="/arts/period/ancient-times" />
         <ImgWindow title1='500-1400' totalNumber={110} imgSource='/images/arts/period/Duccio_di_Buoninsegna_c-1308.jpg' link="/arts/period/500-1400" />
         <ImgWindow title1='1400-1500' totalNumber={110} imgSource='/images/arts/period/Anunciación_c-1425.jpg' link="/arts/period/1400-1500" />
         <ImgWindow title1='1500-1600' totalNumber={110} imgSource='/images/arts/period/Jacopo_Tintoretto_The_Origin_of_the_Milky_Way_c-1582.jpg' link="/arts/period/1500-1600" />
