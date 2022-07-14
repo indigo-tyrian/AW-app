@@ -25,15 +25,3 @@ export const comingSoonText = style({
 })
 
 
-export const comingSoonText2 = style({
-  fontSize: "8vw",
-  fontWeight: 700,
-  textTransform: "uppercase",
-  position: "absolute",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%, -50%)",
-  WebkitTransform: "translate(-50%, -50%)",
-  msTransform: "translate(-50%, -50%)",
-  textAlign: "center",
-})

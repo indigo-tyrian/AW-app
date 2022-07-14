@@ -15,7 +15,7 @@ const FoodsIngredients1 = () => {
 
         <ImgWindow title1='Vegetable' totalNumber={110} imgSource='/images/foods/ingredients/vegetables.jpg' link="/foods/ingredients/vegetables" />
         <ImgWindow title1='Beans' totalNumber={110} imgSource='/images/foods/ingredients/beans.jpg' link="/foods/ingredients/beans" />
-        <ImgWindow title1='Daily Products' totalNumber={110} imgSource='/images/foods/ingredients/dairyProducts.jpg' link="/foods/ingredients/dailyProducts" />
+        <ImgWindow title1='Daily Products' totalNumber={110} imgSource='/images/foods/ingredients/dairyProducts.jpg' link="/foods/ingredients/daily-products" />
         <ImgWindow title1='Fruits' totalNumber={110} imgSource='/images/foods/ingredients/fruits.jpg' link="/foods/ingredients/fruits" />
         <ImgWindow title1='Fish' totalNumber={110} imgSource='/images/foods/ingredients/fish.jpg' link="/foods/ingredients/fish" />
         <ImgWindow title1='Eggs' totalNumber={110} imgSource='/images/foods/ingredients/eggs.jpg' link="/foods/ingredients/eggs" />

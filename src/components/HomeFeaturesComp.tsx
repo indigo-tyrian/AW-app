@@ -3,13 +3,12 @@ import NextImageComp from 'src/components/NextImageComp';
 import { boxStyle, imgStyle } from './styles/ImageWindow.css';
 import { comingSoonText } from './styles/comingSoon.css';
 import { nextImageAdjustment } from './styles/nextImage.css';
+import { homeStyle, homeTextStyle } from './styles/homeWindow.css';
 
 interface Props {
   title: string;
   text?: string;
   imgSource: string;
-  comingSoonClass?: string;
-  comingSoonText?: string;
   link: string;
 }
 
@@ -17,12 +16,9 @@ export function HomeFeaturesComp(props: Props) {
   return (
     <Link href={props.link}>
       <div className={boxStyle}>
-        <div className={props.comingSoonClass}>
-          <div className={comingSoonText}> {props.comingSoonText}</div>
-        </div>
         <div>
-          <div className="text-block">
-            <span className="text">
+          <div className={homeStyle.normal}>
+            <span className={homeTextStyle.normal}>
               {props.title}
             </span>
           </div>

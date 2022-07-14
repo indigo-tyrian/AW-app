@@ -37,6 +37,14 @@ export const boxStyle = style({
 })
 
 
+export const homeBoxStyle = styleVariants({
+  home: [boxStyle,
+    {
+      border: "solid black 0.2vw",
+    }
+  ]
+})
+
 
 const overlayBasic = style({
   backgroundColor: "black",

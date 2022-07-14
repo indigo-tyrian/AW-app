@@ -16,16 +16,16 @@ import { supabase } from 'utils/supabaseClient'
 
 const ArtPeriod = (props: Props2) => {
   const router = useRouter()
-  const one = router.asPath.replace("/arts/period/", "")
+  const one = router.asPath.replace("/foods/ingredients/", "")
   const [content, setContent] = useState<any>({});
   const [hidden, setHidden] = useState(false)
 
-  const fetchArtPeriod = async () => {
-    let { data: artPeriod, error }: any = await supabase
-      .from('arts_period')
+  const fetchArtsStyles = async () => {
+    let { data: foodsIngredients, error }: any = await supabase
+      .from('foods_ingredients')
       .select('title,name,image_URL')
 
-    const kk = await artPeriod.find((d: any) => d.name == one)
+    const kk = await foodsIngredients.find((d: any) => d.name == one)
     setContent(kk);
     console.log(kk);
   }
@@ -43,7 +43,7 @@ const ArtPeriod = (props: Props2) => {
   }
 
   useEffect(() => {
-    fetchArtPeriod();
+    fetchArtsStyles();
   }, []);
 
   console.log(content)
@@ -91,4 +91,4 @@ const ArtPeriod = (props: Props2) => {
   )
 }
 
-export default ArtPeriod;
+export default ArtPeriod; 
