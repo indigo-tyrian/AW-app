@@ -12,6 +12,7 @@ import 'swiper/css';
 import "swiper/css/effect-fade";
 import { tabAreaBase } from 'src/components/styles/global.css';
 import { nextImageAdjustment } from '../styles/nextImage.css';
+import Link from 'next/link'
 
 const AtrsFirstSlider = () => {
   return (
@@ -34,22 +35,22 @@ const AtrsFirstSlider = () => {
           >
             <SwiperSlide>
               <FirstSliderComp title1='The Birth of' title2='Venus' imgSource='/images/arts/firstSlide/La_nascita_di_Venere.jpg'
-                link="arts/each/theBirthOfVenus" slideImgStyle={slideImgStyle.others} slideStyle={slideCardStyle.top} slideTextStyle={slideTextStyle.arts} nextImageAdjustment={nextImageAdjustment.landscape} />
+                link="arts/each/la-nascita-di-venere" slideImgStyle={slideImgStyle.others} slideStyle={slideCardStyle.top} slideTextStyle={slideTextStyle.arts} nextImageAdjustment={nextImageAdjustment.landscape} />
             </SwiperSlide>
 
             <SwiperSlide>
               <FirstSliderComp title1='Mona Lisa' imgSource='/images/arts/firstSlide/Mona_Lisa.jpg'
-                link="arts/each/monaLisa" slideImgStyle={slideImgStyle.others} slideStyle={slideCardStyle.top} slideTextStyle={slideTextStyle.arts} nextImageAdjustment={nextImageAdjustment.landscape} />
+                link="arts/each/mona-lisa" slideImgStyle={slideImgStyle.others} slideStyle={slideCardStyle.top} slideTextStyle={slideTextStyle.arts} nextImageAdjustment={nextImageAdjustment.landscape} />
             </SwiperSlide>
 
             <SwiperSlide>
               <FirstSliderComp title1='The Lords of' title2='Montfoort' imgSource='/images/arts/firstSlide/The_Lords_of_Montfoort.jpg'
-                link="arts/each/theLordsOfMontfoort" slideImgStyle={slideImgStyle.others} slideStyle={slideCardStyle.top} slideTextStyle={slideTextStyle.arts} nextImageAdjustment={nextImageAdjustment.landscape} />
+                link="arts/each/the-lords-of-montfoort" slideImgStyle={slideImgStyle.others} slideStyle={slideCardStyle.top} slideTextStyle={slideTextStyle.arts} nextImageAdjustment={nextImageAdjustment.landscape} />
             </SwiperSlide>
 
             <SwiperSlide>
               <FirstSliderComp title1='The Night Watch' imgSource='/images/arts/firstSlide/The_Night_Watch.jpg'
-                link="arts/each/theNightWatch" slideImgStyle={slideImgStyle.others} slideStyle={slideCardStyle.center} slideTextStyle={slideTextStyle.arts} nextImageAdjustment={nextImageAdjustment.landscape} />
+                link="arts/each/the-night-watch" slideImgStyle={slideImgStyle.others} slideStyle={slideCardStyle.center} slideTextStyle={slideTextStyle.arts} nextImageAdjustment={nextImageAdjustment.landscape} />
             </SwiperSlide>
           </Swiper>
         </div>

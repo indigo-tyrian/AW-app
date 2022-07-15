@@ -14,6 +14,10 @@ import { Props, Props2 } from 'interfaces/livingThingsInterface';
 import Head from 'next/head'
 import { nextImageAdjustment } from "src/components/styles/nextImage.css"
 import { supabase } from 'utils/supabaseClient'
+import fs from "fs"
+import path from "path"
+
+
 
 const AfricanElephant = (props: Props2) => {
   const router = useRouter()
@@ -124,3 +128,15 @@ const AfricanElephant = (props: Props2) => {
 }
 
 export default AfricanElephant;
+
+
+
+// export async function getStaticProps() {
+//   const files = fs.readdirSync(path.join('posts'))
+//   console.log(files)
+//   return {
+//     props: {
+//       posts: 'The Posts'
+//     }
+//   }
+// }

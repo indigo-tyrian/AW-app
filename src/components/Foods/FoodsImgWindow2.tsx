@@ -10,7 +10,7 @@ const FoodsImgWindow2 = () => {
         <div  >Search by Cooking</div>
       </div>
       <div className={`${contentStyle} ${containerStyle}`}>
-        <ImgWindow title1='Deep Fried' totalNumber={110} imgSource='/images/foods/cooking/deep-fried.jpg' link="/foods/cooking/deepFried" />
+        <ImgWindow title1='Deep Fried' totalNumber={110} imgSource='/images/foods/cooking/deep-fried.jpg' link="/foods/cooking/deep-fried" />
         <ImgWindow title1='Stew' totalNumber={110} imgSource='/images/foods/cooking/stew.jpg' link="/foods/cooking/stew" />
       </div>
     </>
