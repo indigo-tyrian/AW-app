@@ -6,12 +6,38 @@ const nextImageAdjustmentBase = style({
 })
 
 export const nextImageAdjustment = styleVariants({
-  livingThings: [nextImageAdjustmentBase,
+  livingThingsFirstSlider: [nextImageAdjustmentBase,
     {
       width: 700,
-      height: 700
+      height: 700,
+      "@media": {
+        "screen and (max-width: 800px)": {
+          // width: 200,
+          // height: 200,
+        }, "screen and (max-width: 480px)": {
+          width: 300,
+          height: 300,
+        }
+      }
     }
   ],
+
+  livingThingsFirstSliderBG:
+    [nextImageAdjustmentBase,
+      {
+        width: 1920,
+        height: 1080,
+        "@media": {
+          "screen and (max-width: 800px)": {
+            width: 1920,
+            height: 800,
+          }, "screen and (max-width: 480px)": {
+            width: 480,
+            height: 480,
+          }
+        }
+      }
+    ],
   imageWindow:
     [nextImageAdjustmentBase,
       {
@@ -23,7 +49,8 @@ export const nextImageAdjustment = styleVariants({
     [nextImageAdjustmentBase,
       {
         width: 200,
-        height: 300
+        height: 300,
+
       }
     ],
   movieBackDrop:

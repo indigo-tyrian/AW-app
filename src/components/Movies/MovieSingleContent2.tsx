@@ -1,6 +1,6 @@
 import 'src/components/styles/global.css'
 import { img_300, img_500, unavailable } from "config";
-import { borderBoxStyle, boxStyle, mediaStyle, subTitleStyle, titleStyle } from "src/components/styles/SingleContent.css";
+import { boxStyle, mediaStyle, subTitleStyle, titleStyle } from "src/components/styles/SingleContent.css";
 import Image from 'next/image'
 import Link from 'next/link';
 import { MouseEvent, useState, useEffect } from 'react'
@@ -65,20 +65,25 @@ const MovieSingleContent = ({
   return (
     // <Link href={`/movie/${original_title.replace(/\s/g, '')}`}>
     <Link href={`/movie/${movieData ? movieData.find((d: any) => d.movie_original_title == original_title).movie_name : ""}`}>
-      <div className={isHover ? boxStyle.pop : boxStyle.nonpop} onMouseEnter={popup} onMouseLeave={undoPopup} >
-        <div className={isHover ? borderBoxStyle.pop : borderBoxStyle.nonpop}></div>
-        <div className={isHover ? mediaStyle.pop : mediaStyle.nonpop} >
-          <NextImageComp containerClassName={nextImageAdjustment.moviePoster} src={poster ? `${img_300}/${poster}` : unavailable} alt={title} />
-        </div>
-        <div>
-          {/* {isHover ?
+      <div className={isHover ? boxStyle.pop : boxStyle.nonpop}>
+        <div className={isHover ? mediaStyle.pop : mediaStyle.nonpop} onMouseEnter={popup} onMouseLeave={undoPopup} >
+          {/* <div className={nextImageAdjustment.moviePoster}>
+            <Image src={poster ? `${img_300}/${poster}` : unavailable} alt={title} layout='fill' objectFit='contain' />
+          </div> */}
+          {isHover ?
+            <NextImageComp containerClassName={nextImageAdjustment.movieBackDrop} src={back_drop ? `${img_500}/${back_drop}` : unavailable} alt={title} /> :
+            <NextImageComp containerClassName={nextImageAdjustment.moviePoster} src={poster ? `${img_300}/${poster}` : unavailable} alt={title} />
+          }
+          <div>
+            {isHover ?
               <>
                 <b className={titleStyle}>{title}</b>
                 <span className={subTitleStyle}>
                   {media_type === "tv" ? "TV Series" : "movie"}
                 </span>
               </> : <></>
-            } */}
+            }
+          </div>
         </div>
       </div>
     </Link >

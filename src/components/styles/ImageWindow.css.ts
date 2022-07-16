@@ -27,8 +27,8 @@ export const boxStyle = style({
     "screen and (max-width: 800px)": {
       height: vars.height.tabBox
     }, "screen and (max-width: 480px)": {
-      border: "none",
-      boxShadow: "none",
+      // border: "none",
+      // boxShadow: "none",
       width: vars.width.phoneSideScrollWidth,
       height: vars.height.phoneSideScrollHeight,
       borderRadius: vars.borderRadius.phone

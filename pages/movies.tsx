@@ -6,7 +6,7 @@ import 'src/components/styles/global.css'
 import { supabase } from 'utils/supabaseClient'
 import { useEffect, useState } from "react";
 import MovieSingleContent from 'src/components/Movies/MovieSingleContent';
-import { movieListContainerStyle } from "src/components/styles/SingleContent.css";
+import { leftContentsStyle, movieContainerStyle, movieListContainerStyle, rightContentsStyle } from "src/components/styles/SingleContent.css";
 import { BottomNav, Footer, Header } from 'src/components';
 import { TMDBProps, MovieDataProps } from 'interfaces/movieInterface';
 import Head from 'next/head'
@@ -81,28 +81,32 @@ function Movies() {
     <>
       <Header />
       <div className={movieListContainerStyle}>
-        {
-          content.map((e: any) => {
-            console.log(movieData);
-            console.log(content);
 
-            return (
-              < MovieSingleContent
-                original_title={e.original_title}
-                key={e.id}
-                poster={e.poster_path}
-                title={e.title || e.name}
-                date={e.first_air_date || e.release_date}
-                media_type={e.media_type}
-                vote_average={e.vote_average}
-                over_view={e.overview}
-                back_drop={e.backdrop_path}
-              />
-            )
-          })
-        }
+        <div className={rightContentsStyle}></div>
+        <div className={leftContentsStyle}></div>
+        <div className={movieContainerStyle}>
+          {
+            content.map((e: any) => {
+              console.log(movieData);
+              console.log(content);
+
+              return (
+                < MovieSingleContent
+                  original_title={e.original_title}
+                  key={e.id}
+                  poster={e.poster_path}
+                  title={e.title || e.name}
+                  date={e.first_air_date || e.release_date}
+                  media_type={e.media_type}
+                  vote_average={e.vote_average}
+                  over_view={e.overview}
+                  back_drop={e.backdrop_path}
+                />
+              )
+            })
+          }
+        </div>
       </div>
-
       <div className={`${contentStyle} ${containerStyle}`}>
         <ImgWindow title1='Movie' totalNumber={110} imgSource='/images/movies/movie.jpg' link="/movie/movies" />
         <ImgWindow title1='TV series' totalNumber={110} imgSource='/images/movies/documentary.jpg' link="/movie/tvSeries" />

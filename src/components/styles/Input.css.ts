@@ -24,11 +24,14 @@ export const containerStyle = styleVariants({
         zIndex: 10,
         "@media": {
           "screen and (max-width: 480px)": {
-            top: "2%",
-            left: "5%",
+            // top: "2%",
+            // left: "5%",
+
+            display: "none"
           }
         }
-      }]
+      }
+    ]
 })
 
 

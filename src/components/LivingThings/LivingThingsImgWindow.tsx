@@ -16,7 +16,7 @@ const LivingThingsImgWindow = () => {
         <ImgWindow title1='Sandy Beach' totalNumber={110} imgSource='/images/livingThings/habitats/sandyBeach.jpg' link="/livingThings/habitats/sandy-beach" />
         <ImgWindow title1='Deep Sea' totalNumber={110} imgSource='/images/livingThings/habitats/deepSea.jpg' link="/livingThings/habitats/deep-sea" />
         <ImgWindow title1='Savanna' totalNumber={110} imgSource='/images/livingThings/habitats/savanna.jpg' link="/livingThings/habitats/savanna" />
-        <ImgWindow title1='Sea' totalNumber={110} imgSource='/images/livingThings/habitats/deepSea.jpg' link="/livingThings/habitats/sea" />
+        <ImgWindow title1='Sea' totalNumber={110} imgSource='/images/livingThings/habitats/sea.jpg' link="/livingThings/habitats/sea" />
         <ImgWindow title1='River' totalNumber={110} imgSource='/images/livingThings/habitats/river.jpg' link="/livingThings/habitats/river" />
         <ImgWindow title1='Rocky Shore' totalNumber={110} imgSource='/images/livingThings/habitats/rockyShore.jpg' link="/livingThings/habitats/rocky-shore" />
         <ImgWindow title1='Lake' totalNumber={110} imgSource='/images/livingThings/habitats/lake.jpg' link="/livingThings/habitats/lake" />

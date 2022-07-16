@@ -91,15 +91,22 @@ export const slideCardStyle = styleVariants({
 
 
 const slideImgBase = style({
-  position: "absolute",
+
 })
 
 export const slideImgStyle = styleVariants({
   livingThings: [slideImgBase,
     {
-      height: "90%",
+      position: "absolute",
+      // height: "90%",
+      top: 0,
       right: 0,
-      bottom: 0
+      bottom: 0,
+      "@media": {
+        "screen and (max-width: 800px)": {
+          top: 0,
+        }
+      }
     }
   ],
   others:
@@ -171,7 +178,7 @@ export const slideContainerStyle = styleVariants({
 
 export const slideBgStyle = style({
   position: "absolute",
-  height: vars.height.ctaSliderPc,
+  // height: vars.height.ctaSliderPc,
   width: "100%",
   objectFit: "cover",
   zIndex: 1,

@@ -33,26 +33,26 @@ const LivingThingsFirstSlider = () => {
           autoplay={{ delay: 2000 }}
         >
           <SwiperSlide>
-            <FirstSliderComp title1='Peacock' imgSource='/images/livingThings/firstSlides/peacock.png' link="livingThings/each/peacock" slideImgStyle={slideImgStyle.livingThings} slideStyle={slideCardStyle.livingThings} slideTextStyle={slideTextStyle.livingThings} nextImageAdjustment={nextImageAdjustment.livingThings} />
+            <FirstSliderComp title1='Peacock' imgSource='/images/livingThings/firstSlides/peacock.png' link="livingThings/each/peacock" slideImgStyle={slideImgStyle.livingThings} slideStyle={slideCardStyle.livingThings} slideTextStyle={slideTextStyle.livingThings} nextImageAdjustment={nextImageAdjustment.livingThingsFirstSlider} />
           </SwiperSlide>
 
           <SwiperSlide>
-            <FirstSliderComp title1='Blue-and-yellow' title2='Macaw' imgSource='/images/livingThings/firstSlides/parrot.png' link="livingThings/each/blue-and-yellow-macaw" slideImgStyle={slideImgStyle.livingThings} slideStyle={slideCardStyle.livingThings} slideTextStyle={slideTextStyle.livingThings} nextImageAdjustment={nextImageAdjustment.livingThings}></FirstSliderComp>
+            <FirstSliderComp title1='Blue-and-yellow' title2='Macaw' imgSource='/images/livingThings/firstSlides/parrot.png' link="livingThings/each/blue-and-yellow-macaw" slideImgStyle={slideImgStyle.livingThings} slideStyle={slideCardStyle.livingThings} slideTextStyle={slideTextStyle.livingThings} nextImageAdjustment={nextImageAdjustment.livingThingsFirstSlider}></FirstSliderComp>
           </SwiperSlide>
 
           <SwiperSlide>
-            <FirstSliderComp title1='Red-Eyed' title2='Tree Frog' imgSource='/images/livingThings/firstSlides/frog.png' link="livingThings/each/red-eyed-tree-frog" slideImgStyle={slideImgStyle.livingThings} slideStyle={slideCardStyle.livingThings} slideTextStyle={slideTextStyle.livingThings} nextImageAdjustment={nextImageAdjustment.livingThings} />
+            <FirstSliderComp title1='Red-Eyed' title2='Tree Frog' imgSource='/images/livingThings/firstSlides/frog.png' link="livingThings/each/red-eyed-tree-frog" slideImgStyle={slideImgStyle.livingThings} slideStyle={slideCardStyle.livingThings} slideTextStyle={slideTextStyle.livingThings} nextImageAdjustment={nextImageAdjustment.livingThingsFirstSlider} />
           </SwiperSlide>
 
           <SwiperSlide>
-            <FirstSliderComp title1='Wolf' imgSource='/images/livingThings/firstSlides/wolf2.png' link="livingThings/each/wolf" slideImgStyle={slideImgStyle.livingThings} slideStyle={slideCardStyle.livingThings} slideTextStyle={slideTextStyle.livingThings} nextImageAdjustment={nextImageAdjustment.livingThings} />
+            <FirstSliderComp title1='Wolf' imgSource='/images/livingThings/firstSlides/wolf2.png' link="livingThings/each/wolf" slideImgStyle={slideImgStyle.livingThings} slideStyle={slideCardStyle.livingThings} slideTextStyle={slideTextStyle.livingThings} nextImageAdjustment={nextImageAdjustment.livingThingsFirstSlider} />
           </SwiperSlide>
         </Swiper>
       </div>
 
       <div className={slideBgStyle}>
         {/* <div className={`${gradientStyle.arts} ${tabAreaBase}`}></div> */}
-        <NextImageComp containerClassName={nextImageAdjustment.landscape} src='/images/livingThings/firstSlides/livingThingsSlideBG.jpg' alt="" />
+        <NextImageComp containerClassName={nextImageAdjustment.livingThingsFirstSliderBG} src='/images/livingThings/firstSlides/livingThingsSlideBG.jpg' alt="" />
       </div>
       {/* <div className={slideEarthStyle}>
         <Image className={slideEarthImgStyle} src="/images/common/earth-png-25612.png" alt="" />
