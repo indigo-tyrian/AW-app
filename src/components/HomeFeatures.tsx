@@ -1,6 +1,5 @@
 import { HomeFeaturesComp } from './HomeFeaturesComp'
 import { containerStyle } from './styles/ImageWindow.css';
-import { comingSoonStyle } from './styles/comingSoon.css'
 import Header from './Header'
 import { contentStyle } from './styles/global.css';
 import { HomeFeaturesCompNoLink } from './HomeFeaturesCompNoLink';

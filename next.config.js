@@ -29,6 +29,7 @@ const withVanillaExtract = createVanillaExtractPlugin();
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  pageExtensions: ['ts', 'tsx', 'mdx'],
   images: {
     domains: ['image.tmdb.org', 'upload.wikimedia.org', 'www.movienewz.com', 'user-images.githubusercontent.com'],
   },

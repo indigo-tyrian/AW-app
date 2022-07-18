@@ -5,15 +5,19 @@ import { vars } from './theme.css'
 
 export const boxStyleBase = style({
   position: "relative",
-  // width: "10vw",
-  height: "15vw",
+  // height: "10vw",
+  height: "20vw",
   // transition: "all 0.3s linear",
   transition: "all 0.1s linear",
   boxShadow: "black 0 2vw 2vw -1vw",
   borderRadius: vars.borderRadius.pc,
   overflow: "hidden",
   // boxSizing: "border-box",
-
+  "@media": {
+    "screen and (max-width: 480px)": {
+      height: "120px",
+    }
+  },
 
 })
 
@@ -39,7 +43,7 @@ export const mediaStyleBase = style({
   // transitionDelay: "0.5s",
   display: "flex",
   flexDirection: "column",
-  margin: "5px 0",
+  // margin: "5px 0",
   backgroundColor: "#282c34",
   fontFamily: '"Montserrat", sans-serif',
   borderRadius: vars.borderRadius.pc,
@@ -50,7 +54,7 @@ export const mediaStyleBase = style({
   position: "absolute",
   "@media": {
     "screen and (max-width: 550px)": {
-      width: "46%"
+      // width: "46%"
     }
   },
 })
@@ -93,7 +97,7 @@ export const borderBoxStyleBase = style({
 export const borderBoxStyle = styleVariants({
   pop: [borderBoxStyleBase,
     {
-      border: "solid white 5px",
+      border: " 5px solid rgba(255,255,255,.7);",
     }
   ],
   nonpop:
@@ -129,7 +133,13 @@ export const movieContainerStyle = style({
   display: "grid",
   gridTemplateColumns: "repeat(4, 1fr)",
   gap: "20px",
-
+  gridArea: "right",
+  "@media": {
+    "screen and (max-width: 550px)": {
+      margin: "0 20px",
+      gap: "5px",
+    }
+  },
 })
 
 
@@ -141,7 +151,14 @@ export const movieListContainerStyle = style({
   margin: "5vw 0",
   display: "grid",
   gridTemplateColumns: "1fr 2.5fr 1fr",
-  gridTemplateAreas: '"right media left"'
+  gridTemplateAreas: '"right media left"',
+  "@media": {
+    "screen and (max-width: 480px)": {
+      // width: "46%"
+      gridTemplateColumns: "1fr",
+      gridTemplateAreas: '"right" "media" "left"',
+    }
+  },
 })
 
 export const rightContentsStyle = style({
