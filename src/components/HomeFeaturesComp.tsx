@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import NextImageComp from 'src/components/NextImageComp';
 import { boxStyle, imgStyle } from './styles/ImageWindow.css';
-import { comingSoonText } from './styles/comingSoon.css';
 import { nextImageAdjustment } from './styles/nextImage.css';
 import { homeStyle, homeTextStyle } from './styles/homeWindow.css';
 
