@@ -26,7 +26,7 @@ export const boxStyle = styleVariants({
 
     {
 
-      transform: 'scale(1.1)'
+      transform: 'scale(1.05)'
     }
   ],
   nonpop:
@@ -97,7 +97,7 @@ export const borderBoxStyleBase = style({
 export const borderBoxStyle = styleVariants({
   pop: [borderBoxStyleBase,
     {
-      border: " 5px solid rgba(255,255,255,.7);",
+      border: " 4px solid rgba(255,255,255,.7);",
     }
   ],
   nonpop:
@@ -133,7 +133,7 @@ export const movieContainerStyle = style({
   display: "grid",
   gridTemplateColumns: "repeat(4, 1fr)",
   gap: "20px",
-  gridArea: "right",
+  gridArea: "media",
   "@media": {
     "screen and (max-width: 550px)": {
       margin: "0 20px",
@@ -151,7 +151,7 @@ export const movieListContainerStyle = style({
   margin: "5vw 0",
   display: "grid",
   gridTemplateColumns: "1fr 2.5fr 1fr",
-  gridTemplateAreas: '"right media left"',
+  gridTemplateAreas: '"left media right"',
   "@media": {
     "screen and (max-width: 480px)": {
       // width: "46%"

@@ -9,6 +9,9 @@ import { getPostFromSlug, getSlugs, PostMeta } from "src/components/api";
 import YouTube from "src/components/youTube";
 import Head from 'next/head'
 import { useRouter } from 'next/router'
+import NextImageComp from "src/components/NextImageComp";
+import MDXNextImageComp from "src/components/MDXNextImageComp";
+import { knowledgeEachContainerStyle, leftContentsStyle, mediaStyle, rightContentsStyle } from "src/components/styles/knowledge/each.css";
 
 interface MDXPost {
   source: MDXRemoteSerializeResult<Record<string, unknown>>;
@@ -24,8 +27,12 @@ export default function PostPage({ post }: { post: MDXPost }) {
       <Head>
         <title>{post.meta.title}</title>
       </Head>
-      <div >
-        <MDXRemote {...post.source} components={{ YouTube, Image, }} />
+      <div className={knowledgeEachContainerStyle}>
+        <div className={rightContentsStyle}></div>
+        <div className={leftContentsStyle}></div>
+        <div className={mediaStyle}>
+          <MDXRemote {...post.source} components={{ YouTube, Image, MDXNextImageComp }} />
+        </div>
       </div>
     </>
   );

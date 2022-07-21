@@ -1,7 +1,8 @@
-import 'src/components/styles/global.css'
+// import 'src/components/styles/global.css'
 import { img_300, img_500, img_1920, unavailable } from "config";
 import { BgStyle, customBgStyle, posterContainerStyle, posterStyle, titleStyle, descriptionContainerStyle, firstContainerStyle, firstContainer2Style, titleContainerStyle, genresStyle, runTimeStyle, dateStyle, runTimeAndGenresStyle, overViewContainerStyle, } from "src/components/styles/movie.css"
 import Image from 'next/image'
+import { defaultStyle } from "../styles/default.css";
 
 
 
@@ -50,7 +51,7 @@ const MoviePosterAndInfo = ({
               <div className={descriptionContainerStyle}>
                 <div className={titleContainerStyle}>
 
-                  <h2 className={titleStyle}>{title}
+                  <h2 className={`${titleStyle} ${defaultStyle}`}>{title}
                     <span className={dateStyle}>&#40;{date ? date.substring(0, 4) : "NO"}&#41;</span>
                   </h2>
                   <div className={runTimeAndGenresStyle}>
@@ -66,7 +67,7 @@ const MoviePosterAndInfo = ({
                   </div>
                 </div>
                 <div className={overViewContainerStyle}>
-                  <h3>Overview</h3>
+                  <h3 className={`${defaultStyle}`}>Overview</h3>
                   <div>{over_view}</div>
                 </div>
 

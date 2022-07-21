@@ -7,7 +7,6 @@ import { MouseEvent, useState, useEffect } from 'react'
 import { nextImageAdjustment } from 'src/components/styles/nextImage.css';
 import NextImageComp from 'src/components/NextImageComp';
 import { supabase } from 'utils/supabaseClient'
-import Movie from 'posts/movie/after-earth';
 
 
 interface Props {

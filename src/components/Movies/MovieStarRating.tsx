@@ -5,6 +5,7 @@ import { ratingContainerStyle, comprehensionRatingStyle, ratingEachStyle, rating
 // import ReactStars from 'react-stars'
 import Rating from '@mui/material/Rating';
 import StarIcon from '@mui/material/Rating';
+import { defaultStyle } from '../styles/default.css';
 
 
 interface Props {
@@ -34,7 +35,7 @@ const MovieStarRating = ({
     <>
       <div className={ratingContainerStyle}>
         <div className={ratingEachStyle}>
-          <p className={ratingTextStyle}>Story</p>
+          <p className={`${ratingTextStyle} ${defaultStyle}`}>Story</p>
           <Rating
             className={ratingStarStyle}
             value={story}
@@ -43,7 +44,7 @@ const MovieStarRating = ({
           />
         </div>
         <div className={ratingEachStyle}>
-          <p className={ratingTextStyle}>Images</p>
+          <p className={`${ratingTextStyle} ${defaultStyle}`}>Images</p>
           <Rating
             className={ratingStarStyle}
             value={images}
@@ -51,7 +52,7 @@ const MovieStarRating = ({
             precision={0.5} />
         </div>
         <div className={ratingEachStyle}>
-          <p className={ratingTextStyle}>Music</p>
+          <p className={`${ratingTextStyle} ${defaultStyle}`}>Music</p>
           <Rating
             className={ratingStarStyle}
             value={music}
@@ -60,7 +61,7 @@ const MovieStarRating = ({
           />
         </div>
         <div className={ratingEachStyle}>
-          <p className={ratingTextStyle}>Opening</p>
+          <p className={`${ratingTextStyle} ${defaultStyle}`}>Opening</p>
           <Rating
             className={ratingStarStyle}
             value={opening}
@@ -69,7 +70,7 @@ const MovieStarRating = ({
           />
         </div>
         <div className={ratingEachStyle}>
-          <p className={ratingTextStyle}>EndRoll</p>
+          <p className={`${ratingTextStyle} ${defaultStyle}`}>EndRoll</p>
           <Rating
             className={ratingStarStyle}
             value={endRoll}
@@ -78,7 +79,7 @@ const MovieStarRating = ({
           />
         </div>
         <div className={ratingEachStyle}>
-          <p className={ratingTextStyle}>Innovative</p>
+          <p className={`${ratingTextStyle} ${defaultStyle}`}>Innovative</p>
           <Rating
             className={ratingStarStyle}
             value={innovative}
@@ -87,7 +88,7 @@ const MovieStarRating = ({
           />
         </div>
         <div className={ratingEachStyle}>
-          <p className={ratingTextStyle}>Social Effect</p>
+          <p className={`${ratingTextStyle} ${defaultStyle}`}>Social Effect</p>
           <Rating
             className={ratingStarStyle}
             value={socialEffect}
@@ -96,7 +97,7 @@ const MovieStarRating = ({
           />
         </div>
         <div className={ratingEachStyle}>
-          <p className={ratingTextStyle}>Business Successful</p>
+          <p className={`${ratingTextStyle} ${defaultStyle}`}>Business Successful</p>
           <Rating
             className={ratingStarStyle}
             value={businessSuccessful}
@@ -107,7 +108,7 @@ const MovieStarRating = ({
       </div>
       <div className={comprehensionRatingStyle}>
         <div className={ratingEachStyle}>
-          <p className={comprehensiveRatingTextStyle}>Comprehensive</p>
+          <p className={`${comprehensiveRatingTextStyle} ${defaultStyle}`}>Comprehensive</p>
           <Rating
             className={ratingStarStyle}
             value={4}
