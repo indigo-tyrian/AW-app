@@ -21,11 +21,13 @@ interface MDXPost {
 export default function PostPage({ post }: { post: MDXPost }) {
 
   const router = useRouter()
-  const one = router.asPath.replace("/knowledge/", "")
+  // const one = router.asPath.replace("/knowledge/", "")
   return (
     <>
       <Head>
         <title>{post.meta.title}</title>
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
       </Head>
       <div className={knowledgeEachContainerStyle}>
         <div className={rightContentsStyle}></div>
