@@ -1,6 +1,7 @@
+import Link from 'next/link';
 import 'src/components/styles/global.css'
 
-import { Style, containerStyle, buttonStyle } from "./styles/footer.css";
+import { Style, containerStyle, buttonStyle, allRightsStyle } from "./styles/footer.css";
 import { logoAStyle, logoStyle } from './styles/logo.css';
 
 const Footer = () => {
@@ -8,25 +9,42 @@ const Footer = () => {
     <footer className={Style}>
       <div className={`${logoStyle.footer}`}> <a className={logoAStyle}>Augmented <br /> World</a></div>
       <div className={containerStyle}>
-        <button className={buttonStyle} type="button">
 
-          <div  >Privacy Policy</div>
-        </button>
-        <button className={buttonStyle} type="button">
+        {/* <Link href="privacy-policy">
+          <div className={buttonStyle} >
+            <div>Privacy Policy</div>
+          </div>
+        </Link> */}
+
+        <Link href="what">
+          <div className={buttonStyle} >
+            <div>What is?</div>
+          </div>
+        </Link>
+
+        {/* <div className={buttonStyle} >
           <div  >Account</div>
-        </button>
-        <button className={buttonStyle} type="button">
+        </div> */}
 
-          <div  >Contact</div>
-        </button>
-        <button className={buttonStyle} type="button">
+        <Link href="contact">
+          <div className={buttonStyle} >
+            <div  >Contact</div>
+          </div>
+        </Link>
 
+        {/* <div className={buttonStyle} >
           <div  >Help</div>
-        </button>
-        <button className={buttonStyle} type="button">
+        </div> */}
 
-          <div  >About Us</div>
-        </button>
+        <Link href="who">
+          <div className={buttonStyle}>
+            <div  >Who creating?</div>
+          </div>
+        </Link>
+
+      </div>
+      <div className={allRightsStyle}>
+        <div>© Augmented World 2022. All rights reserved</div>
       </div>
     </footer>
 

@@ -5,6 +5,7 @@ import { overlayGradientStyle, descriptionContainerStyle, descriptionText, descr
 import { imgStyle } from './styles/ImageWindow.css';
 import { MouseEvent, useState } from 'react'
 import { nextImageAdjustment } from './styles/nextImage.css';
+import NextImageComp from './NextImageComp';
 
 interface Props {
   title: string;
@@ -34,8 +35,8 @@ export function TopicSliderComp(props: Props) {
   return (
     <Link href={props.link}>
       <div className={` ${slideStyle}`} onMouseEnter={hov} onMouseLeave={nonHov}>
-        <div className={nextImageAdjustment.imageWindow}>
-          <Image className={`${isHover ? imgStyle.focus : imgStyle.nonFocus}`} src={props.imgSource} alt="" layout='fill' objectFit='contain' />
+        <div className={`${isHover ? imgStyle.focus : imgStyle.nonFocus}`}>
+          <NextImageComp src={props.imgSource} alt="" />
         </div>
         <div className={overlayGradientStyle}></div>
         <div className={descriptionContainerStyle}>

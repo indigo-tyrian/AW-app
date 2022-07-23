@@ -7,7 +7,8 @@ import { MouseEvent, useState, useEffect } from 'react'
 import { nextImageAdjustment } from 'src/components/styles/nextImage.css';
 import NextImageComp from 'src/components/NextImageComp';
 import { supabase } from 'utils/supabaseClient'
-
+import type { PostMeta } from "src/components/api";
+import styles from "@/styles/Articles.module.css";
 
 interface Props {
   poster: string
@@ -21,15 +22,7 @@ interface Props {
 
 }
 
-const MovieSingleContent = ({
-  poster,
-  title,
-  date,
-  media_type,
-  vote_average,
-  original_title,
-  back_drop
-}: Props) => {
+const MovieSingleContent = ({ posts }: { posts: PostMeta[] }) => {
 
   const [movieData, setMovieData] = useState<any>();
 

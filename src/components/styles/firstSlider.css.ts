@@ -11,14 +11,35 @@ export const Style = style({
   overflow: "hidden",
   position: "relative",
   height: vars.height.ctaSliderPc,
+  // Also change slideCardBase!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
   "@media": {
-    "screen and (max-width: 480px)": {
+    "screen and (max-width: 800px)": {
+      height: vars.height.ctaSliderTab,
+      // Also change slideCardBase!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    }, "screen and (max-width: 480px)": {
       height: vars.height.ctaSliderPhone,
+      // Also change slideCardBase!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
     },
   }
 })
 
+export const slideCardBase = style({
+  position: "relative",
+  zIndex: 3,
+  height: vars.height.ctaSliderPc,
 
+  "@media": {
+    "screen and (max-width: 800px)": {
+      height: vars.height.ctaSliderTab,
+    },
+    "screen and (max-width: 480px)": {
+      paddingLeft: "0",
+      height: vars.height.ctaSliderPhone,
+    },
+  }
+})
 
 
 export const ctaTitleStyle = style({
@@ -54,17 +75,7 @@ export const ctaTitleStyle = style({
 })
 
 
-export const slideCardBase = style({
-  position: "relative",
-  zIndex: 3,
-  height: vars.height.ctaSliderPc,
-  "@media": {
-    "screen and (max-width: 480px)": {
-      paddingLeft: "0",
-      height: vars.height.ctaSliderPhone,
-    },
-  }
-})
+
 
 export const slideCardStyle = styleVariants({
   livingThings:
@@ -99,12 +110,12 @@ export const slideImgStyle = styleVariants({
     {
       position: "absolute",
       // height: "90%",
-      top: 0,
+      // top: "10%",
       right: 0,
       bottom: 0,
       "@media": {
         "screen and (max-width: 800px)": {
-          top: 0,
+          top: 0, bottom: 0, right: 0,
         }
       }
     }

@@ -3,6 +3,7 @@ import { createGlobalTheme } from '@vanilla-extract/css';
 export const vars = createGlobalTheme(':root', {
   height: {
     ctaSliderPc: "45vw",
+    ctaSliderTab: "80vw",
     ctaSliderPhone: "100vw",
     topicSlider: "40vw",
     pcBox: "15vw",

@@ -11,15 +11,20 @@ const LivingThingsTopicSlider = () => {
       <Swiper
         centeredSlides={false}
         grabCursor={true}
-        spaceBetween={50}
+        spaceBetween={2}
         loop={false}
         freeMode={true}
         modules={[FreeMode]}
         slidesPerView={1.5}
-
         breakpoints={{
+          480: {
+            slidesPerView: 2.5,
+            spaceBetween: 3
+          },
           800: {
             slidesPerView: 2.5,
+            spaceBetween: 5
+
           },
         }}
       >

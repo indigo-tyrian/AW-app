@@ -23,10 +23,9 @@ export const containerStyle = styleVariants({
         left: "25%",
         zIndex: 10,
         "@media": {
-          "screen and (max-width: 480px)": {
+          "screen and (max-width: 800px)": {
             // top: "2%",
             // left: "5%",
-
             display: "none"
           }
         }

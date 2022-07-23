@@ -8,15 +8,16 @@ const nextImageAdjustmentBase = style({
 export const nextImageAdjustment = styleVariants({
   livingThingsFirstSlider: [nextImageAdjustmentBase,
     {
-      width: 700,
-      height: 700,
+      position: "relative",
+      width: "40vw",
+      height: "40vw",
       "@media": {
         "screen and (max-width: 800px)": {
-          // width: 200,
-          // height: 200,
+          width: "80vw",
+          height: "80vw",
         }, "screen and (max-width: 480px)": {
-          width: 300,
-          height: 300,
+          width: "100vw",
+          height: "100vw",
         }
       }
     }

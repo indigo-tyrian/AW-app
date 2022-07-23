@@ -52,19 +52,19 @@ export const containerStyle = style({
 export const slideStyle = style({
   position: "relative",
   height: "30vw",
-  width: "30vw",
+  // width: "30vw",
   overflow: "hidden",
   "@media":
   {
     "screen and (max-width: 800px)":
     {
       height: "50vw",
-      width: "50vw",
+      // width: "50vw",
     },
     "screen and (max-width: 480px)":
     {
-      height: "80vw",
-      width: "60vw",
+      height: "60vw",
+      // width: "60vw",
     }
   }
 })
