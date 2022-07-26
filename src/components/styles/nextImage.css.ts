@@ -49,8 +49,18 @@ export const nextImageAdjustment = styleVariants({
   moviePoster:
     [nextImageAdjustmentBase,
       {
-        width: 200,
-        height: 300,
+        position: "relative",
+        width: 300,
+        height: 450,
+        "@media": {
+          "screen and (max-width: 800px)": {
+            width: "30vw",
+            height: "45vw",
+          }, "screen and (max-width: 480px)": {
+            width: "30vw",
+            height: "45vw",
+          }
+        }
 
       }
     ],

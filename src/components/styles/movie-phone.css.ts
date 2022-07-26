@@ -1,17 +1,14 @@
 import { style, styleVariants } from "@vanilla-extract/css"
 
-export const Style = style({
+export const phoneStyle = style({
 
 })
 
-export const BgStyle = style({
-  backgroundPosition: "right -200px top",
-  backgroundSize: "cover",
-  backgroundRepeat: "no-repeat",
-
+export const phoneBgStyle = style({
+  backgroundPosition: "calc((((100vw / 2.222222) - 20px) / 1.5) / 2) 0",
 })
 
-export const customBgStyle = style({
+export const phoneCustomBgStyle = style({
   backgroundImage:
     "linear-gradient(90deg, rgba(92,232,255,1) 0%, rgba(0,91,255,0.19385039171918772) 100%)",
   display: "flex",
@@ -21,7 +18,7 @@ export const customBgStyle = style({
 
 
 
-export const posterStyle = style({
+export const phonePosterStyle = style({
   display: "block",
   width: "100%",
   minWidth: "100%",
@@ -31,16 +28,26 @@ export const posterStyle = style({
   outline: "none"
 })
 
-export const posterContainerStyle = style({
-  borderWidth: "0px",
-  minWidth: "300px",
-  width: "300px",
-  height: "450px",
-  overflow: "hidden"
+export const phonePosterContainerStyle = style({
+
+
+
+
+  position: "absolute",
+  top: "20px",
+  left: "20px",
+  width: "30vw",
+  height: "45vw"
+  // width: "calc(((100vw / 2.222222) - 40px) / 1.5)",
+  // minWidth: "calc(((100vw / 2.222222) - 40px) / 1.5)",
+  // height: "calc((100vw / 2.222222) - 40px)",
+  // minHeight: "calc((100vw / 2.222222) - 40px)",
+  // borderRadius: "var(--imageBorderRadius)",
+  // zIndex: 4
 })
 
 
-export const descriptionContainerStyle = style({
+export const phoneDescriptionContainerStyle = style({
   display: "flex",
   flexWrap: "wrap",
   alignItems: "flex-start",
@@ -50,12 +57,12 @@ export const descriptionContainerStyle = style({
 })
 
 
-export const firstContainerStyle = style({
+export const phoneFirstContainerStyle = style({
   display: "flex",
 
 })
 
-export const firstContainer2Style = style({
+export const phoneFirstContainer2Style = style({
   paddingTop: "30px",
   paddingBottom: "30px",
   paddingLeft: "40px",
@@ -64,7 +71,7 @@ export const firstContainer2Style = style({
 })
 
 
-export const titleContainerStyle = style({
+export const phoneTitleContainerStyle = style({
   width: "100%",
   // display: "grid",
   // gridTemplateRows: "2fr 1fr",
@@ -75,7 +82,7 @@ export const titleContainerStyle = style({
 })
 
 
-export const titleStyle = style({
+export const phoneTitleStyle = style({
   fontSize: "3rem",
   fontWeight: 800,
   fontFamily: 'Sans-Serif'
@@ -83,7 +90,7 @@ export const titleStyle = style({
   // gridRow:"4 / 6"
 })
 
-export const dateStyle = style({
+export const phoneDateStyle = style({
   fontSize: "3rem",
   marginLeft: "1rem",
   opacity: 0.8,
@@ -91,71 +98,71 @@ export const dateStyle = style({
   // gridColumn: "2 / 3",
 })
 
-export const runTimeStyle = style({
+export const phoneRunTimeStyle = style({
 })
 
-export const categoryStyle = style({
+export const phoneCategoryStyle = style({
 })
 
-export const genresStyle = style({
+export const phoneGenresStyle = style({
   display: "flex",
   gap: 10
 })
-export const titleAndDateStyle = style({
+export const phoneTitleAndDateStyle = style({
   display: "flex",
 
 })
-export const runTimeAndGenresStyle = style({
+export const phoneRunTimeAndGenresStyle = style({
   display: "flex",
   gap: 50
 })
-export const overViewContainerStyle = style({
+export const phoneOverViewContainerStyle = style({
   marginTop: 50,
 })
 
-export const ratingContainerStyle = style({
+export const phoneRatingContainerStyle = style({
   display: "grid",
   gridTemplateColumns: "1fr 1fr 1fr 1fr",
   gap: 30
 })
 
-export const comprehensionRatingStyle = style({
+export const phoneComprehensionRatingStyle = style({
   marginTop: "3rem",
   display: "flex",
   justifyContent: "center"
 })
-export const ratingStarStyle = style({
+export const phoneRatingStarStyle = style({
   display: "flex",
   justifyContent: "center"
 })
-export const ratingTextStyle = style({
+export const phoneRatingTextStyle = style({
   textAlign: "center",
   fontSize: "1.5rem"
 })
-export const comprehensiveRatingTextStyle = style({
+export const phoneComprehensiveRatingTextStyle = style({
   fontSize: "2rem"
 })
 
-export const ratingEachStyle = style({
+export const phoneRatingEachStyle = style({
   // display: "flex"
 })
 
 
-export const ffContainerStyle = style({
+export const phoneFfContainerStyle = style({
   margin: "3vw 3vw 0",
 
 })
 
 
 
-export const textContainerStyle = style({
+export const phoneTextContainerStyle = style({
   margin: "5vw 0",
   display: "grid",
   gridTemplateColumns: "1fr 2.5fr 1fr",
   gridTemplateAreas: '"right header left" "right media left"'
 })
 
-export const textTitleStyle = style({
+export const phoneTextTitleStyle = style({
   gridArea: "header",
   lineHeight: 1.15,
   fontWeight: 500,
@@ -171,7 +178,7 @@ export const textTitleStyle = style({
   }
 })
 
-export const textContentsStyle = style({
+export const phoneTextContentsStyle = style({
   lineHeight: 1.5,
   fontSize: "1.0625rem",
   gridArea: "media",
@@ -186,28 +193,28 @@ export const textContentsStyle = style({
 import { allImgStyle } from "./image.css"
 
 
-export const bigImgContainerStyle = style({
+export const phoneBigImgContainerStyle = style({
   overflow: "hidden",
   width: "100%",
   height: "60vh",
   position: "relative"
 })
 
-export const mediumImgContainerStyle = style({
+export const phoneMediumImgContainerStyle = style({
   overflow: "hidden",
   width: "100%",
   height: "60vh",
   position: "relative"
 })
 
-export const imgStyle = style([allImgStyle, {
+export const phoneImgStyle = style([allImgStyle, {
   top: "50%",
   left: "50%",
 }])
 
 
 
-export const TitleNameStyle = style({
+export const phoneTitleNameStyle = style({
   color: "white",
   fontSize: "3vw",
   fontWeight: 900,
@@ -222,15 +229,15 @@ export const TitleNameStyle = style({
 
 
 
-export const rightContentsStyle = style({
+export const phoneRightContentsStyle = style({
   gridArea: "right"
 })
 
-export const leftContentsStyle = style({
+export const phoneLeftContentsStyle = style({
   gridArea: "left"
 })
 
-export const paragraphStyle = style({
+export const phoneParagraphStyle = style({
   margin: "0 0 1rem 0",
 })
 

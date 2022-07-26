@@ -9,7 +9,7 @@ function Who() {
   return (
     <>
       <div className={containerStyle}>
-        <div className={headTitleStyle}>Hello, I'm<br /> Yuri Nakanishi</div>
+        <div className={headTitleStyle}>Hello, I&lsquo;m<br /> Yuri Nakanishi</div>
         <div className={headImageStyle}>
           <NextImageComp src="/images/profile/profile-pic1.jpg" containerClassName={nextImageAdjustment.profileHead} />
         </div>

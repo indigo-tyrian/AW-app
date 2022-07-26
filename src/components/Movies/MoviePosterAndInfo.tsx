@@ -1,9 +1,12 @@
 // import 'src/components/styles/global.css'
 import { img_300, img_500, img_1920, unavailable } from "config";
-import { BgStyle, customBgStyle, posterContainerStyle, posterStyle, titleStyle, descriptionContainerStyle, firstContainerStyle, firstContainer2Style, titleContainerStyle, genresStyle, runTimeStyle, dateStyle, runTimeAndGenresStyle, overViewContainerStyle, } from "src/components/styles/movie.css"
+import { BgStyle, customBgStyle, posterContainerStyle, titleStyle, descriptionContainerStyle, firstContainerStyle, firstContainer2Style, titleContainerStyle, genresStyle, runTimeStyle, dateStyle, runTimeAndGenresStyle, overViewContainerStyle, } from "src/components/styles/movie.css"
 import Image from 'next/image'
 import { defaultStyle } from "../styles/default.css";
-
+import NextImageComp from "../NextImageComp";
+import { nextImageAdjustment } from "../styles/nextImage.css";
+import MediaQuery from 'react-responsive'
+import { phoneBgStyle, phonePosterContainerStyle } from "../styles/movie-phone.css";
 
 
 interface Props {
@@ -33,50 +36,96 @@ const MoviePosterAndInfo = ({
   genres,
 }: Props) => {
 
+
+
   const hours = Math.floor(runtime / 60);
   const minutes = runtime % 60;
 
-  return (
-    <>
-      <div className={BgStyle} style={{
-        backgroundImage:
-          `url(${img_1920}/${back_drop})`
-      }} >
-        <div className={customBgStyle}>
-          <div className={firstContainer2Style}>
-            <div className={firstContainerStyle}>
-              <div className={posterContainerStyle}>
-                <Image className={posterStyle} src={poster ? `${img_300}/${poster}` : unavailable} alt={title} width={300} height={450} />
-              </div>
-              <div className={descriptionContainerStyle}>
-                <div className={titleContainerStyle}>
+  // const isDesktopOrLaptop = useMediaQuery({
+  //   query: '(min-width: 800px)'
+  // })
+  // const isTab = useMediaQuery({
+  //   query: '(max-width: 800px)'
+  // })
 
-                  <h2 className={`${titleStyle} ${defaultStyle}`}>{title}
-                    <span className={dateStyle}>&#40;{date ? date.substring(0, 4) : "NO"}&#41;</span>
-                  </h2>
-                  <div className={runTimeAndGenresStyle}>
-                    <span className={runTimeStyle}>{hours}h{minutes}m</span>
-                    {/* <span className={categoryStyle}>
+  return (
+    <div>
+      <MediaQuery minWidth={800}>
+        <div className={BgStyle} style={{
+          backgroundImage:
+            `url(${img_1920}/${back_drop})`
+        }} >
+          <div className={customBgStyle}>
+            <div className={firstContainer2Style}>
+              <div className={firstContainerStyle}>
+                <div className={posterContainerStyle}>
+                  {/* <Image src={poster ? `${img_300}/${poster}` : unavailable} alt={title} height={450} width={300} /> */}
+                  <NextImageComp src={poster ? `${img_300}/${poster}` : unavailable} alt={title} containerClassName={nextImageAdjustment.moviePoster} />
+                </div>
+                <div className={descriptionContainerStyle}>
+                  <div className={titleContainerStyle}>
+                    <h2 className={`${titleStyle} ${defaultStyle}`}>{title}
+                      <span className={dateStyle}>&#40;{date ? date.substring(0, 4) : "NO"}&#41;</span>
+                    </h2>
+                    <div className={runTimeAndGenresStyle}>
+                      <span className={runTimeStyle}>{hours}h{minutes}m</span>
+                      {/* <span className={categoryStyle}>
                     Category: {media_type === "tv" ? "TV Series" : "movie"}
                   </span> */}
-                    <span className={genresStyle}>
-                      {genres?.map((rr) => (
-                        <div key={rr.id} className="subTitle" > {rr.name}</div>
-                      ))}
-                    </span>
+                      <span className={genresStyle}>
+                        {genres?.map((rr) => (
+                          <div key={rr.id} className="subTitle" > {rr.name}</div>
+                        ))}
+                      </span>
+                    </div>
                   </div>
-                </div>
-                <div className={overViewContainerStyle}>
-                  <h3 className={`${defaultStyle}`}>Overview</h3>
-                  <div>{over_view}</div>
-                </div>
+                  <div className={overViewContainerStyle}>
+                    <h3 className={`${defaultStyle}`}>Overview</h3>
+                    <div>{over_view}</div>
+                  </div>
 
+                </div>
               </div>
             </div>
           </div>
+        </div >
+      </MediaQuery>
+      <MediaQuery maxWidth={800}>
+        <div className={phoneBgStyle} style={{ backgroundImage: `url(${img_1920}/${back_drop})` }}>
+          <div className={phonePosterContainerStyle}>
+            <NextImageComp src={poster ? `${img_300}/${poster}` : unavailable} alt={title} containerClassName={nextImageAdjustment.moviePoster} />
+          </div>
         </div>
-      </div >
-    </>
+        <div className={firstContainer2Style}>
+          <div className={firstContainerStyle}>
+            <div className={descriptionContainerStyle}>
+              <div className={titleContainerStyle}>
+
+                <h2 className={`${titleStyle} ${defaultStyle}`}>{title}
+                  <span className={dateStyle}>&#40;{date ? date.substring(0, 4) : "NO"}&#41;</span>
+                </h2>
+                <div className={runTimeAndGenresStyle}>
+                  <span className={runTimeStyle}>{hours}h{minutes}m</span>
+                  {/* <span className={categoryStyle}>
+                  Category: {media_type === "tv" ? "TV Series" : "movie"}
+                </span> */}
+                  <span className={genresStyle}>
+                    {genres?.map((rr) => (
+                      <div key={rr.id} className="subTitle" > {rr.name}</div>
+                    ))}
+                  </span>
+                </div>
+              </div>
+              <div className={overViewContainerStyle}>
+                <h3 className={`${defaultStyle}`}>Overview</h3>
+                <div>{over_view}</div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </MediaQuery>
+    </div>
   )
 }
 
