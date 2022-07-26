@@ -142,7 +142,7 @@ export const ratingEachStyle = style({
 
 
 export const ffContainerStyle = style({
-  margin: "3rem 10% 0",
+  margin: "3vw 3vw 0",
 
 })
 

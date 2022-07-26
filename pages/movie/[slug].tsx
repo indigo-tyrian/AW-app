@@ -11,6 +11,9 @@ import Head from 'next/head'
 import { useRouter } from 'next/router'
 import Species from "src/components/LivingThings/species";
 import Movie from "src/components/Movies/each";
+import { ffContainerStyle, textContainerStyle, textTitleStyle, textContentsStyle, mediumImgContainerStyle, imgStyle, leftContentsStyle, rightContentsStyle, paragraphStyle } from "src/components/styles/movie.css"
+
+
 
 interface MDXPost {
   source: MDXRemoteSerializeResult<Record<string, unknown>>;
@@ -27,8 +30,16 @@ export default function PostPage({ post }: { post: MDXPost }) {
         <title>{post.meta.title}</title>
       </Head>
       <Movie id={one} />
-      <div >
-        <MDXRemote {...post.source} components={{ YouTube, Image, }} />
+
+      <div className={ffContainerStyle}>
+        <span className={textTitleStyle}>{post.meta.title}</span>
+        <div className={textContainerStyle}>
+          <div>
+            <MDXRemote {...post.source} components={{ YouTube, Image, }} />
+          </div>
+          <div className={leftContentsStyle}></div>
+          <div className={rightContentsStyle}></div>
+        </div>
       </div>
     </>
   );

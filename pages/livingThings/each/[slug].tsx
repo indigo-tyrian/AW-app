@@ -26,11 +26,10 @@ export default function PostPage({ post }: { post: MDXPost }) {
       <Head>
         <title>{post.meta.title}</title>
       </Head>
-      <EachContentNoImageGarelly id={one} />
+      <EachContent id={one} />
       {/* <h1 style={{ color: "red" }}>{post.meta.title}</h1> */}
-      <div >
-        <MDXRemote {...post.source} components={{ YouTube, Image, }} />
-      </div>
+      <MDXRemote {...post.source} components={{ YouTube, Image, }} />
+
     </>
   );
 }

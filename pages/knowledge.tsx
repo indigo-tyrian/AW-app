@@ -5,6 +5,7 @@ import { getAllPosts, PostMeta } from "src/components/api";
 
 
 const Knowledge = ({ posts }: { posts: PostMeta[] }) => {
+  console.log(posts)
   return (
     <>
       <Header />

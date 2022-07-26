@@ -48,6 +48,13 @@ export interface PostMeta {
   date: string;
   name: string;
   imgUrl: string;
+  id?: string;
+  // story?: number;
+  // socialEffect?: number;
+  // businessSuccessful?: number;
+  // innovative?: number;
+  // music?: number;
+  // images?: number;
 }
 
 export const getPostFromSlug = (slug: string, ss: string): Post => {
@@ -55,7 +62,7 @@ export const getPostFromSlug = (slug: string, ss: string): Post => {
   const postPath = path.join(POSTS_PATH, `${slug}.mdx`);
   const source = fs.readFileSync(postPath);
   const { content, data } = matter(source);
-  console.log({ content, data }, "yyyyyyyyy");
+  // console.log({ content, data }, "yyyyyyyyy");
   return {
     content,
     meta: {
@@ -65,7 +72,14 @@ export const getPostFromSlug = (slug: string, ss: string): Post => {
       tags: (data.tags ?? []).sort(),
       date: (data.date ?? new Date()).toString(),
       name: data.name ?? slug,
-      imgUrl: data.imgUrl ?? "/images/black.png"
+      imgUrl: data.imgUrl ?? "/images/black.png",
+      id: data.id ?? slug,
+      // story: data.story,
+      // socialEffect: data.socialEffect ?? 1,
+      // businessSuccessful: data.businessSuccessful ?? 1,
+      // innovative: data.innovative ?? 1,
+      // music: data.music ?? 1,
+      // images: data.images ?? 1
     },
   };
 };

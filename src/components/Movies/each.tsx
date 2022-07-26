@@ -60,21 +60,6 @@ const Movie = ({ id }: { id: string }) => {
         music={parseInt(movieData.rating_music)}
         opening={parseInt(movieData.rating_opening)}
       />
-
-      <div className={ffContainerStyle}>
-        <div className={textContainerStyle}>
-          <span className={textTitleStyle}>{movieData.blog_title}</span>
-          <div className={textContentsStyle}>
-            <p className={paragraphStyle}>
-            </p>
-            <div className={mediumImgContainerStyle}>
-              <NextImageComp containerClassName={nextImageAdjustment.landscape} boxClassName={imgStyle} src="/images/movies/documentary.jpg" alt="" />
-            </div>
-          </div>
-          <div className={leftContentsStyle}></div>
-          <div className={rightContentsStyle}></div>
-        </div>
-      </div>
     </>
   )
 }

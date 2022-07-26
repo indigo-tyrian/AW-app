@@ -92,5 +92,13 @@ export const nextImageAdjustment = styleVariants({
         width: 600,
         height: 600
       }
+    ],
+  profileHead:
+    [nextImageAdjustmentBase,
+      {
+        position: "relative",
+        width: "25vw",
+        height: "25vw"
+      }
     ]
 })
