@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { defaultStyle } from "../styles/default.css";
 import NextImageComp from "../NextImageComp";
 import { nextImageAdjustment } from "../styles/nextImage.css";
-import MediaQuery from 'react-responsive'
+import { useMediaQuery } from "react-responsive";
 import { phoneBgStyle, phonePosterContainerStyle } from "../styles/movie-phone.css";
 
 
@@ -48,9 +48,18 @@ const MoviePosterAndInfo = ({
   //   query: '(max-width: 800px)'
   // })
 
+  const Desktop = ({ children }: any) => {
+    const isDesktop = useMediaQuery({ minWidth: 800 })
+    return isDesktop ? children : null
+  }
+  const Tablet = ({ children }: any) => {
+    const isTablet = useMediaQuery({ maxWidth: 800 })
+    return isTablet ? children : null
+  }
+
   return (
     <div>
-      <MediaQuery minWidth={800}>
+      <Desktop>
         <div className={BgStyle} style={{
           backgroundImage:
             `url(${img_1920}/${back_drop})`
@@ -89,8 +98,8 @@ const MoviePosterAndInfo = ({
             </div>
           </div>
         </div >
-      </MediaQuery>
-      <MediaQuery maxWidth={800}>
+      </Desktop>
+      <Tablet>
         <div className={phoneBgStyle} style={{ backgroundImage: `url(${img_1920}/${back_drop})` }}>
           <div className={phonePosterContainerStyle}>
             <NextImageComp src={poster ? `${img_300}/${poster}` : unavailable} alt={title} containerClassName={nextImageAdjustment.moviePoster} />
@@ -124,8 +133,9 @@ const MoviePosterAndInfo = ({
             </div>
           </div>
         </div>
-      </MediaQuery>
-    </div>
+      </Tablet>
+
+    </div >
   )
 }
 

@@ -7,6 +7,7 @@ const NextImageComp = ({ src, alt, containerClassName, boxClassName }: any) => {
       <Image src={src} alt={alt}
         objectFit='cover'
         layout='fill'
+        priority
         className={`${boxClassName}`} />
     </div>
     // </div>
