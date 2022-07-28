@@ -13,14 +13,20 @@ import { Props, Props2 } from 'interfaces/livingThingsInterface';
 import Head from 'next/head'
 import { nextImageAdjustment } from "src/components/styles/nextImage.css"
 import { supabase } from 'utils/supabaseClient'
+import Image from "next/image"
 
-const ArtsEach = ({ id }: { id: string }, post: any) => {
+const ArtsEach = ({ id }: { id: string }) => {
   // const router = useRouter()
   // const one = router.asPath.replace("/arts/each/", "")
   const [content, setContent] = useState<any>({});
   const [hidden, setHidden] = useState(false)
+
   const fetchData = async () => {
-    const kk = post.meta.find((d: any) => d.name == id)
+    let { data: artEach, error }: any = await supabase
+      .from('arts_each')
+      .select('title,name,image_URL')
+
+    const kk = await artEach.find((d: any) => d.name == id)
     setContent(kk);
     console.log(kk);
   }
@@ -46,7 +52,9 @@ const ArtsEach = ({ id }: { id: string }, post: any) => {
   return (
     <>
       <div className={bigImgContainerStyle}>
-        <NextImageComp containerClassName={nextImageAdjustment.landscape} boxClassName={bigImgStyle} src={content.image_URL ? content.image_URL : "/images/black"} alt="" />
+        <div className={nextImageAdjustment.landscape}>
+          <Image src={content.image_URL ? content.image_URL : "/images/black"} alt="" objectFit='cover' layout='fill' priority />
+        </div>
       </div>
       <div className={TitleNameStyle}>{content.title}</div>
       <div className={linkContainerStyle}>

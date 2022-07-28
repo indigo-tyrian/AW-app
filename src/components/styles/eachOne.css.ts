@@ -9,7 +9,8 @@ export const bigImgContainerStyle = style({
   overflow: "hidden",
   width: "100%",
   height: "60vh",
-  position: "relative"
+  position: "relative",
+
 })
 
 // export const bigImgStyle = style([allImgStyle, {

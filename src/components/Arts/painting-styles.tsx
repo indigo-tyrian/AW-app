@@ -13,6 +13,7 @@ import { Props, Props2 } from 'interfaces/livingThingsInterface';
 import Head from 'next/head'
 import { nextImageAdjustment } from "src/components/styles/nextImage.css"
 import { supabase } from 'utils/supabaseClient'
+import Image from 'next/image';
 
 const ArtStyles = ({ id }: { id: string }) => {
   const router = useRouter()
@@ -51,7 +52,9 @@ const ArtStyles = ({ id }: { id: string }) => {
   return (
     <>
       <div className={bigImgContainerStyle}>
-        <NextImageComp containerClassName={nextImageAdjustment.landscape} boxClassName={bigImgStyle} src={artsStylesData.image_URL ? artsStylesData.image_URL : "/images/black"} alt="" />
+        <div className={nextImageAdjustment.landscape}>
+          <Image src={artsStylesData.image_URL ? artsStylesData.image_URL : "/images/black"} alt="" objectFit='cover' layout='fill' priority />
+        </div>
       </div>
       <div className={TitleNameStyle}>{artsStylesData.title}</div>
       <div className={linkContainerStyle}>

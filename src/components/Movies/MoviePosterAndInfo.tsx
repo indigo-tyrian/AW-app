@@ -69,7 +69,9 @@ const MoviePosterAndInfo = ({
               <div className={firstContainerStyle}>
                 <div className={posterContainerStyle}>
                   {/* <Image src={poster ? `${img_300}/${poster}` : unavailable} alt={title} height={450} width={300} /> */}
-                  <NextImageComp src={poster ? `${img_300}/${poster}` : unavailable} alt={title} containerClassName={nextImageAdjustment.moviePoster} />
+                  <div className={nextImageAdjustment.moviePoster}>
+                    <Image src={poster ? `${img_300}/${poster}` : unavailable} alt="" objectFit='cover' layout='fill' priority />
+                  </div>
                 </div>
                 <div className={descriptionContainerStyle}>
                   <div className={titleContainerStyle}>

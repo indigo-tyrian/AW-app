@@ -25,7 +25,7 @@ export default function BottomNav() {
 
 
   return (
-    <Box sx={{ width: "100vw" }}>
+    <Box sx={{ width: "100vw", color: "black" }}>
       <BottomNavigation
         showLabels
         value={value}
@@ -33,7 +33,7 @@ export default function BottomNav() {
           setValue(newValue);
         }}
       >
-        <BottomNavigationAction classes="" label="Home" icon={<Link href="/"><HomeIcon /></Link>} />
+        <BottomNavigationAction label="Home" icon={<Link href="/"><HomeIcon /></Link>} />
         <BottomNavigationAction label="Saved" icon={<BookmarkIcon />} />
         <BottomNavigationAction label="Post" icon={<PostAddIcon />} />
         <BottomNavigationAction label="Search" icon={<SearchIcon />} />

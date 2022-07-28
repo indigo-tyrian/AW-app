@@ -9,6 +9,7 @@ import { barStyle, boxStyle, containerStyle, textStyle, titleStyle, textContaine
 import Head from 'next/head'
 import type { PostMeta } from "src/components/api";
 import styles from "@/styles/Articles.module.css";
+import Image from 'next/image';
 
 const KnowledgeList = ({ posts }: { posts: PostMeta[] }) => {
   // const kk: any = Data.knowledge as any
@@ -52,7 +53,9 @@ const KnowledgeList = ({ posts }: { posts: PostMeta[] }) => {
                         <div className={infoStyle}>dddddddddddddddddddddd</div>
                       </div>
                       <div className={imageStyle}>
-                        <NextImageComp containerClassName={nextImageAdjustment.smallImage} src={post.imgUrl} alt="" />
+                        <div className={nextImageAdjustment.smallImage}>
+                          <Image src={post.imgUrl ? post.imgUrl : "/images/black"} alt="" objectFit='cover' layout='fill' priority />
+                        </div>
                       </div>
                     </div>
                   </div>

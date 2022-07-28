@@ -1,6 +1,5 @@
 import MoviePosterAndInfo from 'src/components/Movies/MoviePosterAndInfo'
 import MovieStarRating from 'src/components/Movies/MovieStarRating'
-import NextImageComp from 'src/components/NextImageComp';
 import 'src/components/styles/global.css'
 import { useEffect, useState } from "react";
 import { supabase } from 'utils/supabaseClient'

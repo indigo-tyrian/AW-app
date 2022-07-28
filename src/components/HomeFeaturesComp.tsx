@@ -3,7 +3,7 @@ import NextImageComp from 'src/components/NextImageComp';
 import { boxStyle, imgStyle } from './styles/ImageWindow.css';
 import { nextImageAdjustment } from './styles/nextImage.css';
 import { homeStyle, homeTextStyle } from './styles/homeWindow.css';
-
+import Image from 'next/image';
 interface Props {
   title: string;
   text?: string;
@@ -21,7 +21,9 @@ export function HomeFeaturesComp(props: Props) {
               {props.title}
             </span>
           </div>
-          <NextImageComp boxClassName={imgStyle.nonFocus} containerClassName={nextImageAdjustment.imageWindow} src={props.imgSource} alt="" />
+          <div className={nextImageAdjustment.imageWindow}>
+            <Image src={props.imgSource} alt="" layout="fill" objectFit="contain" className={imgStyle.nonFocus} priority />
+          </div>
         </div>
       </div>
     </Link>

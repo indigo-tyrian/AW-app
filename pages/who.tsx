@@ -1,17 +1,20 @@
 import { BottomNav, Footer } from 'src/components'
 import 'src/components/styles/global.css'
 import Head from 'next/head'
-import NextImageComp from 'src/components/NextImageComp'
+// import NextImageComp from 'src/components/NextImageComp'
 import { nextImageAdjustment } from 'src/components/styles/nextImage.css'
 import { containerStyle, creatorBox, developerBox, headDescriptionStyle, headImageStyle, headTitleStyle, profileDescContainerStyle, titleStyle } from 'src/components/styles/who.css'
-
+import Image from 'next/image'
 function Who() {
   return (
     <>
       <div className={containerStyle}>
         <div className={headTitleStyle}>Hello, I&lsquo;m<br /> Yuri Nakanishi</div>
         <div className={headImageStyle}>
-          <NextImageComp src="/images/profile/profile-pic1.jpg" containerClassName={nextImageAdjustment.profileHead} />
+          <div className={`${nextImageAdjustment.profileHead}`}>
+            <Image src="/images/profile/profile-pic1.jpg" objectFit='cover'
+              layout='fill' priority alt="" />
+          </div>
         </div>
         <div className={headDescriptionStyle}>Software Developer, Designer and Creator in Japan </div>
       </div>

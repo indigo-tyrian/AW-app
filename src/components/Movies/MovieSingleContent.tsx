@@ -67,7 +67,9 @@ const MovieSingleContent = ({
       <div className={isHover ? boxStyle.pop : boxStyle.nonpop} onMouseEnter={popup} onMouseLeave={undoPopup} >
         <div className={isHover ? borderBoxStyle.pop : borderBoxStyle.nonpop}></div>
         <div className={isHover ? mediaStyle.pop : mediaStyle.nonpop} >
-          <NextImageComp containerClassName={nextImageAdjustment.moviePoster} src={poster ? `${img_300}/${poster}` : unavailable} alt={title} />
+          <div className={nextImageAdjustment.moviePoster}>
+            <Image src={poster ? `${img_300}/${poster}` : unavailable} alt="" objectFit='cover' layout='fill' priority />
+          </div>
         </div>
         <div>
           {/* {isHover ?

@@ -36,10 +36,9 @@ export function ImgWindow(props: Props) {
   return (
     <Link href={props.link}>
       <div className={`${boxStyle}`} onMouseEnter={onPale} onMouseLeave={undoPale}>
-        <NextImageComp containerClassName={nextImageAdjustment.imageWindow} boxClassName={`${isHover ? imgStyle.focus : imgStyle.nonFocus} `} src={props.imgSource} alt="" />
-        {/* <div className={`${isHover ? imgStyle.focus : imgStyle.nonFocus} `} >
-          <Image src={props.imgSource} alt="" width="200%" height="40%" layout="responsive" objectFit="contain" />
-        </div> */}
+        <div className={nextImageAdjustment.imageWindow}>
+          <Image src={props.imgSource} alt="" layout="fill" objectFit="cover" priority className={`${isHover ? imgStyle.focus : imgStyle.nonFocus} `} />
+        </div>
         <div className={`${overlayStyle} ${pcAreaBase} ${isHover ? overlayStyle.grayOut : overlayStyle.nonGrayOut}`} ></div>
         <div className={gradientStyle}></div>
         <div className="text-block">

@@ -50,14 +50,14 @@ export const nextImageAdjustment = styleVariants({
     [nextImageAdjustmentBase,
       {
         position: "relative",
-        width: 300,
+        width: "auto",
         height: 450,
         "@media": {
           "screen and (max-width: 800px)": {
-            width: "30vw",
+            width: "auto",
             height: "45vw",
           }, "screen and (max-width: 480px)": {
-            width: "30vw",
+            width: "auto",
             height: "45vw",
           }
         }
