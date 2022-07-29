@@ -43,7 +43,7 @@ const LivingThingsTopicSlider = () => {
         <SwiperSlide>
           <TopicSliderComp title='Squirrel'
             text='The squirrel family includes tree squirrels, ground squirrels, and flying squirrels.'
-            imgSource='/images/livingThings/each/squirrels.jpg' link="/livingThings/each/squirrel" />
+            imgSource='/images/livingThings/each/squirrel.jpg' link="/livingThings/each/squirrel" />
         </SwiperSlide>
         <SwiperSlide>
           <TopicSliderComp title='Tiger'

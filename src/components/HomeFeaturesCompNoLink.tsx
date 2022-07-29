@@ -20,7 +20,7 @@ export function HomeFeaturesCompNoLink(props: Props) {
       </div>
       <div>
         <div className={nextImageAdjustment.imageWindow}>
-          <Image src={props.imgSource} alt="" layout="fill" objectFit="contain" className={imgStyle.nonFocus} priority />
+          <Image src={props.imgSource} alt="" layout="fill" objectFit="cover" className={imgStyle.nonFocus} priority />
         </div>
       </div>
     </div>

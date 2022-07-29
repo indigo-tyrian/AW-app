@@ -3,8 +3,8 @@ import { vars } from "./theme.css"
 
 
 globalStyle("body", {
-  margin: "0",
-  padding: "0",
+  margin: 0,
+  padding: 0,
   fontFamily: vars.font.font1,
   backgroundColor: vars.color.navyBlue,
   overflowX: "hidden"

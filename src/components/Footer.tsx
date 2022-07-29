@@ -16,7 +16,7 @@ const Footer = () => {
           </div>
         </Link> */}
 
-        <Link href="what">
+        <Link href="about">
           <div className={buttonStyle} >
             <div>What is?</div>
           </div>

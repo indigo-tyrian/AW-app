@@ -38,6 +38,11 @@ export const homeTextBase = style({
   WebkitTransform: "translate(-50%, -50%)",
   msTransform: "translate(-50%, -50%)",
   textAlign: "center",
+  "@media": {
+    "screen and (max-width: 480px)": {
+      fontSize: "5vw",
+    }
+  },
 })
 
 export const homeTextStyle = styleVariants({

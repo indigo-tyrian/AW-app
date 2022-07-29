@@ -9,6 +9,8 @@ export const nextImageAdjustment = styleVariants({
   livingThingsFirstSlider: [nextImageAdjustmentBase,
     {
       position: "relative",
+      // width: "40vw",
+      // height: "40vw",
       width: "40vw",
       height: "40vw",
       "@media": {
@@ -50,17 +52,17 @@ export const nextImageAdjustment = styleVariants({
     [nextImageAdjustmentBase,
       {
         position: "relative",
-        width: "auto",
         height: 450,
-        "@media": {
-          "screen and (max-width: 800px)": {
-            width: "auto",
-            height: "45vw",
-          }, "screen and (max-width: 480px)": {
-            width: "auto",
-            height: "45vw",
-          }
-        }
+        width: "auto",
+        // "@media": {
+        //   "screen and (max-width: 800px)": {
+        //     width: "auto",
+        //     height: "45vw",
+        //   }, "screen and (max-width: 480px)": {
+        //     width: "auto",
+        //     height: "45vw",
+        //   }
+        // }
 
       }
     ],
@@ -107,8 +109,8 @@ export const nextImageAdjustment = styleVariants({
     [nextImageAdjustmentBase,
       {
         position: "relative",
-        width: "25vw",
-        height: "25vw"
+        width: 500,
+        height: 500
       }
     ]
 })
